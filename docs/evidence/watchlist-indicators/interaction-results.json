@@ -1,0 +1,24 @@
+{
+  "default_indicators": 10,
+  "selectable_columns": 19,
+  "numeric_sort": true,
+  "missing_values_last": true,
+  "sort_survives_refresh": true,
+  "selection_survives_reorder": true,
+  "fixed_name_code_and_headers": true,
+  "preferences_persist": true,
+  "reset_columns": true,
+  "collapse_detail": true,
+  "book_rows": 10,
+  "correct_volume_lots": true,
+  "correct_amount_wan": true,
+  "tested_widths": [
+    1920,
+    1600,
+    1366,
+    1093,
+    390
+  ],
+  "watchlist_and_monitor_records_unchanged": true,
+  "page_errors": []
+}

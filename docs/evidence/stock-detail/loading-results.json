@@ -1,0 +1,7 @@
+{
+  "chart_before_slow_profile": true,
+  "initial_empty_is_loading": true,
+  "research_pending_then_completed": true,
+  "errors": [],
+  "data": "浏览器响应拦截，不写正式库"
+}

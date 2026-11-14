@@ -1,0 +1,89 @@
+{
+  "indices": {
+    "sh000001": {
+      "bars": 320,
+      "points": 242,
+      "last_bar": "2026-10-29",
+      "last_point": "2026-10-29T07:00:00Z"
+    },
+    "sz399001": {
+      "bars": 320,
+      "points": 242,
+      "last_bar": "2026-10-29",
+      "last_point": "2026-10-29T07:00:00Z"
+    },
+    "sz399006": {
+      "bars": 320,
+      "points": 242,
+      "last_bar": "2026-10-29",
+      "last_point": "2026-10-29T07:00:00Z"
+    },
+    "sh000300": {
+      "bars": 320,
+      "points": 242,
+      "last_bar": "2026-10-29",
+      "last_point": "2026-10-29T07:00:00Z"
+    },
+    "sh000016": {
+      "bars": 320,
+      "points": 242,
+      "last_bar": "2026-10-29",
+      "last_point": "2026-10-29T07:00:00Z"
+    },
+    "sh000905": {
+      "bars": 320,
+      "points": 242,
+      "last_bar": "2026-10-29",
+      "last_point": "2026-10-29T07:00:00Z"
+    },
+    "sh000852": {
+      "bars": 320,
+      "points": 242,
+      "last_bar": "2026-10-29",
+      "last_point": "2026-10-29T07:00:00Z"
+    },
+    "sh000688": {
+      "bars": 320,
+      "points": 242,
+      "last_bar": "2026-10-29",
+      "last_point": "2026-10-29T07:00:00Z"
+    }
+  },
+  "repeated_refresh_row_counts_unchanged": true,
+  "before_counts": {
+    "sh000001": 320,
+    "sz399001": 320,
+    "sz399006": 320,
+    "sh000300": 320,
+    "sh000016": 320,
+    "sh000905": 320,
+    "sh000852": 320,
+    "sh000688": 320
+  },
+  "after_counts": {
+    "sh000001": 320,
+    "sz399001": 320,
+    "sz399006": 320,
+    "sh000300": 320,
+    "sh000016": 320,
+    "sh000905": 320,
+    "sh000852": 320,
+    "sh000688": 320
+  },
+  "rankings": {
+    "gainers": 100,
+    "losers": 100,
+    "amount": 100
+  },
+  "status": {
+    "enabled": true,
+    "interval_seconds": 60,
+    "running": false,
+    "phase": "IDLE",
+    "last_attempt_at": "2026-10-29T15:42:33.008747Z",
+    "last_success_at": "2026-10-29T15:42:34.666546Z",
+    "error": null,
+    "market_open": false
+  },
+  "simulation_or_real_order_actions": false
+}

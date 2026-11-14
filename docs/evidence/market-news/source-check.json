@@ -1,0 +1,145 @@
+{
+  "market_count": 100,
+  "market": [
+    {
+      "id": "sina:5190142",
+      "kind": "news",
+      "title": "DeepSeek下一代大模型计划用昇腾芯片训练",
+      "summary": "【DeepSeek下一代大模型计划用昇腾芯片训练】记者从多名产业链人士处获悉，DeepSeek下一代大模型DeepSeekV5计划基于昇腾芯片进行预训练。此前华为昇腾芯片主要用于DeepSeek大模型的推理任务。从公开可查的信息看，昇腾承载DeepSeek模型的最早规模化部署发生在2025年春节前后。（财联社）",
+      "published_at": "2026-11-03T06:34:42Z",
+      "publication_precision": "TIME",
+      "source": "新浪财经",
+      "url": null,
+      "securities": [],
+      "fetched_at": "2026-11-03T06:34:53.143919Z",
+      "raw_hash": "1b541574fa3dc48f87c731d7396a189bd0929fcc7ca6881c8046f1f8df6afcbc"
+    },
+    {
+      "id": "sina:5190141",
+      "kind": "news",
+      "title": "Anthropic招股书“埋暗雷”：已接近RSI模型",
+      "summary": "【Anthropic招股书“埋暗雷”：已接近RSI模型】虽然市场的注意力大多集中在Anthropic最新修订后的S-1A文件中披露的财务数据上（收入飙升，但支出也同样飙升），但这家人工智能实验室在细则中又抛出了一颗小炸弹——公司已经非常接近做出具备RSI能力的模型。递归自我改进（RSI），是指人工智能系统以自身改进结果作为输入，不断优化自身能力并修改自身架构，形成自我改进闭环的过程，被视为实现通用人工智能（AGI）的关键路径。简单来说，就是AI系统能够在无人干预的情况下设计和开发其后续版本。",
+      "published_at": "2026-11-03T06:34:23Z",
+      "publication_precision": "TIME",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/7x24/2026-11-03/doc-inixmxcw6643230.shtml",
+      "securities": [],
+      "fetched_at": "2026-11-03T06:34:53.143919Z",
+      "raw_hash": "1b541574fa3dc48f87c731d7396a189bd0929fcc7ca6881c8046f1f8df6afcbc"
+    },
+    {
+      "id": "sina:5190140",
+      "kind": "news",
+      "title": "世界黄金协会：三季度中国市场黄金需求达192吨",
+      "summary": "【世界黄金协会：三季度中国市场黄金需求达192吨】世界黄金协会11月3日发布的数据显示，三季度中国市场黄金需求（含金饰、金条金币、黄金ETF及工业用金）总量达192吨，同比增长12%，环比增长23%。其中，黄金ETF净流入27吨；金条金币投资需求同比增长7%至79吨；金饰消费量季节性环比回升30%至66吨，总价值达人民币608亿元，明显高于过去十年552亿元的平均水平。（人民财讯）",
+      "published_at": "2026-11-03T06:33:27Z",
+      "publication_precision": "TIME",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/7x24/2026-11-03/doc-inixmxcz8670044.shtml",
+      "securities": [],
+      "fetched_at": "2026-11-03T06:34:53.143919Z",
+      "raw_hash": "1b541574fa3dc48f87c731d7396a189bd0929fcc7ca6881c8046f1f8df6afcbc"
+    }
+  ],
+  "announcement_count": 49,
+  "announcement": [
+    {
+      "id": "eastmoney:AN202611031831361226",
+      "kind": "announcement",
+      "title": "002091江苏国泰投资者关系管理信息20261103",
+      "summary": "公告目录标题，点击原文查看完整披露内容。",
+      "published_at": "2026-11-02T16:00:00Z",
+      "publication_precision": "DATE",
+      "source": "东方财富公告目录",
+      "url": "https://data.eastmoney.com/notices/detail/002091/AN202611031831361226.html",
+      "securities": [
+        {
+          "id": "LIVE.SZ.002091",
+          "code": "002091",
+          "name": "江苏国泰"
+        }
+      ],
+      "fetched_at": "2026-11-03T06:34:53.315404Z",
+      "raw_hash": "2d99e3cba986011fe4408dcf53c9c9f86cc53c556a08dca6a8e23b8b5afe9594"
+    },
+    {
+      "id": "eastmoney:AN202611031831360143",
+      "kind": "announcement",
+      "title": "港迪技术:301633港迪技术投资者关系管理信息20261103",
+      "summary": "公告目录标题，点击原文查看完整披露内容。",
+      "published_at": "2026-11-02T16:00:00Z",
+      "publication_precision": "DATE",
+      "source": "东方财富公告目录",
+      "url": "https://data.eastmoney.com/notices/detail/301633/AN202611031831360143.html",
+      "securities": [
+        {
+          "id": "LIVE.SZ.301633",
+          "code": "301633",
+          "name": "港迪技术"
+        }
+      ],
+      "fetched_at": "2026-11-03T06:34:53.315404Z",
+      "raw_hash": "2d99e3cba986011fe4408dcf53c9c9f86cc53c556a08dca6a8e23b8b5afe9594"
+    },
+    {
+      "id": "eastmoney:AN202611031831359034",
+      "kind": "announcement",
+      "title": "农产品:000061农产品2026年11月2日投资者关系活动记录表",
+      "summary": "公告目录标题，点击原文查看完整披露内容。",
+      "published_at": "2026-11-02T16:00:00Z",
+      "publication_precision": "DATE",
+      "source": "东方财富公告目录",
+      "url": "https://data.eastmoney.com/notices/detail/000061/AN202611031831359034.html",
+      "securities": [
+        {
+          "id": "LIVE.SZ.000061",
+          "code": "000061",
+          "name": "农产品"
+        }
+      ],
+      "fetched_at": "2026-11-03T06:34:53.315404Z",
+      "raw_hash": "2d99e3cba986011fe4408dcf53c9c9f86cc53c556a08dca6a8e23b8b5afe9594"
+    }
+  ],
+  "selected_count": 50,
+  "selected": [
+    {
+      "id": "eastmoney:AN202611021831320924",
+      "kind": "announcement",
+      "title": "贵州茅台:贵州茅台关于召开2026年第三季度业绩说明会的公告",
+      "summary": "公告目录标题，点击原文查看完整披露内容。",
+      "published_at": "2026-11-02T16:00:00Z",
+      "publication_precision": "DATE",
+      "source": "东方财富公告目录",
+      "url": "https://data.eastmoney.com/notices/detail/600519/AN202611021831320924.html",
+      "securities": [
+        {
+          "id": "LIVE.SH.600519",
+          "code": "600519",
+          "name": "贵州茅台"
+        }
+      ],
+      "fetched_at": "2026-11-03T06:34:53.499534Z",
+      "raw_hash": "b8b92be5ff7b3db032105691da4efac90edf61e35a679637cc571646a3954001"
+    },
+    {
+      "id": "eastmoney:AN202610301831245502",
+      "kind": "announcement",
+      "title": "贵州茅台:贵州茅台2026年第三季度主要经营数据公告",
+      "summary": "公告目录标题，点击原文查看完整披露内容。",
+      "published_at": "2026-10-30T16:00:00Z",
+      "publication_precision": "DATE",
+      "source": "东方财富公告目录",
+      "url": "https://data.eastmoney.com/notices/detail/600519/AN202610301831245502.html",
+      "securities": [
+        {
+          "id": "LIVE.SH.600519",
+          "code": "600519",
+          "name": "贵州茅台"
+        }
+      ],
+      "fetched_at": "2026-11-03T06:34:53.499534Z",
+      "raw_hash": "b8b92be5ff7b3db032105691da4efac90edf61e35a679637cc571646a3954001"
+    }
+  ]
+}

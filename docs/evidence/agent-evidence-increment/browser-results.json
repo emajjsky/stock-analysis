@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-10-28T01:43:36.870479+00:00",
+  "browser": "155.0.4283.62",
+  "checks": [
+    "空库与独立合成数据",
+    "真实API保存复核快照",
+    "单条纳入证据与展开哈希",
+    "HTTPS来源链接",
+    "规则演示明确非AI",
+    "1440宽度无整页横向溢出",
+    "修订后旧复核STALE与醒目提示",
+    "显式重审选择旧版本并排除未来修订",
+    "1280宽度展开证据无整页横向溢出",
+    "未创建模拟账户或订单"
+  ],
+  "passed": 10,
+  "page_errors": [],
+  "server_errors": [],
+  "formal_database_modified": false,
+  "research_mode": "独立临时库预置证据",
+  "review_mode": "RULE_DEMO",
+  "account_count": 0,
+  "upstream_is_live": false,
+  "model_is_real": false,
+  "database": "F:\\教学案例\\.runtime\\agent-evidence-acceptance-744b29c1e3b249f9b55e8dff258c2396.db"
+}

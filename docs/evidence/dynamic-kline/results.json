@@ -1,0 +1,645 @@
+{
+  "api": [
+    {
+      "symbol": "sh000001",
+      "timeframe": "1d",
+      "count": 8581,
+      "last": {
+        "time": "2026-11-03",
+        "open": "3624.58",
+        "high": "3624.58",
+        "low": "3582.10",
+        "close": "3609.95",
+        "volume": 21901099600,
+        "amount": "304594830000"
+      },
+      "current": {
+        "time": "2026-11-03",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000001",
+      "timeframe": "1w",
+      "count": 1793,
+      "last": {
+        "time": "2026-11-02",
+        "open": "3614.310",
+        "high": "3648.130",
+        "low": "3582.10",
+        "close": "3609.95",
+        "volume": 78438383200,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000001",
+      "timeframe": "1mo",
+      "count": 428,
+      "last": {
+        "time": "2026-11-02",
+        "open": "3614.310",
+        "high": "3648.130",
+        "low": "3582.10",
+        "close": "3609.95",
+        "volume": 78438383200,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sz399001",
+      "timeframe": "1d",
+      "count": 8222,
+      "last": {
+        "time": "2026-11-03",
+        "open": "10934.30",
+        "high": "11089.57",
+        "low": "10882.90",
+        "close": "11053.94",
+        "volume": 24173848900,
+        "amount": "359732840000"
+      },
+      "current": {
+        "time": "2026-11-03",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:36Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sz399001",
+      "timeframe": "1w",
+      "count": 1714,
+      "last": {
+        "time": "2026-11-02",
+        "open": "10897.500",
+        "high": "11112.640",
+        "low": "10813.160",
+        "close": "11053.94",
+        "volume": 87248460700,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:36Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sz399001",
+      "timeframe": "1mo",
+      "count": 407,
+      "last": {
+        "time": "2026-11-02",
+        "open": "10897.500",
+        "high": "11112.640",
+        "low": "10813.160",
+        "close": "11053.94",
+        "volume": 87248460700,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:36Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sz399006",
+      "timeframe": "1d",
+      "count": 3985,
+      "last": {
+        "time": "2026-11-03",
+        "open": "2429.77",
+        "high": "2471.90",
+        "low": "2406.64",
+        "close": "2455.26",
+        "volume": 7507288300,
+        "amount": "179873240000"
+      },
+      "current": {
+        "time": "2026-11-03",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:36Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sz399006",
+      "timeframe": "1w",
+      "count": 842,
+      "last": {
+        "time": "2026-11-02",
+        "open": "2439.080",
+        "high": "2500.140",
+        "low": "2406.64",
+        "close": "2455.26",
+        "volume": 28139710900,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:36Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sz399006",
+      "timeframe": "1mo",
+      "count": 198,
+      "last": {
+        "time": "2026-11-02",
+        "open": "2439.080",
+        "high": "2500.140",
+        "low": "2406.64",
+        "close": "2455.26",
+        "volume": 28139710900,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:36Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000300",
+      "timeframe": "1d",
+      "count": 5239,
+      "last": {
+        "time": "2026-11-03",
+        "open": "4005.25",
+        "high": "4021.71",
+        "low": "3969.55",
+        "close": "4011.85",
+        "volume": 9317784500,
+        "amount": "196212180000"
+      },
+      "current": {
+        "time": "2026-11-03",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000300",
+      "timeframe": "1w",
+      "count": 1101,
+      "last": {
+        "time": "2026-11-02",
+        "open": "4005.940",
+        "high": "4038.820",
+        "low": "3969.55",
+        "close": "4011.85",
+        "volume": 33757897300,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000300",
+      "timeframe": "1mo",
+      "count": 260,
+      "last": {
+        "time": "2026-11-02",
+        "open": "4005.940",
+        "high": "4038.820",
+        "low": "3969.55",
+        "close": "4011.85",
+        "volume": 33757897300,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000016",
+      "timeframe": "1d",
+      "count": 5543,
+      "last": {
+        "time": "2026-11-03",
+        "open": "2765.28",
+        "high": "2765.28",
+        "low": "2715.72",
+        "close": "2739.56",
+        "volume": 2450079100,
+        "amount": "54934330000"
+      },
+      "current": {
+        "time": "2026-11-03",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000016",
+      "timeframe": "1w",
+      "count": 1164,
+      "last": {
+        "time": "2026-11-02",
+        "open": "2766.920",
+        "high": "2766.920",
+        "low": "2715.72",
+        "close": "2739.56",
+        "volume": 8487197400,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000016",
+      "timeframe": "1mo",
+      "count": 275,
+      "last": {
+        "time": "2026-11-02",
+        "open": "2766.920",
+        "high": "2766.920",
+        "low": "2715.72",
+        "close": "2739.56",
+        "volume": 8487197400,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000905",
+      "timeframe": "1d",
+      "count": 4810,
+      "last": {
+        "time": "2026-11-03",
+        "open": "6373.95",
+        "high": "6442.66",
+        "low": "6337.56",
+        "close": "6426.65",
+        "volume": 6345336500,
+        "amount": "108395310000"
+      },
+      "current": {
+        "time": "2026-11-03",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000905",
+      "timeframe": "1w",
+      "count": 1013,
+      "last": {
+        "time": "2026-11-02",
+        "open": "6309.160",
+        "high": "6469.300",
+        "low": "6253.790",
+        "close": "6426.65",
+        "volume": 24505825500,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000905",
+      "timeframe": "1mo",
+      "count": 239,
+      "last": {
+        "time": "2026-11-02",
+        "open": "6309.160",
+        "high": "6469.300",
+        "low": "6253.790",
+        "close": "6426.65",
+        "volume": 24505825500,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000852",
+      "timeframe": "1d",
+      "count": 2927,
+      "last": {
+        "time": "2026-11-03",
+        "open": "6288.47",
+        "high": "6367.28",
+        "low": "6243.02",
+        "close": "6341.53",
+        "volume": 8694459900,
+        "amount": "125242390000"
+      },
+      "current": {
+        "time": "2026-11-03",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000852",
+      "timeframe": "1w",
+      "count": 618,
+      "last": {
+        "time": "2026-11-02",
+        "open": "6197.380",
+        "high": "6373.940",
+        "low": "6136.520",
+        "close": "6341.53",
+        "volume": 33869246400,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000852",
+      "timeframe": "1mo",
+      "count": 146,
+      "last": {
+        "time": "2026-11-02",
+        "open": "6197.380",
+        "high": "6373.940",
+        "low": "6136.520",
+        "close": "6341.53",
+        "volume": 33869246400,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000688",
+      "timeframe": "1d",
+      "count": 1656,
+      "last": {
+        "time": "2026-11-03",
+        "open": "1184.53",
+        "high": "1184.53",
+        "low": "1162.34",
+        "close": "1174.67",
+        "volume": 332259500,
+        "amount": "24824620000"
+      },
+      "current": {
+        "time": "2026-11-03",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000688",
+      "timeframe": "1w",
+      "count": 351,
+      "last": {
+        "time": "2026-11-02",
+        "open": "1185.510",
+        "high": "1209.970",
+        "low": "1155.940",
+        "close": "1174.67",
+        "volume": 1399152100,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "sh000688",
+      "timeframe": "1mo",
+      "count": 84,
+      "last": {
+        "time": "2026-11-02",
+        "open": "1185.510",
+        "high": "1209.970",
+        "low": "1155.940",
+        "close": "1174.67",
+        "volume": 1399152100,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:39Z",
+        "fetched_at": "2026-11-03T02:18:42.343842Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "LIVE.SH.600519",
+      "timeframe": "1d",
+      "count": 6033,
+      "last": {
+        "time": "2026-11-03",
+        "open": "1450.00",
+        "high": "1450.00",
+        "low": "1435.10",
+        "close": "1445.50",
+        "volume": 1785600,
+        "amount": "2575930000"
+      },
+      "current": {
+        "time": "2026-11-03",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:41Z",
+        "fetched_at": "2026-11-03T02:18:44.001305Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "LIVE.SH.600519",
+      "timeframe": "1w",
+      "count": 1271,
+      "last": {
+        "time": "2026-11-02",
+        "open": "1410.000",
+        "high": "1450.00",
+        "low": "1395.020",
+        "close": "1445.50",
+        "volume": 10054700,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:41Z",
+        "fetched_at": "2026-11-03T02:18:44.001305Z",
+        "stale": false
+      },
+      "quote_verified": true
+    },
+    {
+      "symbol": "LIVE.SH.600519",
+      "timeframe": "1mo",
+      "count": 303,
+      "last": {
+        "time": "2026-11-02",
+        "open": "1410.000",
+        "high": "1450.00",
+        "low": "1395.020",
+        "close": "1445.50",
+        "volume": 10054700,
+        "amount": null
+      },
+      "current": {
+        "time": "2026-11-02",
+        "trade_date": "2026-11-03",
+        "source_time": "2026-11-03T02:18:41Z",
+        "fetched_at": "2026-11-03T02:18:44.001305Z",
+        "stale": false
+      },
+      "quote_verified": true
+    }
+  ],
+  "browser": [
+    {
+      "case": "日 K",
+      "legend": "2026-11-03\n当日动态 · 10:18:39\n开 3624.58\n高 3624.58\n低 3582.10\n最新 3609.95\n量 21,901,099,600"
+    },
+    {
+      "case": "周 K",
+      "legend": "2026-11-02\n当日动态 · 10:18:39\n开 3614.310\n高 3648.130\n低 3582.10\n最新 3609.95\n量 78,438,383,200"
+    },
+    {
+      "case": "月 K",
+      "legend": "2026-11-02\n当日动态 · 10:18:39\n开 3614.310\n高 3648.130\n低 3582.10\n最新 3609.95\n量 78,438,383,200"
+    },
+    {
+      "case": "个股日K1366",
+      "legend": "2026-11-03\n当日动态 · 10:18:41\n开 1450.00\n高 1450.00\n低 1435.10\n最新 1445.50\n量 1,785,600"
+    },
+    {
+      "case": "隔离夹具：页面轮询更新当前棒，保留canvas实例",
+      "responses": 2
+    }
+  ],
+  "errors": [],
+  "refresh": {
+    "enabled": true,
+    "interval_seconds": 60,
+    "running": false,
+    "phase": "IDLE",
+    "last_attempt_at": "2026-11-03T02:18:42.210826Z",
+    "last_success_at": "2026-11-03T02:18:44.062252Z",
+    "error": null,
+    "market_open": true
+  },
+  "history_unchanged": {
+    "index_counts": {
+      "sh000001": 8580,
+      "sh000016": 5542,
+      "sh000300": 5238,
+      "sh000688": 1655,
+      "sh000852": 2926,
+      "sh000905": 4809,
+      "sz399001": 8221,
+      "sz399006": 3984
+    },
+    "provider_count": 11466,
+    "protected_hash": "062f810eec0c673049942c05ff2935836ff5d92aca707a46be1150213f03b7e5"
+  }
+}

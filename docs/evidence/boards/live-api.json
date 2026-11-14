@@ -1,0 +1,89 @@
+{
+  "industry": {
+    "total": 496,
+    "meta": {
+      "request_id": "b628bf2de3bc463996ab572ab7afb5f4",
+      "mode": "LIVE",
+      "source": "东方财富公开板块行情",
+      "as_of": "2026-11-06T07:39:30Z",
+      "stale": false
+    },
+    "fetched_at": "2026-11-06T14:42:39.858217Z"
+  },
+  "concept": {
+    "total": 531,
+    "meta": {
+      "request_id": "aa601920ef734f7cb8852e7cb4cb44bd",
+      "mode": "LIVE",
+      "source": "东方财富公开板块行情",
+      "as_of": "2026-11-06T07:39:30Z",
+      "stale": false
+    },
+    "fetched_at": "2026-11-06T14:42:41.355911Z"
+  },
+  "members": {
+    "status": "READY",
+    "code": "BK1518",
+    "name": null,
+    "loaded": 8,
+    "total": 10,
+    "source": "东方财富公开板块行情",
+    "source_time": null,
+    "trade_date": null,
+    "fetched_at": "2026-11-06T14:42:39.642237Z",
+    "error": null,
+    "rows_count": 8,
+    "points_count": 0,
+    "bars_count": 0,
+    "flows_count": 0
+  },
+  "chart?period=intraday": {
+    "status": "READY",
+    "code": "BK1518",
+    "name": "种子",
+    "loaded": null,
+    "total": null,
+    "source": "东方财富公开板块行情",
+    "source_time": "2026-11-06T07:39:30Z",
+    "trade_date": "2026-11-06",
+    "fetched_at": "2026-11-06T14:42:39.651237Z",
+    "error": null,
+    "rows_count": 0,
+    "points_count": 241,
+    "bars_count": 0,
+    "flows_count": 0
+  },
+  "chart?period=daily": {
+    "status": "READY",
+    "code": "BK1518",
+    "name": "种子",
+    "loaded": null,
+    "total": null,
+    "source": "东方财富公开板块行情",
+    "source_time": null,
+    "trade_date": "2026-11-06",
+    "fetched_at": "2026-11-06T14:42:43.501857Z",
+    "error": null,
+    "rows_count": 0,
+    "points_count": 0,
+    "bars_count": 160,
+    "flows_count": 0
+  },
+  "chart?period=funds": {
+    "status": "READY",
+    "code": "BK1518",
+    "name": "种子",
+    "loaded": null,
+    "total": null,
+    "source": "东方财富公开板块行情",
+    "source_time": null,
+    "trade_date": "2026-11-06",
+    "fetched_at": "2026-11-06T14:36:50.672649Z",
+    "error": null,
+    "rows_count": 0,
+    "points_count": 0,
+    "bars_count": 0,
+    "flows_count": 20
+  },
+  "rotation_days": 1
+}

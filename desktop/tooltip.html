@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'">
+  <style>
+    html,body{margin:0;background:transparent;overflow:hidden}
+    body{padding:0 0 0 5px;font-family:Arial,"Microsoft YaHei",sans-serif}
+    #label{position:relative;display:inline-block;box-sizing:border-box;padding:6px 11px;border-radius:4px;background:#292a24;color:#fffef9;font-size:14px;line-height:24px;white-space:nowrap}
+    #label::before{content:"";position:absolute;top:50%;right:100%;transform:translateY(-50%);border:5px solid transparent;border-right-color:#292a24}
+  </style>
+</head>
+<body><div id="label" role="tooltip"></div></body>
+</html>

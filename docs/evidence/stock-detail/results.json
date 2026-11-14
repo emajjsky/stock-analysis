@@ -1,0 +1,119 @@
+{
+  "errors": [],
+  "viewports": [
+    {
+      "width": 1920,
+      "scrollWidth": 1920,
+      "chart": {
+        "x": 270,
+        "y": 415.203125,
+        "width": 1310,
+        "height": 980,
+        "bottom": 1395.203125
+      },
+      "sidebar": {
+        "x": 1594,
+        "y": 415.203125,
+        "width": 280,
+        "height": 980,
+        "bottom": 1395.203125
+      },
+      "book": {
+        "x": 1594,
+        "y": 453.640625,
+        "width": 280,
+        "height": 941.5625,
+        "bottom": 1395.203125
+      },
+      "metricFont": "16px"
+    },
+    {
+      "width": 1366,
+      "scrollWidth": 1366,
+      "chart": {
+        "x": 270,
+        "y": 415.203125,
+        "width": 776,
+        "height": 920,
+        "bottom": 1335.203125
+      },
+      "sidebar": {
+        "x": 1060,
+        "y": 415.203125,
+        "width": 260,
+        "height": 920,
+        "bottom": 1335.203125
+      },
+      "book": {
+        "x": 1060,
+        "y": 453.640625,
+        "width": 260,
+        "height": 881.5625,
+        "bottom": 1335.203125
+      },
+      "metricFont": "16px"
+    },
+    {
+      "width": 1093,
+      "scrollWidth": 1093,
+      "chart": {
+        "x": 228,
+        "y": 405.5,
+        "width": 553,
+        "height": 920,
+        "bottom": 1325.5
+      },
+      "sidebar": {
+        "x": 795,
+        "y": 405.5,
+        "width": 260,
+        "height": 920,
+        "bottom": 1325.5
+      },
+      "book": {
+        "x": 795,
+        "y": 443.9375,
+        "width": 260,
+        "height": 881.5625,
+        "bottom": 1325.5
+      },
+      "metricFont": "16px"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "chart": {
+        "x": 22,
+        "y": 647.859375,
+        "width": 346,
+        "height": 1237.5625,
+        "bottom": 1885.421875
+      },
+      "sidebar": {
+        "x": 22,
+        "y": 1893.421875,
+        "width": 346,
+        "height": 767.078125,
+        "bottom": 2660.5
+      },
+      "book": {
+        "x": 22,
+        "y": 1931.859375,
+        "width": 346,
+        "height": 728.640625,
+        "bottom": 2660.5
+      },
+      "metricFont": "15px"
+    }
+  ],
+  "api": {
+    "name": "新易盛",
+    "source_time": "2026-11-05T08:14:45Z",
+    "stale": true,
+    "five_bids": 5,
+    "five_asks": 5,
+    "turnover_rate": "9.39",
+    "volume_ratio": "1.28",
+    "total_market_cap": "258877000000.00"
+  }
+}

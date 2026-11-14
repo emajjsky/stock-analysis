@@ -1,0 +1,241 @@
+{
+  "browser": "155.0.4283.62",
+  "upsteam_is_live": true,
+  "sync": {
+    "id": "afa02aa4838842d08cbb015fc78f5d03",
+    "provider_id": "tencent",
+    "status": "SUCCEEDED",
+    "started_at": "2026-10-28T01:07:01.360660Z",
+    "finished_at": "2026-10-28T01:07:01.771009Z",
+    "quotes_updated": 2,
+    "daily_rows_saved": 640,
+    "securities_processed": 2,
+    "errors": [],
+    "limitations": [
+      "公开行情接口可能延迟或变更；无实时性或可用性保证，不是交易所授权行情服务",
+      "手动同步与后台保存日线监测是独立步骤；本轮不自动轮询上游",
+      "日线保守排除当日，仅保存已完成日期；未复权历史不包含企业行为处理",
+      "历史接口缺少成交额时保留未知；不会用收盘价乘成交量伪造成交额",
+      "不自动加入自选、不自动运行选股、不进行模拟或真实交易",
+      "本行情源不含公司资料；公司/财务摘要及公告目录另行手动同步，综合新闻全文未接"
+    ],
+    "requested_security_ids": [
+      "SH.600519",
+      "SZ.000001"
+    ],
+    "sync_daily": true
+  },
+  "research_sync": {
+    "id": "10886b0dcc78481c98df0bac41206dd3",
+    "security_id": "LIVE.SH.600519",
+    "provider_id": "eastmoney-research",
+    "status": "SUCCEEDED",
+    "started_at": "2026-10-28T01:07:02.122330Z",
+    "finished_at": "2026-10-28T01:07:02.460920Z",
+    "updated_sections": [
+      "company",
+      "financials",
+      "announcements"
+    ],
+    "errors": [],
+    "limitations": [
+      "公开研究接口可能延迟、缺项或变更；未验证商业分发与长期保存授权",
+      "手动同步公司概况、财务摘要与公告标题；未抓取公告正文或接入综合新闻",
+      "财务为报表期内累计口径、币种人民币元；不代表单季度收入或利润",
+      "披露日期与本机首次获知时间分别保存；日期级披露不证明盘中可获得",
+      "资料仅供当前研究展示，未送入历史信号Agent或改变选股与买卖结论",
+      "资料缺失、目录为空或同步失败，均不能解释为公司没有风险"
+    ]
+  },
+  "research_profile": {
+    "security_id": "LIVE.SH.600519",
+    "company_facts": 4,
+    "financial_count": 4,
+    "announcement_count": 10,
+    "financials": [
+      {
+        "period": "2026-06-30",
+        "published_at": "2026-08-14T16:00:00Z",
+        "publication_precision": "DATE",
+        "total_revenue": "92278072083.21",
+        "parent_net_profit": "44516880421.86",
+        "currency": "CNY",
+        "unit": "元",
+        "source": "东方财富公开研究接口",
+        "received_at": "2026-10-28T01:07:02.365192Z",
+        "available_at": "2026-10-28T01:07:02.365192Z",
+        "raw_hash": "51a911ed6e93cb3a28ccce9dfed4ca98c373cfa100af7fcad4fadbbc1c73cbbd"
+      },
+      {
+        "period": "2026-03-31",
+        "published_at": "2026-04-24T16:00:00Z",
+        "publication_precision": "DATE",
+        "total_revenue": "54702912385.23",
+        "parent_net_profit": "27242512886.45",
+        "currency": "CNY",
+        "unit": "元",
+        "source": "东方财富公开研究接口",
+        "received_at": "2026-10-28T01:07:02.365192Z",
+        "available_at": "2026-10-28T01:07:02.365192Z",
+        "raw_hash": "51a911ed6e93cb3a28ccce9dfed4ca98c373cfa100af7fcad4fadbbc1c73cbbd"
+      },
+      {
+        "period": "2025-12-31",
+        "published_at": "2026-04-16T16:00:00Z",
+        "publication_precision": "DATE",
+        "total_revenue": "172054171890.91",
+        "parent_net_profit": "82320067101.68",
+        "currency": "CNY",
+        "unit": "元",
+        "source": "东方财富公开研究接口",
+        "received_at": "2026-10-28T01:07:02.365192Z",
+        "available_at": "2026-10-28T01:07:02.365192Z",
+        "raw_hash": "51a911ed6e93cb3a28ccce9dfed4ca98c373cfa100af7fcad4fadbbc1c73cbbd"
+      },
+      {
+        "period": "2025-09-30",
+        "published_at": "2025-10-29T16:00:00Z",
+        "publication_precision": "DATE",
+        "total_revenue": "130903889634.88",
+        "parent_net_profit": "64626746712.18",
+        "currency": "CNY",
+        "unit": "元",
+        "source": "东方财富公开研究接口",
+        "received_at": "2026-10-28T01:07:02.365192Z",
+        "available_at": "2026-10-28T01:07:02.365192Z",
+        "raw_hash": "51a911ed6e93cb3a28ccce9dfed4ca98c373cfa100af7fcad4fadbbc1c73cbbd"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "a659bb93339f87442b24e3a223ae270989e61750fa8ccdb7204e011ceae115d8",
+        "section": "company",
+        "source": "东方财富公开研究接口",
+        "source_url": "https://emweb.securities.eastmoney.com/PC_HSF10/CompanySurvey/CompanySurveyAjax",
+        "received_at": "2026-10-28T01:07:02.174442Z",
+        "available_at": "2026-10-28T01:07:02.174442Z",
+        "raw_hash": "c60442bfe2854f8485a8642558e7d3eefdf89a961dc102969655f03cb567220d"
+      },
+      {
+        "id": "83087caf197bbab8b1d8a8b55bd6f33eb260e88dc7c80567323a6fc3edecf960",
+        "section": "financials",
+        "source": "东方财富公开研究接口",
+        "source_url": "https://datacenter-web.eastmoney.com/api/data/v1/get",
+        "received_at": "2026-10-28T01:07:02.365192Z",
+        "available_at": "2026-10-28T01:07:02.365192Z",
+        "raw_hash": "51a911ed6e93cb3a28ccce9dfed4ca98c373cfa100af7fcad4fadbbc1c73cbbd"
+      },
+      {
+        "id": "b56ef97ccdf8e585a0974dd70241b68e3101a828a4637cb1724320d6745a94c8",
+        "section": "announcements",
+        "source": "东方财富公开研究接口",
+        "source_url": "https://np-anotice-stock.eastmoney.com/api/security/ann",
+        "received_at": "2026-10-28T01:07:02.459917Z",
+        "available_at": "2026-10-28T01:07:02.459917Z",
+        "raw_hash": "4179e171e6b87b6de8c255e57ff6fe6348675860564d1772ebde6aa0c70fbe44"
+      }
+    ],
+    "agent_context_unchanged": true
+  },
+  "securities": [
+    {
+      "id": "LIVE.SH.600519",
+      "code": "600519",
+      "name": "贵州茅台",
+      "exchange": "SSE",
+      "sector": "未接入行业资料",
+      "status": "LIVE_UNVERIFIED",
+      "dataset_id": "tencent-unadjusted-v1",
+      "quote": {
+        "security_id": "LIVE.SH.600519",
+        "code": "600519",
+        "name": "贵州茅台",
+        "price": "1355.90",
+        "previous_close": "1349.98",
+        "open": "1343.88",
+        "volume": 3866900,
+        "volume_raw": "38669",
+        "volume_unit": "SHARES",
+        "amount": "5226800000",
+        "amount_raw": "522680",
+        "amount_unit": "CNY",
+        "change": "5.92",
+        "change_pct": "0.44",
+        "high": "1357.00",
+        "low": "1338.01",
+        "source": "腾讯财经公开报价 / 本地快照",
+        "source_time": "2026-10-27T08:14:52Z",
+        "source_time_raw": "20261027161452",
+        "fetched_at": "2026-10-28T01:07:01.521798Z",
+        "raw_hash": "409338210dcb8f26bcf407cbbbc262f3715d6dc8a3872c913bdbd4c99ce19735",
+        "id": "LIVE.SH.600519",
+        "provider_id": "tencent",
+        "as_of": "2026-10-27T08:14:52Z",
+        "mode": "LIVE",
+        "is_realtime": false,
+        "stale": true,
+        "dataset_id": "tencent-unadjusted-v1"
+      }
+    },
+    {
+      "id": "LIVE.SZ.000001",
+      "code": "000001",
+      "name": "平安银行",
+      "exchange": "SZSE",
+      "sector": "未接入行业资料",
+      "status": "LIVE_UNVERIFIED",
+      "dataset_id": "tencent-unadjusted-v1",
+      "quote": {
+        "security_id": "LIVE.SZ.000001",
+        "code": "000001",
+        "name": "平安银行",
+        "price": "11.47",
+        "previous_close": "11.30",
+        "open": "11.27",
+        "volume": 152929200,
+        "volume_raw": "1529292",
+        "volume_unit": "SHARES",
+        "amount": "1750400000",
+        "amount_raw": "175040",
+        "amount_unit": "CNY",
+        "change": "0.17",
+        "change_pct": "1.50",
+        "high": "11.55",
+        "low": "11.24",
+        "source": "腾讯财经公开报价 / 本地快照",
+        "source_time": "2026-10-27T08:15:00Z",
+        "source_time_raw": "20261027161500",
+        "fetched_at": "2026-10-28T01:07:01.521798Z",
+        "raw_hash": "409338210dcb8f26bcf407cbbbc262f3715d6dc8a3872c913bdbd4c99ce19735",
+        "id": "LIVE.SZ.000001",
+        "provider_id": "tencent",
+        "as_of": "2026-10-27T08:15:00Z",
+        "mode": "LIVE",
+        "is_realtime": false,
+        "stale": true,
+        "dataset_id": "tencent-unadjusted-v1"
+      }
+    }
+  ],
+  "historical_bar_count": 320,
+  "historical_cutoff": "2026-10-27",
+  "algorithm_ids": [
+    "trend-stability-v1",
+    "trend-stability-v1"
+  ],
+  "checks": [
+    "no default symbols or automatic requests",
+    "real upstream quote and history saved",
+    "synthetic records preserved under separate identities",
+    "quote source time differs from fetched time",
+    "daily weekly monthly charts render with unknown amount kept null",
+    "company profile, financial summary and announcement metadata sync with source evidence",
+    "financial summary at 1280 viewport without page overflow",
+    "real stock ranking excludes synthetic candidates",
+    "watchlist and signal workflow uses saved real history",
+    "no accounts or trading created",
+    "1280 viewport without horizontal overflow"
+  ],
+  "page_errors": [],
+  "server_errors": []
+}

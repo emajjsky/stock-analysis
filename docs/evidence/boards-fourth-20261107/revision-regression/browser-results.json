@@ -1,0 +1,99 @@
+{
+  "errors": [],
+  "visible_concept_rows": 10,
+  "heatmap_boards": 531,
+  "heatmap_bounds": {
+    "x": 252,
+    "y": 261.328125,
+    "width": 1320,
+    "height": 610
+  },
+  "concept_etfs": "化工ETF鹏华\n159870\n0.701\n-1.96%\n通信ETF国泰\n515880\n0.405\n-5.59%\n有色金属ETF南方\n512400\n1.448\n-3.21%\n储能电池ETF易方达\n159566\n1.517\n-2.94%\n创业板ETF易方达\n159915\n2.480\n-4.02%\n科创50ETF华夏\n588000\n1.326\n-2.36%\n科创芯片ETF嘉实\n588200\n0.838\n-2.90%\n机器人ETF易方达\n159530\n1.311\n-2.96%\n创业板人工智能ETF华宝\n159363\n0.840\n-4.33%\n农业ETF富国\n159825\n0.736\n+0.27%",
+  "layouts": [
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1,
+      "tab": "板块热点",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1,
+      "tab": "最新概念",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1,
+      "tab": "板块分析",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "tab": "板块热点",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "tab": "最新概念",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "tab": "板块分析",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1.25,
+      "tab": "板块热点",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1.25,
+      "tab": "最新概念",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1.25,
+      "tab": "板块分析",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "zoom": 1,
+      "tab": "板块热点",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "zoom": 1,
+      "tab": "最新概念",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "zoom": 1,
+      "tab": "板块分析",
+      "overflow": false
+    }
+  ],
+  "position_source_available": true
+}

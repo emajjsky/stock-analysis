@@ -1,0 +1,17 @@
+{
+  "protected_records": {
+    "equal": true,
+    "count": 15,
+    "sha256": "5d9810d53da993296af558b597da37e565152131e3cc976cfb9e511ad09ca018"
+  },
+  "bars": {
+    "original": 762,
+    "current": 762,
+    "original_preserved": true
+  },
+  "provider_bars": {
+    "original": 22081,
+    "current": 26374,
+    "original_preserved": true
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "book": [
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "height": 940,
+      "scrollHeight": 940,
+      "width": 278,
+      "horizontal": false,
+      "overlaps": [],
+      "sidebarBottom": 1395.203125,
+      "panelBottom": 1395.203125,
+      "rowHeight": 28,
+      "chipRowHeight": null,
+      "chipRows": 0,
+      "visibleChipBars": 0,
+      "profileHeight": null,
+      "chipRowPitch": null,
+      "chipLayoutSpan": null,
+      "chipTrackWidth": null,
+      "priceLabels": []
+    },
+    {
+      "viewport": [
+        1600,
+        1000
+      ],
+      "height": 900,
+      "scrollHeight": 900,
+      "width": 278,
+      "horizontal": false,
+      "overlaps": [],
+      "sidebarBottom": 1040.203125,
+      "panelBottom": 1040.203125,
+      "rowHeight": 28,
+      "chipRowHeight": null,
+      "chipRows": 0,
+      "visibleChipBars": 0,
+      "profileHeight": null,
+      "chipRowPitch": null,
+      "chipLayoutSpan": null,
+      "chipTrackWidth": null,
+      "priceLabels": []
+    },
+    {
+      "viewport": [
+        1366,
+        768
+      ],
+      "height": 880,
+      "scrollHeight": 880,
+      "width": 258,
+      "horizontal": false,
+      "overlaps": [],
+      "sidebarBottom": 1020.203125,
+      "panelBottom": 1020.203125,
+      "rowHeight": 28,
+      "chipRowHeight": null,
+      "chipRows": 0,
+      "visibleChipBars": 0,
+      "profileHeight": null,
+      "chipRowPitch": null,
+      "chipLayoutSpan": null,
+      "chipTrackWidth": null,
+      "priceLabels": []
+    },
+    {
+      "viewport": [
+        1093,
+        700
+      ],
+      "height": 880,
+      "scrollHeight": 880,
+      "width": 258,
+      "horizontal": false,
+      "overlaps": [],
+      "sidebarBottom": 910.5,
+      "panelBottom": 910.5,
+      "rowHeight": 28,
+      "chipRowHeight": null,
+      "chipRows": 0,
+      "visibleChipBars": 0,
+      "profileHeight": null,
+      "chipRowPitch": null,
+      "chipLayoutSpan": null,
+      "chipTrackWidth": null,
+      "priceLabels": []
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "height": 797,
+      "scrollHeight": 797,
+      "width": 344,
+      "horizontal": false,
+      "overlaps": [],
+      "sidebarBottom": 1818.34375,
+      "panelBottom": 1818.34375,
+      "rowHeight": 28,
+      "chipRowHeight": null,
+      "chipRows": 0,
+      "visibleChipBars": 0,
+      "profileHeight": null,
+      "chipRowPitch": null,
+      "chipLayoutSpan": null,
+      "chipTrackWidth": null,
+      "priceLabels": []
+    }
+  ],
+  "chip": [
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "height": 940,
+      "scrollHeight": 940,
+      "width": 278,
+      "horizontal": false,
+      "overlaps": [],
+      "sidebarBottom": 1395.203125,
+      "panelBottom": 1395.203125,
+      "rowHeight": null,
+      "chipRowHeight": 2,
+      "chipRows": 140,
+      "visibleChipBars": 137,
+      "profileHeight": 300,
+      "chipRowPitch": 2,
+      "chipLayoutSpan": 280,
+      "chipTrackWidth": 210,
+      "priceLabels": [
+        510.93,
+        477.05,
+        443.16,
+        409.27,
+        375.39,
+        341.5,
+        307.61,
+        273.72,
+        239.84,
+        205.95
+      ]
+    },
+    {
+      "viewport": [
+        1600,
+        1000
+      ],
+      "height": 900,
+      "scrollHeight": 900,
+      "width": 278,
+      "horizontal": false,
+      "overlaps": [],
+      "sidebarBottom": 1040.203125,
+      "panelBottom": 1040.203125,
+      "rowHeight": null,
+      "chipRowHeight": 2,
+      "chipRows": 140,
+      "visibleChipBars": 137,
+      "profileHeight": 300,
+      "chipRowPitch": 2,
+      "chipLayoutSpan": 280,
+      "chipTrackWidth": 210,
+      "priceLabels": [
+        510.93,
+        477.05,
+        443.16,
+        409.27,
+        375.39,
+        341.5,
+        307.61,
+        273.72,
+        239.84,
+        205.95
+      ]
+    },
+    {
+      "viewport": [
+        1366,
+        768
+      ],
+      "height": 880,
+      "scrollHeight": 880,
+      "width": 258,
+      "horizontal": false,
+      "overlaps": [],
+      "sidebarBottom": 1020.203125,
+      "panelBottom": 1020.203125,
+      "rowHeight": null,
+      "chipRowHeight": 2,
+      "chipRows": 140,
+      "visibleChipBars": 137,
+      "profileHeight": 300,
+      "chipRowPitch": 2,
+      "chipLayoutSpan": 280,
+      "chipTrackWidth": 190,
+      "priceLabels": [
+        510.93,
+        477.05,
+        443.16,
+        409.27,
+        375.39,
+        341.5,
+        307.61,
+        273.72,
+        239.84,
+        205.95
+      ]
+    },
+    {
+      "viewport": [
+        1093,
+        700
+      ],
+      "height": 880,
+      "scrollHeight": 880,
+      "width": 258,
+      "horizontal": false,
+      "overlaps": [],
+      "sidebarBottom": 910.5,
+      "panelBottom": 910.5,
+      "rowHeight": null,
+      "chipRowHeight": 2,
+      "chipRows": 140,
+      "visibleChipBars": 137,
+      "profileHeight": 300,
+      "chipRowPitch": 2,
+      "chipLayoutSpan": 280,
+      "chipTrackWidth": 190,
+      "priceLabels": [
+        510.93,
+        477.05,
+        443.16,
+        409.27,
+        375.39,
+        341.5,
+        307.61,
+        273.72,
+        239.84,
+        205.95
+      ]
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "height": 831,
+      "scrollHeight": 831,
+      "width": 344,
+      "horizontal": false,
+      "overlaps": [],
+      "sidebarBottom": 2349.78125,
+      "panelBottom": 2349.78125,
+      "rowHeight": null,
+      "chipRowHeight": 2,
+      "chipRows": 140,
+      "visibleChipBars": 137,
+      "profileHeight": 300,
+      "chipRowPitch": 2,
+      "chipLayoutSpan": 280,
+      "chipTrackWidth": 276,
+      "priceLabels": [
+        510.93,
+        477.05,
+        443.16,
+        409.27,
+        375.39,
+        341.5,
+        307.61,
+        273.72,
+        239.84,
+        205.95
+      ]
+    }
+  ],
+  "sidebar_distinct_from_header": [
+    "外盘",
+    "内盘",
+    "市净率",
+    "市盈TTM",
+    "市盈静",
+    "流通值",
+    "总股本",
+    "流通股"
+  ],
+  "reference_stock_600221": {
+    "cost90": [
+      1.19,
+      1.86
+    ],
+    "axisLabels": [
+      1.25,
+      1.86
+    ],
+    "visibleBars": 140
+  },
+  "watch_compact_unchanged": true,
+  "missing_and_lot_units": true,
+  "trade_failure_visible": true,
+  "business_records_unchanged": true,
+  "page_errors": [],
+  "trade_source": "东方财富公开逐笔成交"
+}

@@ -1,0 +1,148 @@
+{
+  "checks": [
+    {
+      "label": "首页",
+      "visible": true,
+      "top": true,
+      "bounds": {
+        "x": 73,
+        "y": 101,
+        "width": 56,
+        "height": 36
+      },
+      "text": "首页",
+      "remoteVisible": true
+    },
+    {
+      "label": "发现",
+      "visible": true,
+      "top": true,
+      "bounds": {
+        "x": 73,
+        "y": 155,
+        "width": 56,
+        "height": 36
+      },
+      "text": "发现",
+      "remoteVisible": true
+    },
+    {
+      "label": "市场",
+      "visible": true,
+      "top": true,
+      "bounds": {
+        "x": 73,
+        "y": 209,
+        "width": 56,
+        "height": 36
+      },
+      "text": "市场",
+      "remoteVisible": true
+    },
+    {
+      "label": "自选",
+      "visible": true,
+      "top": true,
+      "bounds": {
+        "x": 73,
+        "y": 263,
+        "width": 56,
+        "height": 36
+      },
+      "text": "自选",
+      "remoteVisible": true
+    },
+    {
+      "label": "新股",
+      "visible": true,
+      "top": true,
+      "bounds": {
+        "x": 73,
+        "y": 317,
+        "width": 56,
+        "height": 36
+      },
+      "text": "新股",
+      "remoteVisible": true
+    },
+    {
+      "label": "网页行情",
+      "visible": true,
+      "top": true,
+      "bounds": {
+        "x": 73,
+        "y": 371,
+        "width": 84,
+        "height": 36
+      },
+      "text": "网页行情",
+      "remoteVisible": true
+    },
+    {
+      "label": "信号",
+      "visible": true,
+      "top": true,
+      "bounds": {
+        "x": 73,
+        "y": 425,
+        "width": 56,
+        "height": 36
+      },
+      "text": "信号",
+      "remoteVisible": true
+    },
+    {
+      "label": "验证",
+      "visible": true,
+      "top": true,
+      "bounds": {
+        "x": 73,
+        "y": 479,
+        "width": 56,
+        "height": 36
+      },
+      "text": "验证",
+      "remoteVisible": true
+    },
+    {
+      "label": "交易",
+      "visible": true,
+      "top": true,
+      "bounds": {
+        "x": 73,
+        "y": 533,
+        "width": 56,
+        "height": 36
+      },
+      "text": "交易",
+      "remoteVisible": true
+    },
+    {
+      "label": "算法与规则",
+      "visible": true,
+      "top": true,
+      "bounds": {
+        "x": 77,
+        "y": 671,
+        "width": 98,
+        "height": 36
+      },
+      "text": "算法与规则",
+      "remoteVisible": true
+    },
+    {
+      "label": "数据与设置",
+      "visible": true,
+      "top": true,
+      "bounds": {
+        "x": 77,
+        "y": 725,
+        "width": 98,
+        "height": 36
+      },
+      "text": "数据与设置",
+      "remoteVisible": true
+    }
+  ],
+  "keyboardEscape": true
+}

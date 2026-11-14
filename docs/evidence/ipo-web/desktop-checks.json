@@ -1,0 +1,41 @@
+[
+  {
+    "check": "同花顺真实页面加载与隔离",
+    "url": "https://q.10jqka.com.cn/",
+    "info": {
+      "title": "A股市场_同花顺行情中心_同花顺财经网",
+      "text": "行情中心\nA股市场 香港市场 美国市场 英国市场 板块 新三板 数据中心\n登录\nA股市场\n涨跌分布\n\n上涨：0只 下跌：0只\n\n涨跌停\n\n涨停：0只 跌停：0只\n\n昨日涨停今日收益\n\n今收益：0%\n\n大盘评级\n\n投资建议\n\n上证(1A0001)\n--\n--\n--\n深证(399001)\n--\n--\n--\n北证50(899050)\n--\n--\n--\n创业(399006)\n--\n--\n--\n个股行情\n全",
+      "node": "undefined",
+      "bridge": "undefined",
+      "links": 159
+    },
+    "nodeIntegration": false,
+    "sandbox": true
+  },
+  {
+    "check": "原站target=_blank链接进入内部第二标签",
+    "labels": [
+      "A股市场_同花顺行情中心_同花顺财经网",
+      "加载中…"
+    ],
+    "windows": 1
+  },
+  {
+    "check": "切页保留标签且侧栏收缩后网页重新对齐",
+    "views": [
+      {
+        "visible": true,
+        "bounds": {
+          "x": 245,
+          "y": 222,
+          "width": 1258,
+          "height": 540
+        }
+      }
+    ]
+  },
+  {
+    "check": "拒绝内嵌浏览器打开本地API",
+    "blocked": true
+  }
+]

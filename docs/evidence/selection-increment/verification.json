@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-27",
+  "scope": "Second historical selection algorithm and signal review filter gate",
+  "backend": {"command": ".venv/Scripts/python -m pytest -q", "passed": 47, "failed": 0, "warnings": ["Starlette TestClient httpx compatibility deprecation"]},
+  "frontend": {"tests": 7, "build": "vue-tsc --noEmit && vite build passed"},
+  "browser": {"entry": "Independent empty database / 127.0.0.1:5173", "engine": "headless Edge 155.0.4283.62", "result_file": "browser-results.json", "check_groups": 5, "page_errors": 0, "server_errors": 0},
+  "llm_test": "HTTP test double checks structured protocol and gate binding; no real provider credentials used",
+  "baseline_evidence": "../verification.json retains the earlier 22 backend, 5 frontend and 10 browser groups; baseline browser flow not rerun in this increment",
+  "not_verified": ["Real market/news/financial providers", "Real LLM service efficacy", "Strategy profitability or out-of-sample quality", "Automatic monitoring and execution", "Full exchange rules", "Live trading", "Desktop installer and disaster recovery"]
+}

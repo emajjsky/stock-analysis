@@ -1,0 +1,19 @@
+{
+  "source": "新浪财经公开沪深证券清单",
+  "metadata": {
+    "raw_count": 5576,
+    "expected_raw_count": 5576,
+    "excluded_before_normalize": 354
+  },
+  "state": {
+    "count": 5222,
+    "source": "新浪财经公开沪深证券清单",
+    "updated_at": "2026-10-29T15:39:08.082026Z",
+    "status": "READY",
+    "error": null
+  },
+  "seconds": 3.42,
+  "unique": 5222,
+  "actual_provider_download": true,
+  "production_database_modified": false
+}

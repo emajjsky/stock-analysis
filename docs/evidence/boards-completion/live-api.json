@@ -1,0 +1,179 @@
+{
+  "/market/boards?kind=industry": {
+    "status": "READY",
+    "error": null,
+    "fetched_at": "2026-11-06T15:49:07.691124Z",
+    "source": "东方财富公开板块行情",
+    "covered": null,
+    "total": 496,
+    "loaded": null,
+    "progress": null,
+    "http_status": 200,
+    "row_count": 496,
+    "days": []
+  },
+  "/market/boards?kind=concept": {
+    "status": "READY",
+    "error": null,
+    "fetched_at": "2026-11-06T15:44:00.977267Z",
+    "source": "东方财富公开板块行情",
+    "covered": null,
+    "total": 531,
+    "loaded": null,
+    "progress": null,
+    "http_status": 200,
+    "row_count": 531,
+    "days": []
+  },
+  "/market/boards/concepts/latest": {
+    "status": "READY",
+    "error": null,
+    "fetched_at": "2026-11-06T15:32:06.172306Z",
+    "source": "同花顺公开概念页面",
+    "covered": null,
+    "total": null,
+    "loaded": null,
+    "progress": null,
+    "http_status": 200,
+    "row_count": 10,
+    "days": []
+  },
+  "/market/futures": {
+    "status": "READY",
+    "error": null,
+    "fetched_at": "2026-11-06T15:44:06.992548Z",
+    "source": "东方财富国内期货行情",
+    "covered": null,
+    "total": 1078,
+    "loaded": 824,
+    "progress": null,
+    "http_status": 200,
+    "row_count": 824,
+    "days": []
+  },
+  "/market/etfs": {
+    "status": "READY",
+    "error": null,
+    "fetched_at": "2026-11-06T15:50:38.069026Z",
+    "source": "东方财富场内基金行情",
+    "covered": null,
+    "total": null,
+    "loaded": null,
+    "progress": null,
+    "http_status": 200,
+    "row_count": 1659,
+    "days": []
+  },
+  "/market/boards/rotation/history?kind=industry": {
+    "status": "READY",
+    "error": null,
+    "fetched_at": "2026-11-06T15:33:02.432159Z",
+    "source": "东方财富板块日K回填",
+    "covered": 496,
+    "total": 496,
+    "loaded": null,
+    "progress": null,
+    "http_status": 200,
+    "row_count": 0,
+    "days": [
+      {
+        "date": "2026-11-06",
+        "rows": 496
+      },
+      {
+        "date": "2026-11-05",
+        "rows": 496
+      },
+      {
+        "date": "2026-11-04",
+        "rows": 496
+      },
+      {
+        "date": "2026-11-03",
+        "rows": 496
+      },
+      {
+        "date": "2026-11-02",
+        "rows": 496
+      },
+      {
+        "date": "2026-10-30",
+        "rows": 496
+      },
+      {
+        "date": "2026-10-29",
+        "rows": 496
+      },
+      {
+        "date": "2026-10-28",
+        "rows": 496
+      },
+      {
+        "date": "2026-10-27",
+        "rows": 496
+      },
+      {
+        "date": "2026-10-26",
+        "rows": 496
+      }
+    ]
+  },
+  "/market/boards/rotation/history?kind=concept": {
+    "status": "READY",
+    "error": null,
+    "fetched_at": "2026-11-06T15:44:18.121245Z",
+    "source": "东方财富板块日K回填",
+    "covered": 531,
+    "total": 531,
+    "loaded": null,
+    "progress": {
+      "completed": 531,
+      "total": 531,
+      "failed": 0
+    },
+    "http_status": 200,
+    "row_count": 0,
+    "days": [
+      {
+        "date": "2026-11-06",
+        "rows": 531
+      },
+      {
+        "date": "2026-11-05",
+        "rows": 531
+      },
+      {
+        "date": "2026-11-04",
+        "rows": 531
+      },
+      {
+        "date": "2026-11-03",
+        "rows": 531
+      },
+      {
+        "date": "2026-11-02",
+        "rows": 531
+      },
+      {
+        "date": "2026-10-30",
+        "rows": 516
+      },
+      {
+        "date": "2026-10-29",
+        "rows": 516
+      },
+      {
+        "date": "2026-10-28",
+        "rows": 516
+      },
+      {
+        "date": "2026-10-27",
+        "rows": 516
+      },
+      {
+        "date": "2026-10-26",
+        "rows": 516
+      }
+    ]
+  }
+}

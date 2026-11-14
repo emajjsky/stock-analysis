@@ -1,0 +1,1755 @@
+{
+  "version": "0.3.0",
+  "generated_at": "2026-11-14T18:15:46.330708+00:00",
+  "target_trade_date": "2026-11-13",
+  "scope": "当前目录沪深在市证券 / 来源可提供的未复权完成日线",
+  "catalog_count": 5223,
+  "history_count": 5223,
+  "completed_check_count": 5223,
+  "row_count": 16805168,
+  "first_date": "1990-12-19",
+  "last_date": "2026-11-13",
+  "status": "COMPLETE_WITH_DIAGNOSTICS",
+  "missing": [],
+  "quality": [
+    {
+      "id": "LIVE.SH.600059",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600081",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600104",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600123",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600137",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600150",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600185",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600230",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600336",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600399",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600448",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600449",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600505",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600516",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600530",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600616",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600654",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600683",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600688",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600690",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600706",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600708",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600727",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600749",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600816",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.600917",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.601199",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.601928",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.603208",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.603283",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.603615",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.603928",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.688121",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.688128",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.688480",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.688496",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.688798",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SH.688820",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000034",
+      "excluded_dates": [
+        "2009-05-21"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-21",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000035",
+      "excluded_dates": [
+        "2009-06-08"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-08",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000049",
+      "excluded_dates": [
+        "2009-06-08"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-08",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000065",
+      "excluded_dates": [
+        "2009-06-05"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-05",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000078",
+      "excluded_dates": [
+        "2009-05-18"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-18",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000411",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-04",
+          "action": "ROUNDING_CLAMP_LOW"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000417",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-05-22",
+          "action": "ROUNDING_CLAMP_LOW"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000420",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-17",
+          "action": "ROUNDING_CLAMP_LOW"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000513",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-30",
+          "action": "ROUNDING_CLAMP_HIGH"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000519",
+      "excluded_dates": [
+        "2009-06-16",
+        "2009-06-25"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-16",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        },
+        {
+          "date": "2009-06-25",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000525",
+      "excluded_dates": [
+        "2009-05-15"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-15",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000526",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-05-26",
+          "action": "ROUNDING_CLAMP_HIGH"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000546",
+      "excluded_dates": [
+        "2009-05-11"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-11",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000550",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-09",
+          "action": "ROUNDING_CLAMP_HIGH"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000552",
+      "excluded_dates": [
+        "2009-05-11"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-11",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000560",
+      "excluded_dates": [
+        "2009-06-01"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-01",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000565",
+      "excluded_dates": [
+        "2009-05-27"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-27",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000567",
+      "excluded_dates": [
+        "2009-06-10"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-10",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000596",
+      "excluded_dates": [
+        "2009-06-19",
+        "2009-06-25"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-19",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        },
+        {
+          "date": "2009-06-25",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000637",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-22",
+          "action": "ROUNDING_CLAMP_HIGH"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000679",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-03",
+          "action": "ROUNDING_CLAMP_LOW"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000711",
+      "excluded_dates": [
+        "2009-06-18"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-18",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000712",
+      "excluded_dates": [
+        "2009-06-01"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-01",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000715",
+      "excluded_dates": [
+        "2009-06-23"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-23",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000723",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-25",
+          "action": "ROUNDING_CLAMP_HIGH"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000785",
+      "excluded_dates": [
+        "2009-05-14"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-14",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000818",
+      "excluded_dates": [
+        "2009-06-22"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-22",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000831",
+      "excluded_dates": [
+        "2009-05-22"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-22",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000887",
+      "excluded_dates": [
+        "2009-06-12"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-19",
+          "action": "ROUNDING_CLAMP_LOW"
+        },
+        {
+          "date": "2009-06-12",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000892",
+      "excluded_dates": [
+        "2009-06-15"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-15",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000899",
+      "excluded_dates": [
+        "2009-06-17"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-17",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000925",
+      "excluded_dates": [
+        "2009-05-15"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-15",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000929",
+      "excluded_dates": [
+        "2009-06-03"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-03",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000951",
+      "excluded_dates": [
+        "2009-06-08"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-08",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000965",
+      "excluded_dates": [
+        "2009-06-09"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-09",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000978",
+      "excluded_dates": [
+        "2009-06-05"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-05",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.000999",
+      "excluded_dates": [
+        "2009-06-30"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-30",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.001896",
+      "excluded_dates": [
+        "2009-06-08"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-08",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002007",
+      "excluded_dates": [
+        "2009-06-09"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-09",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002014",
+      "excluded_dates": [
+        "2009-05-21"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-21",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002017",
+      "excluded_dates": [
+        "2009-05-27"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-27",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002037",
+      "excluded_dates": [
+        "2009-05-22"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-22",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002052",
+      "excluded_dates": [
+        "2009-05-27"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-27",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002057",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-29",
+          "action": "ROUNDING_CLAMP_LOW"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002058",
+      "excluded_dates": [
+        "2009-06-26"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-26",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002059",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-29",
+          "action": "ROUNDING_CLAMP_LOW"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002061",
+      "excluded_dates": [
+        "2009-06-08"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-08",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002062",
+      "excluded_dates": [
+        "2009-05-15"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-15",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002064",
+      "excluded_dates": [
+        "2009-06-18"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-18",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002065",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-15",
+          "action": "ROUNDING_CLAMP_LOW"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002091",
+      "excluded_dates": [
+        "2009-05-11",
+        "2009-06-29"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-11",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        },
+        {
+          "date": "2009-06-29",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002096",
+      "excluded_dates": [
+        "2009-05-21"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-21",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002099",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-16",
+          "action": "ROUNDING_CLAMP_HIGH"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002101",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-11",
+          "action": "ROUNDING_CLAMP_LOW"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002104",
+      "excluded_dates": [
+        "2009-05-18"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-18",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002106",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-24",
+          "action": "ROUNDING_CLAMP_LOW"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002112",
+      "excluded_dates": [
+        "2009-06-08"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-08",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002117",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-04",
+          "action": "ROUNDING_CLAMP_HIGH"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002120",
+      "excluded_dates": [
+        "2009-05-20"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-20",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002124",
+      "excluded_dates": [
+        "2009-06-19"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-19",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002129",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-26",
+          "action": "ROUNDING_CLAMP_HIGH"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002131",
+      "excluded_dates": [
+        "2009-05-18"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-18",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        },
+        {
+          "date": "2009-06-04",
+          "action": "ROUNDING_CLAMP_HIGH"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002136",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-05-27",
+          "action": "ROUNDING_CLAMP_HIGH"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002138",
+      "excluded_dates": [
+        "2009-06-19"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-19",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002139",
+      "excluded_dates": [
+        "2009-05-20"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-20",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002145",
+      "excluded_dates": [
+        "2009-05-12"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-12",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002149",
+      "excluded_dates": [
+        "2009-05-27",
+        "2009-06-29"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-27",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        },
+        {
+          "date": "2009-06-29",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002151",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-25",
+          "action": "ROUNDING_CLAMP_LOW"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002153",
+      "excluded_dates": [
+        "2009-06-12"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-12",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002164",
+      "excluded_dates": [
+        "2009-06-04",
+        "2009-06-05",
+        "2009-06-22",
+        "2009-06-25"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-04",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        },
+        {
+          "date": "2009-06-05",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        },
+        {
+          "date": "2009-06-22",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        },
+        {
+          "date": "2009-06-25",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002167",
+      "excluded_dates": [
+        "2009-06-12"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-12",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002174",
+      "excluded_dates": [
+        "2009-05-22",
+        "2009-06-18"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-22",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        },
+        {
+          "date": "2009-06-18",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002175",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-05-13",
+          "action": "ROUNDING_CLAMP_HIGH"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002178",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-30",
+          "action": "ROUNDING_CLAMP_HIGH"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002180",
+      "excluded_dates": [
+        "2009-06-01"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-01",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002188",
+      "excluded_dates": [
+        "2009-06-19"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-19",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002190",
+      "excluded_dates": [
+        "2009-05-19",
+        "2009-06-15"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-19",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        },
+        {
+          "date": "2009-06-15",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002195",
+      "excluded_dates": [
+        "2009-06-22"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-22",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002196",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-05-19",
+          "action": "ROUNDING_CLAMP_LOW"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002203",
+      "excluded_dates": [
+        "2009-06-05"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-05",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002213",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-06-01",
+          "action": "ROUNDING_CLAMP_LOW"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002215",
+      "excluded_dates": [
+        "2009-06-11"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-11",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002222",
+      "excluded_dates": [
+        "2009-06-02"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-02",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002227",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-05-13",
+          "action": "ROUNDING_CLAMP_HIGH"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002229",
+      "excluded_dates": [
+        "2009-06-11"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-11",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002235",
+      "excluded_dates": [
+        "2009-05-15"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-14",
+          "action": "ROUNDING_CLAMP_HIGH"
+        },
+        {
+          "date": "2009-05-15",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002236",
+      "excluded_dates": [
+        "2009-06-10"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-10",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002243",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "date": "2009-05-20",
+          "action": "ROUNDING_CLAMP_HIGH"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002245",
+      "excluded_dates": [
+        "2009-06-12"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-12",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002261",
+      "excluded_dates": [
+        "2009-06-19"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-06-19",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002270",
+      "excluded_dates": [
+        "2009-05-27"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-27",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002272",
+      "excluded_dates": [
+        "2009-05-26"
+      ],
+      "diagnostics": [
+        {
+          "date": "2009-05-26",
+          "action": "INVALID_SOURCE_ROW_SKIPPED"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002602",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002717",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002809",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002816",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002857",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.002966",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.003012",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.300112",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.300232",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.300349",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.300513",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.300515",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.300539",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.300609",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.300631",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.300639",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.300675",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.300694",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.300851",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.300969",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.301001",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.301032",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    },
+    {
+      "id": "LIVE.SZ.301370",
+      "excluded_dates": [],
+      "diagnostics": [
+        {
+          "action": "SOURCE_ADJUSTMENT_ACK_OMITTED",
+          "requested_adjustflag": "3"
+        }
+      ]
+    }
+  ],
+  "document_kinds": {
+    "history_coverage": 5223,
+    "history_release": 1,
+    "index_daily": 8,
+    "market_history": 5223
+  },
+  "sources": {
+    "baostock": 11994880,
+    "tencent": 4810288
+  },
+  "privacy": "仅目录/行情/公开覆盖元数据；无自选、账户、任务、模型设置或私人研究记录",
+  "limitations": [
+    "不含北交所、全退市样本、完整分钟/逐笔历史",
+    "停牌不补造日线；来源无效行剔除并在quality中记录",
+    "公开接口不代表取得商业行情转售授权"
+  ],
+  "database_bytes": 5611474944,
+  "database_sha256": "cebc5473d2c72530eee90f86375b4442f135c5e7561c3327ba333a7b8fc0c5d0"
+}

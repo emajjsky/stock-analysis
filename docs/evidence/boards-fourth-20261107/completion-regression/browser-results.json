@@ -1,0 +1,164 @@
+{
+  "errors": [],
+  "layouts": [
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1,
+      "tab": "板块热点",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1,
+      "tab": "板块分析",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1,
+      "tab": "板块轮动",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1,
+      "tab": "期股联动",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "zoom": 1,
+      "tab": "板块热点",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "zoom": 1,
+      "tab": "板块分析",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "zoom": 1,
+      "tab": "板块轮动",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "zoom": 1,
+      "tab": "期股联动",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "tab": "板块热点",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "tab": "板块分析",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "tab": "板块轮动",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "tab": "期股联动",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1.25,
+      "tab": "板块热点",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1.25,
+      "tab": "板块分析",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1.25,
+      "tab": "板块轮动",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1.25,
+      "tab": "期股联动",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "zoom": 1,
+      "tab": "板块热点",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "zoom": 1,
+      "tab": "板块分析",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "zoom": 1,
+      "tab": "板块轮动",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "zoom": 1,
+      "tab": "期股联动",
+      "horizontal_overflow": false
+    }
+  ],
+  "hot_members": 8,
+  "manual_refresh_requests": 1,
+  "checks": [
+    "热点两表两图资讯",
+    "样本财务五项",
+    "独立分析布局",
+    "上下证比较",
+    "量额资金与换手历史",
+    "更多指标",
+    "ETF候选",
+    "多日资金与订单分项",
+    "十日轮动及5日前20成交额排序",
+    "最新概念日期与事件",
+    "未映射概念不串数据",
+    "期货日K夜盘分时及A股主题联动",
+    "增仓真实排行",
+    "覆盖清单",
+    "侧栏缩进恢复"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "health": {
+    "status": "ok",
+    "total": null,
+    "failed": null,
+    "fetched_at": null,
+    "error": null,
+    "rows": 0
+  },
+  "market/boards?kind=industry": {
+    "status": "READY",
+    "total": 496,
+    "failed": null,
+    "fetched_at": "2026-11-07T06:48:26.579371Z",
+    "error": null,
+    "rows": 496
+  },
+  "market/boards?kind=concept": {
+    "status": "READY",
+    "total": 531,
+    "failed": null,
+    "fetched_at": "2026-11-07T06:46:28.172810Z",
+    "error": null,
+    "rows": 531
+  },
+  "market/etfs": {
+    "status": "READY",
+    "total": null,
+    "failed": null,
+    "fetched_at": "2026-11-07T06:48:12.807727Z",
+    "error": null,
+    "rows": 1659
+  },
+  "market/etfs/holdings": {
+    "status": "READY",
+    "total": 23,
+    "failed": 2,
+    "fetched_at": "2026-11-07T06:45:17.428324Z",
+    "error": null,
+    "rows": 21
+  },
+  "openapi_paths": 65
+}

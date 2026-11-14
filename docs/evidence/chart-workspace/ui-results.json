@@ -1,0 +1,100 @@
+{
+  "errors": [],
+  "main": [
+    "布林带 BOLL",
+    "指数均线 EXPMA",
+    "多空均线 BBI",
+    "抛物线 SAR",
+    "均线 MA"
+  ],
+  "secondary": [
+    "MACD",
+    "KDJ",
+    "RSI",
+    "OBV",
+    "W&R",
+    "MTM",
+    "VR",
+    "ARBR",
+    "DMI",
+    "BIAS",
+    "DMA",
+    "ASI",
+    "TRIX",
+    "DPO"
+  ],
+  "viewports": [
+    {
+      "scroll": 1920,
+      "width": 1920,
+      "bookOverflow": 0,
+      "bottomGap": 0
+    },
+    {
+      "scroll": 1366,
+      "width": 1366,
+      "bookOverflow": 0,
+      "bottomGap": 0
+    },
+    {
+      "scroll": 1093,
+      "width": 1093,
+      "bookOverflow": 0,
+      "bottomGap": 0
+    },
+    {
+      "scroll": 390,
+      "width": 390,
+      "bookOverflow": 0,
+      "bottomGap": 715.640625
+    }
+  ],
+  "intraday_panes": {
+    "height": 670.9375,
+    "volume": 373,
+    "secondary": 490,
+    "volumeHeader": 32,
+    "secondaryHeader": 41,
+    "paneCanvases": 8
+  },
+  "kline_panes": {
+    "height": 604.328125,
+    "volume": 335,
+    "secondary": 440,
+    "volumeHeader": 32,
+    "secondaryHeader": 41,
+    "paneCanvases": 8
+  },
+  "ma7": {
+    "expected": 219.32999999999998,
+    "display": "MA7 219.33",
+    "selected": 5
+  },
+  "adjustments": {
+    "date": "2026-06-10",
+    "close": {
+      "qfq": "551.072",
+      "hfq": "8912.020",
+      "none": "772.500"
+    }
+  },
+  "all_disables_wheel": true,
+  "search_focus": {
+    "outline": "none",
+    "parent": "rgb(32, 32, 32)"
+  },
+  "new_stock": {
+    "seconds_to_chart_or_explicit_error": 0.45,
+    "has_chart": true,
+    "state": "价格 成交均价\n分时 · 成交量 · 技术副图\n15:30\n现价 30.48\n涨跌幅 -2.28%\n均价 31.29\n昨收 31.19\n分钟成交量 0\n\t\n\t\n\n\n\n\t\n\t\n\n\n\n\t\n\t\n\n\n\t\n\t\n成交量\n0 股\n副图\nMACD\n⌄\nDIF 0.002\nDEA 0.002\nMACD 0.001\n\n2026-11-03 · 左轴涨跌幅 / 右轴价格 · 北京时间 · TradingView Lightweight Charts™"
+  },
+  "session_recovery": {
+    "unauthorized": 1,
+    "new_sessions": 1,
+    "no_error": true
+  },
+  "index_average_removed": {
+    "points": 242,
+    "first_price": "3624.58"
+  }
+}

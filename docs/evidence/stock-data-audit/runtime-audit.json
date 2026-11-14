@@ -1,0 +1,659 @@
+{
+  "checked_at": "2026-11-03T13:30:35.912783+00:00",
+  "securities": {
+    "LIVE.SZ.300502": {
+      "name": "新易盛",
+      "source_time": "2026-11-03T08:14:30Z",
+      "fetched_at": "2026-11-03T13:30:13.408731Z",
+      "quote_comparison": {
+        "pe_ttm": {
+          "cache": "16.59",
+          "source": "16.59",
+          "equal": true
+        },
+        "pe_dynamic": {
+          "cache": "15.95",
+          "source": "15.95",
+          "equal": true
+        },
+        "pe_static": {
+          "cache": "25.37",
+          "source": "25.37",
+          "equal": true
+        },
+        "total_shares": {
+          "cache": "1394737276",
+          "source": "1394737276",
+          "equal": true
+        },
+        "float_shares": {
+          "cache": "1254723748",
+          "source": "1254723748",
+          "equal": true
+        },
+        "buy_volume": {
+          "cache": "50428300",
+          "source": "50428300",
+          "equal": true
+        },
+        "sell_volume": {
+          "cache": "46388700",
+          "source": "46388700",
+          "equal": true
+        }
+      },
+      "financials": [
+        {
+          "period": "2026-09-30",
+          "published_at": "2026-10-29T16:00:00Z",
+          "publication_precision": "DATE",
+          "total_revenue": "31849895741.23",
+          "parent_net_profit": "11372330534.73",
+          "revenue_yoy": "92.9736361603",
+          "profit_yoy": "79.74",
+          "currency": "CNY",
+          "unit": "元",
+          "source": "东方财富公开研究接口",
+          "received_at": "2026-11-03T13:14:25.817795Z",
+          "available_at": "2026-11-03T13:14:25.817795Z",
+          "raw_hash": "4e16d45542156ada7412d11fdd9647ce762d0cf8861fb3a465ca9d1450694d2b"
+        },
+        {
+          "period": "2026-06-30",
+          "published_at": "2026-08-24T16:00:00Z",
+          "publication_precision": "DATE",
+          "total_revenue": "20909746962.2",
+          "parent_net_profit": "7529168039.39",
+          "revenue_yoy": "100.3392340098",
+          "profit_yoy": "90.98",
+          "currency": "CNY",
+          "unit": "元",
+          "source": "东方财富公开研究接口",
+          "received_at": "2026-11-03T13:14:25.817795Z",
+          "available_at": "2026-11-03T13:14:25.817795Z",
+          "raw_hash": "4e16d45542156ada7412d11fdd9647ce762d0cf8861fb3a465ca9d1450694d2b"
+        },
+        {
+          "period": "2026-03-31",
+          "published_at": "2026-04-23T16:00:00Z",
+          "publication_precision": "DATE",
+          "total_revenue": "8337902040.74",
+          "parent_net_profit": "2780222960.23",
+          "revenue_yoy": "105.759481459",
+          "profit_yoy": "76.8",
+          "currency": "CNY",
+          "unit": "元",
+          "source": "东方财富公开研究接口",
+          "received_at": "2026-11-03T13:14:25.817795Z",
+          "available_at": "2026-11-03T13:14:25.817795Z",
+          "raw_hash": "4e16d45542156ada7412d11fdd9647ce762d0cf8861fb3a465ca9d1450694d2b"
+        },
+        {
+          "period": "2025-12-31",
+          "published_at": "2026-04-23T16:00:00Z",
+          "publication_precision": "DATE",
+          "total_revenue": "24841854840.22",
+          "parent_net_profit": "9531922730.17",
+          "revenue_yoy": "187.2943215188",
+          "profit_yoy": "235.89",
+          "currency": "CNY",
+          "unit": "元",
+          "source": "东方财富公开研究接口",
+          "received_at": "2026-11-03T13:14:25.817795Z",
+          "available_at": "2026-11-03T13:14:25.817795Z",
+          "raw_hash": "4e16d45542156ada7412d11fdd9647ce762d0cf8861fb3a465ca9d1450694d2b"
+        }
+      ],
+      "corporate_actions": {
+        "security_id": "SZ.300502",
+        "items": [
+          {
+            "period": "2025-12-31",
+            "published_at": "2026-06-04",
+            "record_date": "2026-06-10",
+            "ex_date": "2026-06-11",
+            "plan": "10转4股派10.00元(含税,扣税后9.00元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2024-12-31",
+            "published_at": "2025-05-20",
+            "record_date": "2025-05-27",
+            "ex_date": "2025-05-28",
+            "plan": "10转4股派4.50元(含税,扣税后4.05元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2023-12-31",
+            "published_at": "2024-06-27",
+            "record_date": "2024-07-04",
+            "ex_date": "2024-07-05",
+            "plan": "10派1.55元(含税,扣税后1.395元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2022-12-31",
+            "published_at": "2023-06-01",
+            "record_date": "2023-06-07",
+            "ex_date": "2023-06-08",
+            "plan": "10转4.00派1.26元(含税,扣税后1.134元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2021-12-31",
+            "published_at": "2022-06-16",
+            "record_date": "2022-06-22",
+            "ex_date": "2022-06-23",
+            "plan": "10派1.13元(含税,扣税后1.017元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2020-12-31",
+            "published_at": "2021-06-01",
+            "record_date": "2021-06-07",
+            "ex_date": "2021-06-08",
+            "plan": "10转4.002532派2.717082元(含税,扣税后2.445374元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2019-12-31",
+            "published_at": "2020-05-21",
+            "record_date": "2020-05-28",
+            "ex_date": "2020-05-29",
+            "plan": "10转4.00派1.80元(含税,扣税后1.62元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2018-12-31",
+            "published_at": "2019-06-06",
+            "record_date": "2019-06-13",
+            "ex_date": "2019-06-14",
+            "plan": "10派1.20元(含税,扣税后1.08元)",
+            "status": "实施分配"
+          }
+        ],
+        "source": "东方财富公开研究接口",
+        "source_url": "https://datacenter-web.eastmoney.com/api/data/v1/get",
+        "received_at": "2026-11-03T13:05:15.297895Z",
+        "raw_hash": "7360ac291d02a91a53e073cff9c407f2f61f48abef60ba2dbc2330f5dfab1d09",
+        "checked_at": "2026-11-03T13:05:15.298405Z",
+        "error": null
+      },
+      "auto_refresh": {
+        "enabled": true,
+        "pending": false
+      }
+    },
+    "LIVE.SZ.300030": {
+      "name": "阳普医疗",
+      "source_time": "2026-11-03T08:14:57Z",
+      "fetched_at": "2026-11-03T13:30:13.408731Z",
+      "quote_comparison": {
+        "pe_ttm": {
+          "cache": "242.96",
+          "source": "242.96",
+          "equal": true
+        },
+        "pe_dynamic": {
+          "cache": "90.34",
+          "source": "90.34",
+          "equal": true
+        },
+        "pe_static": {
+          "cache": "156.40",
+          "source": "156.40",
+          "equal": true
+        },
+        "total_shares": {
+          "cache": "309187315",
+          "source": "309187315",
+          "equal": true
+        },
+        "float_shares": {
+          "cache": "272227587",
+          "source": "272227587",
+          "equal": true
+        },
+        "buy_volume": {
+          "cache": "33914500",
+          "source": "33914500",
+          "equal": true
+        },
+        "sell_volume": {
+          "cache": "32614200",
+          "source": "32614200",
+          "equal": true
+        }
+      },
+      "financials": [
+        {
+          "period": "2026-09-30",
+          "published_at": "2026-10-27T16:00:00Z",
+          "publication_precision": "DATE",
+          "total_revenue": "363452008.57",
+          "parent_net_profit": "18867121.29",
+          "revenue_yoy": "4.0720347088",
+          "profit_yoy": "-21.53",
+          "currency": "CNY",
+          "unit": "元",
+          "source": "东方财富公开研究接口",
+          "received_at": "2026-11-03T13:17:25.580044Z",
+          "available_at": "2026-11-03T13:17:25.580044Z",
+          "raw_hash": "f3371647a2cbf366c39aa2e58849b57b1ab4a8c2f85cbb6dc6772e10793f96c1"
+        },
+        {
+          "period": "2026-06-30",
+          "published_at": "2026-08-14T16:00:00Z",
+          "publication_precision": "DATE",
+          "total_revenue": "215097732",
+          "parent_net_profit": "30814928.63",
+          "revenue_yoy": "-6.866566159",
+          "profit_yoy": "101.85",
+          "currency": "CNY",
+          "unit": "元",
+          "source": "东方财富公开研究接口",
+          "received_at": "2026-11-03T13:17:25.580044Z",
+          "available_at": "2026-11-03T13:17:25.580044Z",
+          "raw_hash": "f3371647a2cbf366c39aa2e58849b57b1ab4a8c2f85cbb6dc6772e10793f96c1"
+        },
+        {
+          "period": "2026-03-31",
+          "published_at": "2026-04-21T16:00:00Z",
+          "publication_precision": "DATE",
+          "total_revenue": "95314773.95",
+          "parent_net_profit": "21679634.29",
+          "revenue_yoy": "-17.501693978",
+          "profit_yoy": "177.64",
+          "currency": "CNY",
+          "unit": "元",
+          "source": "东方财富公开研究接口",
+          "received_at": "2026-11-03T13:17:25.580044Z",
+          "available_at": "2026-11-03T13:17:25.580044Z",
+          "raw_hash": "f3371647a2cbf366c39aa2e58849b57b1ab4a8c2f85cbb6dc6772e10793f96c1"
+        },
+        {
+          "period": "2025-12-31",
+          "published_at": "2026-04-08T16:00:00Z",
+          "publication_precision": "DATE",
+          "total_revenue": "486260010.42",
+          "parent_net_profit": "14530384.08",
+          "revenue_yoy": "-16.3535899154",
+          "profit_yoy": "112.32",
+          "currency": "CNY",
+          "unit": "元",
+          "source": "东方财富公开研究接口",
+          "received_at": "2026-11-03T13:17:25.580044Z",
+          "available_at": "2026-11-03T13:17:25.580044Z",
+          "raw_hash": "f3371647a2cbf366c39aa2e58849b57b1ab4a8c2f85cbb6dc6772e10793f96c1"
+        }
+      ],
+      "corporate_actions": {
+        "security_id": "SZ.300030",
+        "items": [
+          {
+            "period": "2021-12-31",
+            "published_at": "2022-06-29",
+            "record_date": "2022-07-05",
+            "ex_date": "2022-07-06",
+            "plan": "10派0.40元(含税,扣税后0.36元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2020-12-31",
+            "published_at": "2021-06-03",
+            "record_date": "2021-06-10",
+            "ex_date": "2021-06-11",
+            "plan": "10派0.32元(含税,扣税后0.288元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2017-12-31",
+            "published_at": "2018-06-13",
+            "record_date": "2018-06-19",
+            "ex_date": "2018-06-20",
+            "plan": "10派0.25元(含税,扣税后0.225元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2015-12-31",
+            "published_at": "2016-07-19",
+            "record_date": "2016-07-25",
+            "ex_date": "2016-07-26",
+            "plan": "10派0.25元(含税,扣税后0.225元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2014-12-31",
+            "published_at": "2015-05-18",
+            "record_date": "2015-05-25",
+            "ex_date": "2015-05-26",
+            "plan": "10派0.30元(含税,扣税后0.27元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2013-12-31",
+            "published_at": "2014-04-21",
+            "record_date": "2014-04-24",
+            "ex_date": "2014-04-25",
+            "plan": "10转10.00派0.50元(含税,扣税后0.45元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2012-12-31",
+            "published_at": "2013-05-24",
+            "record_date": "2013-05-30",
+            "ex_date": "2013-05-31",
+            "plan": "10派0.60元(含税,扣税后0.54元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2011-12-31",
+            "published_at": "2012-05-21",
+            "record_date": "2012-05-24",
+            "ex_date": "2012-05-25",
+            "plan": "10派0.60元(含税,扣税后0.54元)",
+            "status": "实施分配"
+          }
+        ],
+        "source": "东方财富公开研究接口",
+        "source_url": "https://datacenter-web.eastmoney.com/api/data/v1/get",
+        "received_at": "2026-11-03T13:17:28.524134Z",
+        "raw_hash": "4941394f42db81f4bc5eff1de0da264d51b162cf6ef9c9c12f668d0ce240f616",
+        "checked_at": "2026-11-03T13:17:28.524134Z",
+        "error": null
+      },
+      "auto_refresh": {
+        "enabled": true,
+        "pending": false
+      }
+    },
+    "LIVE.SH.603444": {
+      "name": "吉比特",
+      "source_time": "2026-11-03T08:14:45Z",
+      "fetched_at": "2026-11-03T13:30:13.408731Z",
+      "quote_comparison": {
+        "pe_ttm": {
+          "cache": "11.51",
+          "source": "11.51",
+          "equal": true
+        },
+        "pe_dynamic": {
+          "cache": "11.79",
+          "source": "11.79",
+          "equal": true
+        },
+        "pe_static": {
+          "cache": "13.89",
+          "source": "13.89",
+          "equal": true
+        },
+        "total_shares": {
+          "cache": "72041101",
+          "source": "72041101",
+          "equal": true
+        },
+        "float_shares": {
+          "cache": "72041101",
+          "source": "72041101",
+          "equal": true
+        },
+        "buy_volume": {
+          "cache": "750800",
+          "source": "750800",
+          "equal": true
+        },
+        "sell_volume": {
+          "cache": "768900",
+          "source": "768900",
+          "equal": true
+        }
+      },
+      "financials": [
+        {
+          "period": "2026-09-30",
+          "published_at": "2026-10-22T16:00:00Z",
+          "publication_precision": "DATE",
+          "total_revenue": "5496468492.26",
+          "parent_net_profit": "1585007442.94",
+          "revenue_yoy": "22.5309750311",
+          "profit_yoy": "30.55",
+          "currency": "CNY",
+          "unit": "元",
+          "source": "东方财富公开研究接口",
+          "received_at": "2026-11-03T13:17:33.599610Z",
+          "available_at": "2026-11-03T13:17:33.599610Z",
+          "raw_hash": "93364fae59c19ec1d5ea40021dc4c8d4ce421cc5287e121bbd56bd4cd1cdc2db"
+        },
+        {
+          "period": "2026-06-30",
+          "published_at": "2026-08-13T16:00:00Z",
+          "publication_precision": "DATE",
+          "total_revenue": "3726842297.78",
+          "parent_net_profit": "1091536495.39",
+          "revenue_yoy": "48.01380786",
+          "profit_yoy": "69.31",
+          "currency": "CNY",
+          "unit": "元",
+          "source": "东方财富公开研究接口",
+          "received_at": "2026-11-03T13:17:33.599610Z",
+          "available_at": "2026-11-03T13:17:33.599610Z",
+          "raw_hash": "93364fae59c19ec1d5ea40021dc4c8d4ce421cc5287e121bbd56bd4cd1cdc2db"
+        },
+        {
+          "period": "2026-03-31",
+          "published_at": "2026-04-23T16:00:00Z",
+          "publication_precision": "DATE",
+          "total_revenue": "1847352228.76",
+          "parent_net_profit": "517544467.11",
+          "revenue_yoy": "62.6671899461",
+          "profit_yoy": "82.68",
+          "currency": "CNY",
+          "unit": "元",
+          "source": "东方财富公开研究接口",
+          "received_at": "2026-11-03T13:17:33.599610Z",
+          "available_at": "2026-11-03T13:17:33.599610Z",
+          "raw_hash": "93364fae59c19ec1d5ea40021dc4c8d4ce421cc5287e121bbd56bd4cd1cdc2db"
+        },
+        {
+          "period": "2025-12-31",
+          "published_at": "2026-03-26T16:00:00Z",
+          "publication_precision": "DATE",
+          "total_revenue": "6204659480.39",
+          "parent_net_profit": "1793666076.8",
+          "revenue_yoy": "67.8894040089",
+          "profit_yoy": "89.82",
+          "currency": "CNY",
+          "unit": "元",
+          "source": "东方财富公开研究接口",
+          "received_at": "2026-11-03T13:17:33.599610Z",
+          "available_at": "2026-11-03T13:17:33.599610Z",
+          "raw_hash": "93364fae59c19ec1d5ea40021dc4c8d4ce421cc5287e121bbd56bd4cd1cdc2db"
+        }
+      ],
+      "corporate_actions": {
+        "security_id": "SH.603444",
+        "items": [
+          {
+            "period": "2026-09-30",
+            "published_at": "2026-10-23",
+            "record_date": null,
+            "ex_date": null,
+            "plan": "10派60.00元(含税)",
+            "status": "董事会决议通过"
+          },
+          {
+            "period": "2026-06-30",
+            "published_at": "2026-09-10",
+            "record_date": "2026-09-16",
+            "ex_date": "2026-09-17",
+            "plan": "10派100.00元(含税,扣税后90.00元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2025-12-31",
+            "published_at": "2026-05-14",
+            "record_date": "2026-05-20",
+            "ex_date": "2026-05-21",
+            "plan": "10派70.00元(含税,扣税后63.00元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2025-09-30",
+            "published_at": "2025-11-21",
+            "record_date": "2025-11-27",
+            "ex_date": "2025-11-28",
+            "plan": "10派60.00元(含税,扣税后54.00元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2025-06-30",
+            "published_at": "2025-09-12",
+            "record_date": "2025-09-18",
+            "ex_date": "2025-09-19",
+            "plan": "10派66.00元(含税,扣税后59.40元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2024-12-31",
+            "published_at": "2025-05-16",
+            "record_date": "2025-05-23",
+            "ex_date": "2025-05-26",
+            "plan": "10派35.00元(含税,扣税后31.50元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2024-09-30",
+            "published_at": "2024-11-16",
+            "record_date": "2024-11-22",
+            "ex_date": "2024-11-25",
+            "plan": "10派20.00元(含税,扣税后18.00元)",
+            "status": "实施分配"
+          },
+          {
+            "period": "2024-06-30",
+            "published_at": "2024-09-06",
+            "record_date": "2024-09-12",
+            "ex_date": "2024-09-13",
+            "plan": "10派45.00元(含税,扣税后40.50元)",
+            "status": "实施分配"
+          }
+        ],
+        "source": "东方财富公开研究接口",
+        "source_url": "https://datacenter-web.eastmoney.com/api/data/v1/get",
+        "received_at": "2026-11-03T13:17:35.771042Z",
+        "raw_hash": "918c797c995edaa07d916621e63ad88e127d0242081191749089b7726b3eda11",
+        "checked_at": "2026-11-03T13:17:35.771042Z",
+        "error": null
+      },
+      "auto_refresh": {
+        "enabled": true,
+        "pending": false
+      }
+    }
+  },
+  "adjustments": {
+    "none": {
+      "coverage": {
+        "from_date": "2016-03-03",
+        "to_date": "2026-11-03",
+        "count": 2590
+      },
+      "indicator_count": 47
+    },
+    "qfq": {
+      "sync": {
+        "id": "LIVE.SZ.300502:QFQ",
+        "security_id": "LIVE.SZ.300502",
+        "adjustment": "QFQ",
+        "from_date": "2016-03-03",
+        "to_date": "2026-11-03",
+        "count": 2590,
+        "source": "腾讯财经公开日线",
+        "received_at": "2026-11-03T13:30:36.921795Z",
+        "raw_hash": "a49834ec29117b0ca4b6bd3351f47333431c150998499ae8c20c3adc49c0141a"
+      },
+      "coverage": {
+        "from_date": "2016-03-03",
+        "to_date": "2026-11-03",
+        "count": 2590
+      },
+      "indicator_count": 47
+    },
+    "hfq": {
+      "sync": {
+        "id": "LIVE.SZ.300502:HFQ",
+        "security_id": "LIVE.SZ.300502",
+        "adjustment": "HFQ",
+        "from_date": "2016-03-03",
+        "to_date": "2026-11-03",
+        "count": 2590,
+        "source": "腾讯财经公开日线",
+        "received_at": "2026-11-03T13:30:37.892308Z",
+        "raw_hash": "3ab631f995e52e8630ab981e2afa151813ba9c79b648941a06ae75b43821732d"
+      },
+      "coverage": {
+        "from_date": "2016-03-03",
+        "to_date": "2026-11-03",
+        "count": 2590
+      },
+      "indicator_count": 47
+    }
+  },
+  "intraday": {
+    "count": 267,
+    "last": {
+      "time": "2026-11-03T07:30:00Z",
+      "value": "173.36",
+      "volume": 2800,
+      "average_price": "179.8409",
+      "cumulative_volume": 97009200,
+      "cumulative_amount": "17446221329.89"
+    },
+    "source_time": "2026-11-03T07:30:00Z",
+    "average_formula": "cumulative_amount / cumulative_volume (shares)",
+    "expected_average": "179.8408947799796307979037040"
+  },
+  "adjustment_sample": {
+    "date": "2026-11-03",
+    "close": {
+      "none": "173.36",
+      "qfq": "173.36",
+      "hfq": "2817.767"
+    }
+  },
+  "qfq_sample": {
+    "date": "2026-06-10",
+    "none": "772.500",
+    "qfq": "551.072"
+  },
+  "runtime_paths": 50,
+  "adjustment_sync_loaded": true,
+  "business_preserved": {
+    "kinds": [
+      "watch",
+      "signal",
+      "latest_review",
+      "review",
+      "account",
+      "order",
+      "fill",
+      "monitor",
+      "monitor_version",
+      "profile",
+      "state"
+    ],
+    "equal_to_backup": true,
+    "record_count": 15,
+    "sha256": "5d9810d53da993296af558b597da37e565152131e3cc976cfb9e511ad09ca018"
+  },
+  "bars_preservation": {
+    "original_rows_unchanged": true,
+    "count": 762,
+    "appended_rows": 0
+  },
+  "provider_bars_preservation": {
+    "original_rows_unchanged": true,
+    "count": 24466,
+    "appended_rows": 2385
+  }
+}

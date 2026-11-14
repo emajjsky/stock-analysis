@@ -1,0 +1,56 @@
+[
+  {
+    "key": "LIVE.SZ.000019",
+    "width": 1366,
+    "visibleBars": 140,
+    "barHeight": 1,
+    "barGap": 1,
+    "pitch": 2,
+    "labelsIndependent": true
+  },
+  {
+    "key": "LIVE.SZ.000019",
+    "width": 390,
+    "visibleBars": 140,
+    "barHeight": 1,
+    "barGap": 1,
+    "pitch": 2,
+    "labelsIndependent": true
+  },
+  {
+    "key": "LIVE.SZ.300502",
+    "width": 1366,
+    "visibleBars": 140,
+    "barHeight": 1,
+    "barGap": 1,
+    "pitch": 2,
+    "labelsIndependent": true
+  },
+  {
+    "key": "LIVE.SZ.300502",
+    "width": 390,
+    "visibleBars": 140,
+    "barHeight": 1,
+    "barGap": 1,
+    "pitch": 2,
+    "labelsIndependent": true
+  },
+  {
+    "key": "LIVE.SZ.000014",
+    "width": 1366,
+    "visibleBars": 140,
+    "barHeight": 1,
+    "barGap": 1,
+    "pitch": 2,
+    "labelsIndependent": true
+  },
+  {
+    "key": "LIVE.SZ.000014",
+    "width": 390,
+    "visibleBars": 140,
+    "barHeight": 1,
+    "barGap": 1,
+    "pitch": 2,
+    "labelsIndependent": true
+  }
+]

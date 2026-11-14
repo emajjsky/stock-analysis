@@ -1,0 +1,101 @@
+{
+  "browser": "155.0.4283.62",
+  "checks": [
+    "default disabled state",
+    "clear cached-data and no-trading boundary",
+    "manual one-shot run and persisted signal",
+    "two scheduled runs separated by at least 29 seconds",
+    "polling preserves unsaved form",
+    "unchanged signals deduplicated",
+    "enabled configuration persists after reload",
+    "unconfigured agent never reviews",
+    "disabled configuration persists and no account created",
+    "1280 viewport without page overflow"
+  ],
+  "scheduled_run_gaps_seconds": [
+    30.23927
+  ],
+  "elapsed_seconds": 34.2,
+  "final_config": {
+    "enabled": false,
+    "interval_seconds": 30,
+    "auto_review": false,
+    "next_run_at": null,
+    "last_run_at": "2026-10-27T15:20:01.049533Z",
+    "last_status": "SUCCEEDED",
+    "last_error": null,
+    "active_monitor_count": 1,
+    "worker_running": true,
+    "limitations": [
+      "仅在本地后端服务运行期间检查已保存日线；停止服务后不继续监测",
+      "不自动获取实时行情，不进行模拟或真实交易",
+      "自动复核需显式开启且模型已配置；可能产生模型费用，每轮最多5次、每信号最多自动尝试一次",
+      "关闭阻止后续步骤；已开始的模型请求无法撤回费用，迟到结果保留等待",
+      "停机不逐次补跑；失败或中断的模型调用请人工检查后手动重试"
+    ]
+  },
+  "runs": [
+    {
+      "id": "df309108d2764d2993b58edd9cf6e6b4",
+      "status": "SUCCEEDED",
+      "trigger": "MANUAL",
+      "started_at": "2026-10-27T15:20:01.049533Z",
+      "finished_at": "2026-10-27T15:20:01.051533Z",
+      "generated": 0,
+      "reviewed": 0,
+      "skipped": 0,
+      "error": null,
+      "details": [
+        "检查1条监测规则，使用已保存日线",
+        "尚未配置LLM；本轮没有发起模型请求"
+      ]
+    },
+    {
+      "id": "33b7195ab0ec4e4b9aa33c0de9ac10d0",
+      "status": "SUCCEEDED",
+      "trigger": "SCHEDULED",
+      "started_at": "2026-10-27T15:19:59.581163Z",
+      "finished_at": "2026-10-27T15:19:59.584687Z",
+      "generated": 0,
+      "reviewed": 0,
+      "skipped": 0,
+      "error": null,
+      "details": [
+        "检查1条监测规则，使用已保存日线",
+        "自动复核未开启；仅计算信号，不调用模型"
+      ]
+    },
+    {
+      "id": "fda50348c2d741fc8d948ce1230181d2",
+      "status": "SUCCEEDED",
+      "trigger": "SCHEDULED",
+      "started_at": "2026-10-27T15:19:29.341893Z",
+      "finished_at": "2026-10-27T15:19:29.344443Z",
+      "generated": 0,
+      "reviewed": 0,
+      "skipped": 0,
+      "error": null,
+      "details": [
+        "检查1条监测规则，使用已保存日线",
+        "自动复核未开启；仅计算信号，不调用模型"
+      ]
+    },
+    {
+      "id": "e0f4c0c33414422e8b10b84baf9dfd55",
+      "status": "SUCCEEDED",
+      "trigger": "MANUAL",
+      "started_at": "2026-10-27T15:19:29.028955Z",
+      "finished_at": "2026-10-27T15:19:29.030956Z",
+      "generated": 1,
+      "reviewed": 0,
+      "skipped": 1,
+      "error": null,
+      "details": [
+        "检查1条监测规则，使用已保存日线",
+        "自动复核未开启；仅计算信号，不调用模型"
+      ]
+    }
+  ],
+  "page_errors": [],
+  "server_errors": []
+}

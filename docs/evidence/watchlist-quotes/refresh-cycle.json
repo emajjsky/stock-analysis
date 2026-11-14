@@ -1,0 +1,25 @@
+{
+  "initial": {
+    "enabled": true,
+    "interval_seconds": 60,
+    "running": false,
+    "phase": "ERROR",
+    "last_attempt_at": "2026-11-05T02:30:16.240401Z",
+    "last_success_at": "2026-11-05T02:30:17.820001Z",
+    "error": "SZ.301015：已保存历史成交额存在数值修订，保留原数据，需版本化处理：2026-11-03",
+    "market_open": true
+  },
+  "next": {
+    "enabled": true,
+    "interval_seconds": 60,
+    "running": false,
+    "phase": "ERROR",
+    "last_attempt_at": "2026-11-05T02:31:17.953996Z",
+    "last_success_at": "2026-11-05T02:31:19.522470Z",
+    "error": "SZ.301015：已保存历史成交额存在数值修订，保留原数据，需版本化处理：2026-11-03",
+    "market_open": true
+  },
+  "all_watch_quotes_advanced": true,
+  "watch_count": 7,
+  "wait_seconds": 30.4
+}

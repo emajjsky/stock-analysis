@@ -1,0 +1,38 @@
+{
+  "watch_count": 17,
+  "tested_widths": [
+    1600,
+    1366,
+    1920,
+    1093,
+    390
+  ],
+  "amount_unit": "万元",
+  "no_redundant_labels": true,
+  "selection_activation": true,
+  "cache_poll_seconds": 5,
+  "stale_chart_date_visible": true,
+  "quote_failure_preserves_rows": true,
+  "full_stock_chart_preserved": true,
+  "algorithm_flags_unchanged": true,
+  "toolbar_single_row": true,
+  "cards_aligned": true,
+  "empty_cards_aligned": true,
+  "dense_cards_aligned": true,
+  "typography": {
+    "name": 16,
+    "code": 15,
+    "header": 14,
+    "amount": 16,
+    "time": 15,
+    "metric": 16,
+    "group": 15,
+    "row": 44
+  },
+  "density": {
+    "row_height": 44,
+    "visible_rows": 13,
+    "previous_visible_rows": 9
+  },
+  "page_errors": []
+}

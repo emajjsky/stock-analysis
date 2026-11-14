@@ -1,0 +1,21 @@
+{
+  "zoom": {
+    "from": 91.35796114274356,
+    "to": 240,
+    "count": 241
+  },
+  "after_refresh": {
+    "from": 91.35796114274356,
+    "to": 240,
+    "count": 241
+  },
+  "after_resize": {
+    "from": 91.35796114274356,
+    "to": 240,
+    "count": 241
+  },
+  "mobile_dialog_overflow": false,
+  "keyboard_focus_trapped": true,
+  "watchlists_monitors_refresh_settings_unchanged": true,
+  "errors": []
+}

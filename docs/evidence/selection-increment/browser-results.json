@@ -1,0 +1,12 @@
+{
+  "browser": "155.0.4283.62",
+  "checks": [
+    "two algorithms explicit selection and distinct explanations",
+    "recommendation versions and input hashes",
+    "FILTER mode persisted",
+    "expired/no-model/rule-demo stay blocked",
+    "execution permission remains not evaluated"
+  ],
+  "page_errors": [],
+  "server_errors": []
+}

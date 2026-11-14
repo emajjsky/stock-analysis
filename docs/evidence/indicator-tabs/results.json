@@ -1,0 +1,83 @@
+{
+  "errors": [],
+  "main": [
+    "均线 MA",
+    "布林带 BOLL",
+    "指数均线 EXPMA",
+    "多空均线 BBI",
+    "抛物线 SAR"
+  ],
+  "secondary": [
+    "MACD",
+    "KDJ",
+    "RSI",
+    "OBV",
+    "W&R",
+    "MTM",
+    "VR",
+    "ARBR",
+    "DMI",
+    "BIAS",
+    "DMA",
+    "ASI",
+    "TRIX",
+    "DPO"
+  ],
+  "viewports": [
+    {
+      "width": 1920,
+      "scroll": 1920,
+      "stackHeight": 468.59375,
+      "controlsAfterCanvas": true,
+      "bottomGap": 0,
+      "labels": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "width": 1366,
+      "scroll": 1366,
+      "stackHeight": 468.59375,
+      "controlsAfterCanvas": true,
+      "bottomGap": 0,
+      "labels": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "width": 1093,
+      "scroll": 1093,
+      "stackHeight": 388.15625,
+      "controlsAfterCanvas": true,
+      "bottomGap": 0,
+      "labels": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "width": 390,
+      "scroll": 390,
+      "stackHeight": 600,
+      "controlsAfterCanvas": true,
+      "bottomGap": 715.640625,
+      "labels": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "intraday": {
+    "amount": 485407.98999786377,
+    "display": "48.54万元",
+    "volume_amount_differ": true,
+    "ma_toggle_changes_canvas": true
+  },
+  "missing_history_amount": "explicit missing, no fabricated columns"
+}

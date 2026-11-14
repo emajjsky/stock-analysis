@@ -1,0 +1,36 @@
+[
+  {
+    "id": "LIVE.SH.688066",
+    "seconds": 0.0,
+    "points": 241,
+    "source": "东方财富公开分时",
+    "fallback": true,
+    "primary_error": "腾讯分时来源返回 HTTP 501",
+    "last": {
+      "time": "2026-11-03T07:00:00Z",
+      "value": "6.80",
+      "volume": 484300,
+      "cumulative_volume": 19614800,
+      "cumulative_amount": "127960568.00",
+      "average_price": "6.5237"
+    },
+    "error": null
+  },
+  {
+    "id": "LIVE.SZ.301015",
+    "seconds": 0.0,
+    "points": 241,
+    "source": "东方财富公开分时",
+    "fallback": true,
+    "primary_error": "腾讯分时来源返回 HTTP 501",
+    "last": {
+      "time": "2026-11-03T07:00:00Z",
+      "value": "26.25",
+      "volume": 252100,
+      "cumulative_volume": 25501300,
+      "cumulative_amount": "659666150.00",
+      "average_price": "25.8679"
+    },
+    "error": null
+  }
+]

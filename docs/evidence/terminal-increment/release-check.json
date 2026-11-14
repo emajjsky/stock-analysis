@@ -1,0 +1,193 @@
+{
+  "checked_at": "2026-10-29T15:17:06.952007+00:00",
+  "before": {
+    "integrity": "ok",
+    "counts": {
+      "automation": 1,
+      "automation_run": 1,
+      "evaluation": 1,
+      "market_snapshot": 9,
+      "market_sync_run": 4,
+      "monitor": 2,
+      "monitor_version": 2,
+      "notification": 1,
+      "profile": 6,
+      "recommendation": 6,
+      "security": 15,
+      "signal": 1,
+      "state": 1,
+      "watch": 2
+    },
+    "protected_sha256": "73a508abbe925b5212dd3cdadb8717b8e8bf9dd79bfa9457435f50b05fdbe927",
+    "bars_sha256": "373126491b55add293a2de03b61562f09c2b1040b7d02dded26a940dd3ac06ba",
+    "original_bars": 762,
+    "provider_bars": 319
+  },
+  "backup": "F:\\教学案例\\.runtime\\backups\\terminal-before-20261029T151706Z.db",
+  "after": {
+    "integrity": "ok",
+    "counts": {
+      "automation": 1,
+      "automation_run": 1,
+      "evaluation": 1,
+      "index_daily": 8,
+      "index_intraday": 8,
+      "index_quote": 8,
+      "market_snapshot": 9,
+      "market_sync_run": 18,
+      "monitor": 2,
+      "monitor_version": 2,
+      "notification": 1,
+      "profile": 6,
+      "recommendation": 6,
+      "security": 15,
+      "signal": 1,
+      "state": 1,
+      "stock_intraday": 1,
+      "terminal": 2,
+      "terminal_history": 2,
+      "terminal_recent": 1,
+      "watch": 2
+    },
+    "protected_sha256": "73a508abbe925b5212dd3cdadb8717b8e8bf9dd79bfa9457435f50b05fdbe927",
+    "bars_sha256": "373126491b55add293a2de03b61562f09c2b1040b7d02dded26a940dd3ac06ba",
+    "original_bars": 762,
+    "provider_bars": 959
+  },
+  "business_records_preserved": true,
+  "catalog": {
+    "count": 5222,
+    "source": "新浪财经公开沪深证券清单",
+    "updated_at": "2026-10-29T15:39:53.106342Z",
+    "status": "READY",
+    "error": null
+  },
+  "search": {
+    "600519": {
+      "id": "LIVE.SH.600519",
+      "name": "贵州茅台"
+    },
+    "贵州茅台": {
+      "id": "LIVE.SH.600519",
+      "name": "贵州茅台"
+    },
+    "guizhoumaotai": {
+      "id": "LIVE.SH.600519",
+      "name": "贵州茅台"
+    },
+    "gzmt": {
+      "id": "LIVE.SH.600519",
+      "name": "贵州茅台"
+    }
+  },
+  "indices": [
+    {
+      "id": "sh000001",
+      "symbol": "sh000001",
+      "name": "上证指数",
+      "price": "3651.43",
+      "change_pct": "-0.82",
+      "volume": 44356414400,
+      "amount": "715620690000",
+      "source": "腾讯财经公开行情",
+      "source_time": "2026-10-29T08:14:00Z",
+      "fetched_at": "2026-10-29T15:42:36.946878Z"
+    },
+    {
+      "id": "sz399001",
+      "symbol": "sz399001",
+      "name": "深证成指",
+      "price": "11138.20",
+      "change_pct": "-2.92",
+      "volume": 54047912100,
+      "amount": "840903490000",
+      "source": "腾讯财经公开行情",
+      "source_time": "2026-10-29T08:14:15Z",
+      "fetched_at": "2026-10-29T15:42:36.946878Z"
+    },
+    {
+      "id": "sz399006",
+      "symbol": "sz399006",
+      "name": "创业板指",
+      "price": "2517.59",
+      "change_pct": "-4.45",
+      "volume": 16967934100,
+      "amount": "419356540000",
+      "source": "腾讯财经公开行情",
+      "source_time": "2026-10-29T08:14:30Z",
+      "fetched_at": "2026-10-29T15:42:36.946878Z"
+    },
+    {
+      "id": "sh000300",
+      "symbol": "sh000300",
+      "name": "沪深300",
+      "price": "4041.84",
+      "change_pct": "-1.03",
+      "volume": 17143072900,
+      "amount": "411892970000",
+      "source": "腾讯财经公开行情",
+      "source_time": "2026-10-29T08:14:12Z",
+      "fetched_at": "2026-10-29T15:42:36.946878Z"
+    },
+    {
+      "id": "sh000016",
+      "symbol": "sh000016",
+      "name": "上证50",
+      "price": "2762.79",
+      "change_pct": "0.36",
+      "volume": 4719737800,
+      "amount": "124805650000",
+      "source": "腾讯财经公开行情",
+      "source_time": "2026-10-29T08:14:00Z",
+      "fetched_at": "2026-10-29T15:42:36.946878Z"
+    },
+    {
+      "id": "sh000905",
+      "symbol": "sh000905",
+      "name": "中证500",
+      "price": "6453.72",
+      "change_pct": "-2.82",
+      "volume": 13902219000,
+      "amount": "271552260000",
+      "source": "腾讯财经公开行情",
+      "source_time": "2026-10-29T08:14:12Z",
+      "fetched_at": "2026-10-29T15:42:36.946878Z"
+    },
+    {
+      "id": "sh000852",
+      "symbol": "sh000852",
+      "name": "中证1000",
+      "price": "6378.78",
+      "change_pct": "-3.03",
+      "volume": 21592952400,
+      "amount": "320931770000",
+      "source": "腾讯财经公开行情",
+      "source_time": "2026-10-29T08:14:00Z",
+      "fetched_at": "2026-10-29T15:42:36.946878Z"
+    },
+    {
+      "id": "sh000688",
+      "symbol": "sh000688",
+      "name": "科创50",
+      "price": "1228.09",
+      "change_pct": "-4.27",
+      "volume": 760056500,
+      "amount": "71099760000",
+      "source": "腾讯财经公开行情",
+      "source_time": "2026-10-29T08:14:12Z",
+      "fetched_at": "2026-10-29T15:42:36.946878Z"
+    }
+  ],
+  "refresh": {
+    "enabled": true,
+    "interval_seconds": 60,
+    "running": false,
+    "phase": "IDLE",
+    "last_attempt_at": "2026-10-29T15:42:36.796017Z",
+    "last_success_at": "2026-10-29T15:42:37.997122Z",
+    "error": null,
+    "market_open": false
+  },
+  "runtime_paths": 47,
+  "checked_after_at": "2026-10-29T15:43:03.218571+00:00"
+}

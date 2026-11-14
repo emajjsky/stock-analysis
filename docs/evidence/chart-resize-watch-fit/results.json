@@ -1,0 +1,311 @@
+{
+  "intraday_full": [
+    {
+      "width": 1600,
+      "collapsed": true,
+      "edges": [
+        "09:30",
+        "15:00"
+      ]
+    },
+    {
+      "width": 1600,
+      "collapsed": false,
+      "edges": [
+        "09:30",
+        "15:00"
+      ]
+    },
+    {
+      "width": 1600,
+      "collapsed": true,
+      "edges": [
+        "09:30",
+        "15:00"
+      ]
+    },
+    {
+      "width": 1600,
+      "collapsed": false,
+      "edges": [
+        "09:30",
+        "15:00"
+      ]
+    },
+    {
+      "width": 1920,
+      "collapsed": true,
+      "edges": [
+        "09:30",
+        "15:00"
+      ]
+    },
+    {
+      "width": 1920,
+      "collapsed": false,
+      "edges": [
+        "09:30",
+        "15:00"
+      ]
+    },
+    {
+      "width": 1920,
+      "collapsed": true,
+      "edges": [
+        "09:30",
+        "15:00"
+      ]
+    },
+    {
+      "width": 1920,
+      "collapsed": false,
+      "edges": [
+        "09:30",
+        "15:00"
+      ]
+    },
+    {
+      "width": 1366,
+      "collapsed": true,
+      "edges": [
+        "09:30",
+        "15:00"
+      ]
+    },
+    {
+      "width": 1366,
+      "collapsed": false,
+      "edges": [
+        "09:30",
+        "15:00"
+      ]
+    },
+    {
+      "width": 1366,
+      "collapsed": true,
+      "edges": [
+        "09:30",
+        "15:00"
+      ]
+    },
+    {
+      "width": 1366,
+      "collapsed": false,
+      "edges": [
+        "09:30",
+        "15:00"
+      ]
+    }
+  ],
+  "intraday_history": {
+    "before": [
+      "09:30",
+      "14:38"
+    ],
+    "after": [
+      [
+        "09:30",
+        "14:38"
+      ],
+      [
+        "09:30",
+        "14:38"
+      ],
+      [
+        "09:30",
+        "14:38"
+      ],
+      [
+        "09:30",
+        "14:38"
+      ]
+    ]
+  },
+  "candles": {
+    "日 K": [
+      "2026-03-06",
+      "2026-11-05"
+    ],
+    "周 K": [
+      "2023-08-28",
+      "2026-11-02"
+    ],
+    "月 K": [
+      "2013-04-01",
+      "2026-11-02"
+    ]
+  },
+  "watch_sizes": [
+    {
+      "width": 2048,
+      "collapsed": false,
+      "client": 1318,
+      "scroll": 1318,
+      "columns": 10,
+      "lastVisible": true,
+      "sideBySide": true,
+      "aligned": true,
+      "font": "16px",
+      "pageOverflow": false
+    },
+    {
+      "width": 2048,
+      "collapsed": true,
+      "client": 1486,
+      "scroll": 1486,
+      "columns": 10,
+      "lastVisible": true,
+      "sideBySide": true,
+      "aligned": true,
+      "font": "16px",
+      "pageOverflow": false
+    },
+    {
+      "width": 1920,
+      "collapsed": false,
+      "client": 1214,
+      "scroll": 1214,
+      "columns": 10,
+      "lastVisible": true,
+      "sideBySide": true,
+      "aligned": true,
+      "font": "16px",
+      "pageOverflow": false
+    },
+    {
+      "width": 1920,
+      "collapsed": true,
+      "client": 1358,
+      "scroll": 1358,
+      "columns": 10,
+      "lastVisible": true,
+      "sideBySide": true,
+      "aligned": true,
+      "font": "16px",
+      "pageOverflow": false
+    },
+    {
+      "width": 1600,
+      "collapsed": false,
+      "client": 940,
+      "scroll": 940,
+      "columns": 10,
+      "lastVisible": true,
+      "sideBySide": true,
+      "aligned": true,
+      "font": "16px",
+      "pageOverflow": false
+    },
+    {
+      "width": 1600,
+      "collapsed": true,
+      "client": 1045,
+      "scroll": 1045,
+      "columns": 10,
+      "lastVisible": true,
+      "sideBySide": true,
+      "aligned": true,
+      "font": "16px",
+      "pageOverflow": false
+    },
+    {
+      "width": 1536,
+      "collapsed": false,
+      "client": 1244,
+      "scroll": 1244,
+      "columns": 10,
+      "lastVisible": true,
+      "sideBySide": false,
+      "aligned": false,
+      "font": "16px",
+      "pageOverflow": false
+    },
+    {
+      "width": 1536,
+      "collapsed": true,
+      "client": 999,
+      "scroll": 999,
+      "columns": 10,
+      "lastVisible": true,
+      "sideBySide": true,
+      "aligned": true,
+      "font": "16px",
+      "pageOverflow": false
+    },
+    {
+      "width": 1366,
+      "collapsed": false,
+      "client": 1074,
+      "scroll": 1074,
+      "columns": 10,
+      "lastVisible": true,
+      "sideBySide": false,
+      "aligned": false,
+      "font": "16px",
+      "pageOverflow": false
+    },
+    {
+      "width": 1366,
+      "collapsed": true,
+      "client": 1218,
+      "scroll": 1218,
+      "columns": 10,
+      "lastVisible": true,
+      "sideBySide": false,
+      "aligned": false,
+      "font": "16px",
+      "pageOverflow": false
+    },
+    {
+      "width": 1280,
+      "collapsed": false,
+      "client": 1038,
+      "scroll": 1038,
+      "columns": 10,
+      "lastVisible": true,
+      "sideBySide": false,
+      "aligned": false,
+      "font": "16px",
+      "pageOverflow": false
+    },
+    {
+      "width": 1280,
+      "collapsed": true,
+      "client": 1148,
+      "scroll": 1148,
+      "columns": 10,
+      "lastVisible": true,
+      "sideBySide": false,
+      "aligned": false,
+      "font": "16px",
+      "pageOverflow": false
+    },
+    {
+      "width": 1093,
+      "collapsed": false,
+      "client": 851,
+      "scroll": 890,
+      "columns": 10,
+      "lastVisible": false,
+      "sideBySide": false,
+      "aligned": false,
+      "font": "16px",
+      "pageOverflow": false
+    },
+    {
+      "width": 1093,
+      "collapsed": true,
+      "client": 961,
+      "scroll": 961,
+      "columns": 10,
+      "lastVisible": true,
+      "sideBySide": false,
+      "aligned": false,
+      "font": "16px",
+      "pageOverflow": false
+    }
+  ],
+  "extra_columns_and_sticky": true,
+  "unchanged_watchlist": true,
+  "page_errors": []
+}

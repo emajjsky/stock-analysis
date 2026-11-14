@@ -1,0 +1,12 @@
+{
+  "watch_count": 7,
+  "paused_algorithm_rows_with_quotes": 6,
+  "initial_intraday_request": true,
+  "quote_cache_reads": 3,
+  "removed_monitor_and_signal_placeholders": true,
+  "selection_linkage": true,
+  "mobile_no_page_overflow": true,
+  "monitor_flags_unchanged": true,
+  "browser_errors": [],
+  "monitor_writes": []
+}

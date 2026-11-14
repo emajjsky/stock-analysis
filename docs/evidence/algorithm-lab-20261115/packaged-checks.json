@@ -1,0 +1,48 @@
+[
+  {
+    "check": "真实发行库临时副本缺少末日后启动内置服务",
+    "packaged": true,
+    "version": "0.3.0",
+    "appPath": "F:\\教学案例\\release\\Wangzha-0.3.0-win-x64\\resources\\app",
+    "coverage": {
+      "catalog_count": 5223,
+      "history_count": 5223,
+      "rows": 16805167,
+      "first_date": "1990-12-19",
+      "last_date": "2026-11-13",
+      "quality_warning_count": 67
+    },
+    "status": "RUNNING",
+    "repair_probe": {
+      "sid": "LIVE.SH.600000",
+      "target": "2026-11-13",
+      "before": 6427
+    }
+  },
+  {
+    "check": "缓存进入发现页、真实算法计算、桌面桥拒绝本地外站",
+    "result": "计算 5223 只 · 满足 336 只 · 数据不足 2 只\n11/15 02:21\n 仅看符合条件",
+    "page_errors": []
+  },
+  {
+    "check": "启动补齐临时副本缺失末日并保留已有日线",
+    "target": "2026-11-13",
+    "rows": 6427,
+    "last": "2026-11-13",
+    "passed": true
+  },
+  {
+    "check": "冻结服务真实历史补数及独立下载子进程",
+    "completed": 5223,
+    "target": "2026-11-13",
+    "downloaded": 1
+  },
+  {
+    "check": "退出后内置服务端口关闭",
+    "passed": true
+  },
+  {
+    "check": "冻结后端无缺包异常",
+    "passed": true
+  }
+]

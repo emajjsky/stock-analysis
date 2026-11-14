@@ -1,0 +1,2 @@
+# 已验证的运行/测试依赖；桌面构建工具单独锁定于desktop/build-requirements.txt。
+-r requirements-lock.txt

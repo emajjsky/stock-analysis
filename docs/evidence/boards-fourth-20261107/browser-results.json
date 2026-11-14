@@ -1,0 +1,1145 @@
+{
+  "errors": [],
+  "charts": [
+    {
+      "label": "板块热点/main-chart-panel/分时",
+      "full": {
+        "count": 241,
+        "from": 0,
+        "to": 240,
+        "width": 381,
+        "height": 204
+      },
+      "zoom": {
+        "count": 241,
+        "from": 76.39375725701794,
+        "to": 240,
+        "width": 381,
+        "height": 204
+      },
+      "dragged": {
+        "count": 241,
+        "from": 0,
+        "to": 163.60624274298206,
+        "width": 381,
+        "height": 204
+      },
+      "restored": {
+        "count": 241,
+        "from": 0,
+        "to": 163.60624274298206,
+        "width": 381,
+        "height": 204
+      }
+    },
+    {
+      "label": "板块热点/main-chart-panel/日K",
+      "full": {
+        "count": 160,
+        "from": 0,
+        "to": 159,
+        "width": 381,
+        "height": 204
+      },
+      "zoom": {
+        "count": 160,
+        "from": 50.71784714158869,
+        "to": 159,
+        "width": 381,
+        "height": 204
+      },
+      "dragged": {
+        "count": 160,
+        "from": 0,
+        "to": 108.28215285841131,
+        "width": 381,
+        "height": 204
+      },
+      "restored": {
+        "count": 160,
+        "from": 0,
+        "to": 108.28215285841131,
+        "width": 381,
+        "height": 204
+      }
+    },
+    {
+      "label": "板块热点/stock-chart-panel/分时",
+      "full": {
+        "count": 267,
+        "from": 0,
+        "to": 266,
+        "width": 381,
+        "height": 204
+      },
+      "zoom": {
+        "count": 267,
+        "from": 84.63540741752615,
+        "to": 266,
+        "width": 381,
+        "height": 204
+      },
+      "dragged": {
+        "count": 267,
+        "from": 0,
+        "to": 181.36459258247385,
+        "width": 381,
+        "height": 204
+      },
+      "restored": {
+        "count": 267,
+        "from": 0,
+        "to": 181.36459258247385,
+        "width": 381,
+        "height": 204
+      }
+    },
+    {
+      "label": "板块热点/stock-chart-panel/日K",
+      "full": {
+        "count": 5747,
+        "from": 0,
+        "to": 5746,
+        "width": 381,
+        "height": 204
+      },
+      "zoom": {
+        "count": 5747,
+        "from": 1821.7216720169386,
+        "to": 5746,
+        "width": 381,
+        "height": 204
+      },
+      "dragged": {
+        "count": 5747,
+        "from": 0,
+        "to": 3924.2783279830614,
+        "width": 381,
+        "height": 204
+      },
+      "restored": {
+        "count": 5747,
+        "from": 0,
+        "to": 3924.2783279830624,
+        "width": 381,
+        "height": 204
+      }
+    },
+    {
+      "label": "板块轮动/main-chart-panel/分时",
+      "full": {
+        "count": 241,
+        "from": 0,
+        "to": 240,
+        "width": 365,
+        "height": 304
+      },
+      "zoom": {
+        "count": 241,
+        "from": 76.39375725701794,
+        "to": 240,
+        "width": 365,
+        "height": 304
+      },
+      "dragged": {
+        "count": 241,
+        "from": 0,
+        "to": 163.60624274298206,
+        "width": 365,
+        "height": 304
+      },
+      "restored": {
+        "count": 241,
+        "from": 0,
+        "to": 163.60624274298206,
+        "width": 365,
+        "height": 304
+      }
+    },
+    {
+      "label": "板块轮动/main-chart-panel/日K",
+      "full": {
+        "count": 160,
+        "from": 0,
+        "to": 159,
+        "width": 365,
+        "height": 304
+      },
+      "zoom": {
+        "count": 160,
+        "from": 50.71784714158869,
+        "to": 159,
+        "width": 365,
+        "height": 304
+      },
+      "dragged": {
+        "count": 160,
+        "from": 0,
+        "to": 108.28215285841131,
+        "width": 365,
+        "height": 304
+      },
+      "restored": {
+        "count": 160,
+        "from": 0,
+        "to": 108.28215285841131,
+        "width": 365,
+        "height": 304
+      }
+    },
+    {
+      "label": "板块轮动/stock-chart-panel/分时",
+      "full": {
+        "count": 267,
+        "from": 0,
+        "to": 266,
+        "width": 365,
+        "height": 304
+      },
+      "zoom": {
+        "count": 267,
+        "from": 84.63540741752615,
+        "to": 266,
+        "width": 365,
+        "height": 304
+      },
+      "dragged": {
+        "count": 267,
+        "from": 0,
+        "to": 181.36459258247385,
+        "width": 365,
+        "height": 304
+      },
+      "restored": {
+        "count": 267,
+        "from": 0,
+        "to": 181.36459258247385,
+        "width": 365,
+        "height": 304
+      }
+    },
+    {
+      "label": "板块轮动/stock-chart-panel/日K",
+      "full": {
+        "count": 5747,
+        "from": 0,
+        "to": 5746,
+        "width": 365,
+        "height": 304
+      },
+      "zoom": {
+        "count": 5747,
+        "from": 1821.7216720169386,
+        "to": 5746,
+        "width": 365,
+        "height": 304
+      },
+      "dragged": {
+        "count": 5747,
+        "from": 0,
+        "to": 3924.2783279830614,
+        "width": 365,
+        "height": 304
+      },
+      "restored": {
+        "count": 5747,
+        "from": 0,
+        "to": 3924.2783279830614,
+        "width": 365,
+        "height": 304
+      }
+    },
+    {
+      "label": "板块分析/main-chart-panel/分时",
+      "full": {
+        "count": 241,
+        "from": 0,
+        "to": 240,
+        "width": 628,
+        "height": 287
+      },
+      "zoom": {
+        "count": 241,
+        "from": 76.393757257018,
+        "to": 240,
+        "width": 628,
+        "height": 287
+      },
+      "dragged": {
+        "count": 241,
+        "from": 0,
+        "to": 163.606242742982,
+        "width": 628,
+        "height": 287
+      },
+      "restored": {
+        "count": 241,
+        "from": 0,
+        "to": 163.606242742982,
+        "width": 628,
+        "height": 287
+      }
+    },
+    {
+      "label": "板块分析/main-chart-panel/日K",
+      "full": {
+        "count": 160,
+        "from": 0,
+        "to": 159,
+        "width": 628,
+        "height": 287
+      },
+      "zoom": {
+        "count": 160,
+        "from": 50.71784714158868,
+        "to": 159,
+        "width": 628,
+        "height": 287
+      },
+      "dragged": {
+        "count": 160,
+        "from": 0,
+        "to": 108.28215285841132,
+        "width": 628,
+        "height": 287
+      },
+      "restored": {
+        "count": 160,
+        "from": 0,
+        "to": 108.28215285841132,
+        "width": 628,
+        "height": 287
+      }
+    },
+    {
+      "label": "板块分析/指标图1",
+      "full": {
+        "count": 30,
+        "from": -3.552713678800501e-15,
+        "to": 29,
+        "width": 280,
+        "height": 142
+      },
+      "zoom": {
+        "count": 30,
+        "from": 9.509596339047878,
+        "to": 29,
+        "width": 280,
+        "height": 142
+      },
+      "dragged": {
+        "count": 30,
+        "from": 0,
+        "to": 19.490403660952122,
+        "width": 280,
+        "height": 142
+      },
+      "restored": {
+        "count": 30,
+        "from": 0,
+        "to": 19.490403660952122,
+        "width": 280,
+        "height": 142
+      }
+    },
+    {
+      "label": "板块分析/指标图2",
+      "full": {
+        "count": 30,
+        "from": 0,
+        "to": 29,
+        "width": 337,
+        "height": 142
+      },
+      "zoom": {
+        "count": 30,
+        "from": 9.509596339047874,
+        "to": 29,
+        "width": 337,
+        "height": 142
+      },
+      "dragged": {
+        "count": 30,
+        "from": 0,
+        "to": 19.490403660952126,
+        "width": 337,
+        "height": 142
+      },
+      "restored": {
+        "count": 30,
+        "from": 0,
+        "to": 19.490403660952126,
+        "width": 337,
+        "height": 142
+      }
+    },
+    {
+      "label": "板块资金/main-chart-panel/分时",
+      "full": {
+        "count": 241,
+        "from": 0,
+        "to": 240,
+        "width": 424,
+        "height": 206
+      },
+      "zoom": {
+        "count": 241,
+        "from": 76.39375725701797,
+        "to": 240,
+        "width": 424,
+        "height": 206
+      },
+      "dragged": {
+        "count": 241,
+        "from": 0,
+        "to": 163.60624274298203,
+        "width": 424,
+        "height": 206
+      },
+      "restored": {
+        "count": 241,
+        "from": 0,
+        "to": 163.60624274298203,
+        "width": 424,
+        "height": 206
+      }
+    },
+    {
+      "label": "板块资金/main-chart-panel/日K",
+      "full": {
+        "count": 160,
+        "from": 0,
+        "to": 159,
+        "width": 424,
+        "height": 206
+      },
+      "zoom": {
+        "count": 160,
+        "from": 50.71784714158869,
+        "to": 159,
+        "width": 424,
+        "height": 206
+      },
+      "dragged": {
+        "count": 160,
+        "from": 0,
+        "to": 108.28215285841131,
+        "width": 424,
+        "height": 206
+      },
+      "restored": {
+        "count": 160,
+        "from": 0,
+        "to": 108.28215285841131,
+        "width": 424,
+        "height": 206
+      }
+    },
+    {
+      "label": "板块资金/stock-chart-panel/分时",
+      "full": {
+        "count": 267,
+        "from": 0,
+        "to": 266,
+        "width": 424,
+        "height": 206
+      },
+      "zoom": {
+        "count": 267,
+        "from": 84.63540741752612,
+        "to": 266,
+        "width": 424,
+        "height": 206
+      },
+      "dragged": {
+        "count": 267,
+        "from": 0,
+        "to": 181.36459258247388,
+        "width": 424,
+        "height": 206
+      },
+      "restored": {
+        "count": 267,
+        "from": 0,
+        "to": 181.36459258247388,
+        "width": 424,
+        "height": 206
+      }
+    },
+    {
+      "label": "板块资金/stock-chart-panel/日K",
+      "full": {
+        "count": 5747,
+        "from": 9.094947017729282e-13,
+        "to": 5746,
+        "width": 424,
+        "height": 206
+      },
+      "zoom": {
+        "count": 5747,
+        "from": 1821.7216720169395,
+        "to": 5746,
+        "width": 424,
+        "height": 206
+      },
+      "dragged": {
+        "count": 5747,
+        "from": 0,
+        "to": 3924.2783279830605,
+        "width": 424,
+        "height": 206
+      },
+      "restored": {
+        "count": 5747,
+        "from": 4.547473508864641e-13,
+        "to": 3924.2783279830605,
+        "width": 424,
+        "height": 206
+      }
+    },
+    {
+      "label": "板块资金/指标图1",
+      "full": {
+        "count": 20,
+        "from": 0,
+        "to": 19,
+        "width": 424,
+        "height": 112
+      },
+      "zoom": {
+        "count": 20,
+        "from": 6.3397308926985865,
+        "to": 19,
+        "width": 424,
+        "height": 112
+      },
+      "dragged": {
+        "count": 20,
+        "from": 0,
+        "to": 12.660269107301414,
+        "width": 424,
+        "height": 112
+      },
+      "restored": {
+        "count": 20,
+        "from": 0,
+        "to": 12.660269107301414,
+        "width": 424,
+        "height": 112
+      }
+    },
+    {
+      "label": "板块增仓/main-chart-panel/分时",
+      "full": {
+        "count": 241,
+        "from": 0,
+        "to": 240,
+        "width": 424,
+        "height": 206
+      },
+      "zoom": {
+        "count": 241,
+        "from": 76.39375725701797,
+        "to": 240,
+        "width": 424,
+        "height": 206
+      },
+      "dragged": {
+        "count": 241,
+        "from": 0,
+        "to": 163.60624274298203,
+        "width": 424,
+        "height": 206
+      },
+      "restored": {
+        "count": 241,
+        "from": 0,
+        "to": 163.60624274298203,
+        "width": 424,
+        "height": 206
+      }
+    },
+    {
+      "label": "板块增仓/main-chart-panel/日K",
+      "full": {
+        "count": 160,
+        "from": 0,
+        "to": 159,
+        "width": 424,
+        "height": 206
+      },
+      "zoom": {
+        "count": 160,
+        "from": 50.71784714158869,
+        "to": 159,
+        "width": 424,
+        "height": 206
+      },
+      "dragged": {
+        "count": 160,
+        "from": 0,
+        "to": 108.28215285841131,
+        "width": 424,
+        "height": 206
+      },
+      "restored": {
+        "count": 160,
+        "from": 0,
+        "to": 108.28215285841131,
+        "width": 424,
+        "height": 206
+      }
+    },
+    {
+      "label": "板块增仓/stock-chart-panel/分时",
+      "full": {
+        "count": 267,
+        "from": 0,
+        "to": 266,
+        "width": 424,
+        "height": 206
+      },
+      "zoom": {
+        "count": 267,
+        "from": 84.63540741752612,
+        "to": 266,
+        "width": 424,
+        "height": 206
+      },
+      "dragged": {
+        "count": 267,
+        "from": 0,
+        "to": 181.36459258247388,
+        "width": 424,
+        "height": 206
+      },
+      "restored": {
+        "count": 267,
+        "from": 0,
+        "to": 181.36459258247388,
+        "width": 424,
+        "height": 206
+      }
+    },
+    {
+      "label": "板块增仓/stock-chart-panel/日K",
+      "full": {
+        "count": 5747,
+        "from": 9.094947017729282e-13,
+        "to": 5746,
+        "width": 424,
+        "height": 206
+      },
+      "zoom": {
+        "count": 5747,
+        "from": 1821.7216720169395,
+        "to": 5746,
+        "width": 424,
+        "height": 206
+      },
+      "dragged": {
+        "count": 5747,
+        "from": 0,
+        "to": 3924.2783279830605,
+        "width": 424,
+        "height": 206
+      },
+      "restored": {
+        "count": 5747,
+        "from": 4.547473508864641e-13,
+        "to": 3924.2783279830605,
+        "width": 424,
+        "height": 206
+      }
+    },
+    {
+      "label": "板块增仓/指标图1",
+      "full": {
+        "count": 20,
+        "from": 0,
+        "to": 19,
+        "width": 424,
+        "height": 112
+      },
+      "zoom": {
+        "count": 20,
+        "from": 6.3397308926985865,
+        "to": 19,
+        "width": 424,
+        "height": 112
+      },
+      "dragged": {
+        "count": 20,
+        "from": 0,
+        "to": 12.660269107301414,
+        "width": 424,
+        "height": 112
+      },
+      "restored": {
+        "count": 20,
+        "from": 0,
+        "to": 12.660269107301414,
+        "width": 424,
+        "height": 112
+      }
+    },
+    {
+      "label": "最新概念/main-chart-panel/分时",
+      "full": {
+        "count": 241,
+        "from": 0,
+        "to": 240,
+        "width": 381,
+        "height": 204
+      },
+      "zoom": {
+        "count": 241,
+        "from": 76.393757257018,
+        "to": 240,
+        "width": 381,
+        "height": 204
+      },
+      "dragged": {
+        "count": 241,
+        "from": 0,
+        "to": 163.606242742982,
+        "width": 381,
+        "height": 204
+      },
+      "restored": {
+        "count": 241,
+        "from": 0,
+        "to": 163.606242742982,
+        "width": 381,
+        "height": 204
+      }
+    },
+    {
+      "label": "最新概念/main-chart-panel/日K",
+      "full": {
+        "count": 20,
+        "from": 0,
+        "to": 19,
+        "width": 381,
+        "height": 204
+      },
+      "zoom": {
+        "count": 20,
+        "from": 6.3397308926985865,
+        "to": 19,
+        "width": 381,
+        "height": 204
+      },
+      "dragged": {
+        "count": 20,
+        "from": 0,
+        "to": 12.660269107301414,
+        "width": 381,
+        "height": 204
+      },
+      "restored": {
+        "count": 20,
+        "from": 0,
+        "to": 12.660269107301414,
+        "width": 381,
+        "height": 204
+      }
+    },
+    {
+      "label": "最新概念/stock-chart-panel/分时",
+      "full": {
+        "count": 267,
+        "from": 0,
+        "to": 266,
+        "width": 381,
+        "height": 204
+      },
+      "zoom": {
+        "count": 267,
+        "from": 84.63540741752615,
+        "to": 266,
+        "width": 381,
+        "height": 204
+      },
+      "dragged": {
+        "count": 267,
+        "from": 0,
+        "to": 181.36459258247385,
+        "width": 381,
+        "height": 204
+      },
+      "restored": {
+        "count": 267,
+        "from": 0,
+        "to": 181.36459258247385,
+        "width": 381,
+        "height": 204
+      }
+    },
+    {
+      "label": "最新概念/stock-chart-panel/日K",
+      "full": {
+        "count": 43,
+        "from": 0,
+        "to": 42,
+        "width": 381,
+        "height": 204
+      },
+      "zoom": {
+        "count": 43,
+        "from": 13.630421419301957,
+        "to": 42,
+        "width": 381,
+        "height": 204
+      },
+      "dragged": {
+        "count": 43,
+        "from": 0,
+        "to": 28.369578580698043,
+        "width": 381,
+        "height": 204
+      },
+      "restored": {
+        "count": 43,
+        "from": 0,
+        "to": 28.369578580698043,
+        "width": 381,
+        "height": 204
+      }
+    },
+    {
+      "label": "期股联动/main-chart-panel/分时",
+      "full": {
+        "count": 226,
+        "from": 0,
+        "to": 225,
+        "width": 479,
+        "height": 304
+      },
+      "zoom": {
+        "count": 226,
+        "from": 71.63895908749402,
+        "to": 225,
+        "width": 479,
+        "height": 304
+      },
+      "dragged": {
+        "count": 226,
+        "from": 0,
+        "to": 153.36104091250598,
+        "width": 479,
+        "height": 304
+      },
+      "restored": {
+        "count": 226,
+        "from": 0,
+        "to": 153.36104091250598,
+        "width": 479,
+        "height": 304
+      }
+    },
+    {
+      "label": "期股联动/main-chart-panel/日K",
+      "full": {
+        "count": 150,
+        "from": 0,
+        "to": 149,
+        "width": 479,
+        "height": 304
+      },
+      "zoom": {
+        "count": 150,
+        "from": 47.5479816952394,
+        "to": 149,
+        "width": 479,
+        "height": 304
+      },
+      "dragged": {
+        "count": 150,
+        "from": 0,
+        "to": 101.4520183047606,
+        "width": 479,
+        "height": 304
+      },
+      "restored": {
+        "count": 150,
+        "from": 0,
+        "to": 101.4520183047606,
+        "width": 479,
+        "height": 304
+      }
+    },
+    {
+      "label": "期股联动/stock-chart-panel/分时",
+      "full": {
+        "count": 267,
+        "from": 0,
+        "to": 266,
+        "width": 479,
+        "height": 304
+      },
+      "zoom": {
+        "count": 267,
+        "from": 84.63540741752612,
+        "to": 266,
+        "width": 479,
+        "height": 304
+      },
+      "dragged": {
+        "count": 267,
+        "from": 0,
+        "to": 181.36459258247388,
+        "width": 479,
+        "height": 304
+      },
+      "restored": {
+        "count": 267,
+        "from": 0,
+        "to": 181.36459258247388,
+        "width": 479,
+        "height": 304
+      }
+    },
+    {
+      "label": "期股联动/stock-chart-panel/日K",
+      "full": {
+        "count": 3245,
+        "from": 0,
+        "to": 3244,
+        "width": 479,
+        "height": 304
+      },
+      "zoom": {
+        "count": 3245,
+        "from": 1028.6213373403457,
+        "to": 3244,
+        "width": 479,
+        "height": 304
+      },
+      "dragged": {
+        "count": 3245,
+        "from": 0,
+        "to": 2215.3786626596543,
+        "width": 479,
+        "height": 304
+      },
+      "restored": {
+        "count": 3245,
+        "from": 0,
+        "to": 2215.3786626596543,
+        "width": 479,
+        "height": 304
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1,
+      "tab": "板块热点",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1,
+      "tab": "板块轮动",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1,
+      "tab": "板块分析",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1,
+      "tab": "板块资金",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1,
+      "tab": "板块增仓",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1,
+      "tab": "最新概念",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1,
+      "tab": "期股联动",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "tab": "板块热点",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "tab": "板块轮动",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "tab": "板块分析",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "tab": "板块资金",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "tab": "板块增仓",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "tab": "最新概念",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "tab": "期股联动",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1.25,
+      "tab": "板块热点",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1.25,
+      "tab": "板块轮动",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1.25,
+      "tab": "板块分析",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1.25,
+      "tab": "板块资金",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1.25,
+      "tab": "板块增仓",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1.25,
+      "tab": "最新概念",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "zoom": 1.25,
+      "tab": "期股联动",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "zoom": 1,
+      "tab": "板块热点",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "zoom": 1,
+      "tab": "板块轮动",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "zoom": 1,
+      "tab": "板块分析",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "zoom": 1,
+      "tab": "板块资金",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "zoom": 1,
+      "tab": "板块增仓",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "zoom": 1,
+      "tab": "最新概念",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "zoom": 1,
+      "tab": "期股联动",
+      "overflow": false
+    }
+  ],
+  "visible_etfs": 5,
+  "etf_scope": "相关候选（7）\n全部ETF（1659）",
+  "position_coverage": {
+    "industry": {
+      "covered": 496,
+      "total": 496
+    },
+    "concept": {
+      "covered": 531,
+      "total": 531
+    }
+  }
+}

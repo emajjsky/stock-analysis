@@ -1,0 +1,104 @@
+{
+  "cases": [
+    {
+      "width": 1920,
+      "viewport_height": 1080,
+      "ranking": "涨幅榜 Top100",
+      "height": 676,
+      "total": 3236,
+      "row": 32,
+      "header": 36,
+      "scrollbar": 15,
+      "chain": "contain"
+    },
+    {
+      "width": 1920,
+      "viewport_height": 1080,
+      "ranking": "跌幅榜 Top100",
+      "height": 676,
+      "total": 3236,
+      "row": 32,
+      "header": 36,
+      "scrollbar": 15,
+      "chain": "contain"
+    },
+    {
+      "width": 1920,
+      "viewport_height": 1080,
+      "ranking": "成交额榜 Top100",
+      "height": 676,
+      "total": 3236,
+      "row": 32,
+      "header": 36,
+      "scrollbar": 15,
+      "chain": "contain"
+    },
+    {
+      "width": 1366,
+      "viewport_height": 768,
+      "ranking": "涨幅榜 Top100",
+      "height": 592,
+      "total": 3236,
+      "row": 32,
+      "header": 36,
+      "scrollbar": 15,
+      "chain": "contain"
+    },
+    {
+      "width": 1366,
+      "viewport_height": 768,
+      "ranking": "跌幅榜 Top100",
+      "height": 592,
+      "total": 3236,
+      "row": 32,
+      "header": 36,
+      "scrollbar": 15,
+      "chain": "contain"
+    },
+    {
+      "width": 1366,
+      "viewport_height": 768,
+      "ranking": "成交额榜 Top100",
+      "height": 592,
+      "total": 3236,
+      "row": 32,
+      "header": 36,
+      "scrollbar": 15,
+      "chain": "contain"
+    },
+    {
+      "width": 1600,
+      "viewport_height": 900,
+      "ranking": "涨幅榜 Top100",
+      "height": 676,
+      "total": 3236,
+      "row": 32,
+      "header": 36,
+      "scrollbar": 15,
+      "chain": "contain"
+    },
+    {
+      "width": 1600,
+      "viewport_height": 900,
+      "ranking": "跌幅榜 Top100",
+      "height": 676,
+      "total": 3236,
+      "row": 32,
+      "header": 36,
+      "scrollbar": 15,
+      "chain": "contain"
+    },
+    {
+      "width": 1600,
+      "viewport_height": 900,
+      "ranking": "成交额榜 Top100",
+      "height": 676,
+      "total": 3236,
+      "row": 32,
+      "header": 36,
+      "scrollbar": 15,
+      "chain": "contain"
+    }
+  ],
+  "errors": []
+}

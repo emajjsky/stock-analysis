@@ -1,0 +1,18 @@
+{
+  "service": "http://127.0.0.1:8765",
+  "selection_algorithms": [
+    "rank-momentum-v1",
+    "trend-stability-v1"
+  ],
+  "preserved": {
+    "securities": 6,
+    "watchlists": 1,
+    "accounts": 0,
+    "database_table_counts_unchanged": true
+  },
+  "served_assets": [
+    "/assets/index-DR1LY092.js",
+    "/assets/index-CBTfgMvf.css"
+  ],
+  "backup_integrity": "ok"
+}

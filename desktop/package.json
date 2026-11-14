@@ -1,0 +1,15 @@
+{
+  "name": "wangzha-desktop",
+  "version": "0.3.0",
+  "private": true,
+  "description": "王炸桌面客户端与多标签网页行情",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/*.test.cjs"
+  },
+  "devDependencies": {
+    "electron": "45.2.3",
+    "rcedit": "5.0.2"
+  }
+}

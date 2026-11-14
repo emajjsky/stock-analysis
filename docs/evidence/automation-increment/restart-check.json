@@ -1,0 +1,64 @@
+{
+  "before": {
+    "counts": {
+      "monitor": 1,
+      "monitor_version": 1,
+      "profile": 6,
+      "recommendation": 6,
+      "security": 6,
+      "state": 1,
+      "watch": 1
+    },
+    "bars": 762,
+    "integrity": "ok",
+    "documents_sha256": "7bc427d588b8dc7570d24198bfe30d5637139d603f15b7b24bae03796c5b4cfc",
+    "bars_sha256": "373126491b55add293a2de03b61562f09c2b1040b7d02dded26a940dd3ac06ba"
+  },
+  "backup": "F:\\教学案例\\.runtime\\backups\\automation-before-restart-20261027.db",
+  "after": {
+    "counts": {
+      "monitor": 1,
+      "monitor_version": 1,
+      "profile": 6,
+      "recommendation": 6,
+      "security": 6,
+      "state": 1,
+      "watch": 1
+    },
+    "bars": 762,
+    "integrity": "ok",
+    "documents_sha256": "7bc427d588b8dc7570d24198bfe30d5637139d603f15b7b24bae03796c5b4cfc",
+    "bars_sha256": "373126491b55add293a2de03b61562f09c2b1040b7d02dded26a940dd3ac06ba"
+  },
+  "data_unchanged": true,
+  "assets": [
+    "/assets/index-CtqZpQsl.js",
+    "/assets/index-CPqcKEzh.css"
+  ],
+  "securities": 6,
+  "watchlists": 1,
+  "simulation_accounts": 0,
+  "automation": {
+    "enabled": false,
+    "interval_seconds": 60,
+    "auto_review": false,
+    "next_run_at": null,
+    "last_run_at": null,
+    "last_status": "IDLE",
+    "last_error": null,
+    "active_monitor_count": 1,
+    "worker_running": true,
+    "limitations": [
+      "仅在本地后端服务运行期间检查已保存日线；停止服务后不继续监测",
+      "不自动获取实时行情，不进行模拟或真实交易",
+      "自动复核需显式开启且模型已配置；可能产生模型费用，每轮最多5次、每信号最多自动尝试一次",
+      "关闭阻止后续步骤；已开始的模型请求无法撤回费用，迟到结果保留等待",
+      "停机不逐次补跑；失败或中断的模型调用请人工检查后手动重试"
+    ]
+  },
+  "methods_used": [
+    "GET"
+  ],
+  "html_status": 200,
+  "assets_match_current_build": true
+}

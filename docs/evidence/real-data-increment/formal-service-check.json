@@ -1,0 +1,77 @@
+{
+  "checked_at": "2026-10-28T01:52:55.889672Z",
+  "service": "http://127.0.0.1:8765",
+  "methods_used": [
+    "GET"
+  ],
+  "data_unchanged": true,
+  "before": {
+    "integrity": "ok",
+    "counts": {
+      "automation": 1,
+      "automation_run": 1,
+      "evaluation": 1,
+      "monitor": 1,
+      "monitor_version": 1,
+      "notification": 1,
+      "profile": 6,
+      "recommendation": 6,
+      "security": 6,
+      "signal": 1,
+      "state": 1,
+      "watch": 1
+    },
+    "bars": 762,
+    "provider_bars": 0,
+    "documents_sha256": "4208a62b4d16ce8da833e1922922f2b92e7d83388631cbaa56cf0c6a708fac09",
+    "bars_sha256": "373126491b55add293a2de03b61562f09c2b1040b7d02dded26a940dd3ac06ba",
+    "provider_bars_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "after": {
+    "integrity": "ok",
+    "counts": {
+      "automation": 1,
+      "automation_run": 1,
+      "evaluation": 1,
+      "monitor": 1,
+      "monitor_version": 1,
+      "notification": 1,
+      "profile": 6,
+      "recommendation": 6,
+      "security": 6,
+      "signal": 1,
+      "state": 1,
+      "watch": 1
+    },
+    "bars": 762,
+    "provider_bars": 0,
+    "documents_sha256": "4208a62b4d16ce8da833e1922922f2b92e7d83388631cbaa56cf0c6a708fac09",
+    "bars_sha256": "373126491b55add293a2de03b61562f09c2b1040b7d02dded26a940dd3ac06ba",
+    "provider_bars_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "backup": "F:\\教学案例\\.runtime\\backups\\workstation-before-live-provider-20261028.db",
+  "backup_matches_snapshot": true,
+  "backup_restored": false,
+  "runtime_openapi_paths": 35,
+  "exported_openapi_paths": 38,
+  "missing_runtime_paths": [
+    "/api/v1/data/providers/tencent/sync",
+    "/api/v1/data/sync-runs",
+    "/api/v1/securities/{key}/research/sync"
+  ],
+  "runtime_provider_ids": [
+    "local-csv",
+    "synthetic-demo",
+    "xtdata",
+    "fundamentals"
+  ],
+  "served_assets_match_build": true,
+  "assets": {
+    "/assets/index-2jta3rER.js": true,
+    "/assets/index-BPPKSo2b.css": true
+  },
+  "backend_update_pending": true,
+  "deployment_note": "最新前端静态资源已可读取；后端仍待重启，旧服务缺少真实行情同步接口。",
+  "restart_performed": false,
+  "restart_blocked_reason": "本轮自动审批以blocked by policy拒绝停止/重启8765命令；未绕过该限制。"
+}

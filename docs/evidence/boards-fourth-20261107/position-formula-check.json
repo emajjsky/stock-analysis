@@ -1,0 +1,48 @@
+{
+  "industry": {
+    "board": "电池",
+    "code": "BK1033",
+    "trade_days": [
+      "2026-11-05",
+      "2026-11-06"
+    ],
+    "prior": {
+      "time": "2026-11-05",
+      "amount": "85231630953.00",
+      "net_inflow": "2643242496.0"
+    },
+    "current": {
+      "net_inflow": "-2894688512.0",
+      "amount": "60303191450.0",
+      "source_time": "2026-11-06T07:39:30Z"
+    },
+    "expected_position_2d": "-0.1727737814553562038471552179",
+    "history_rows": 496,
+    "failed": 0,
+    "actual_position_2d": "-0.172774",
+    "passed": true
+  },
+  "concept": {
+    "board": "工程建设",
+    "code": "BK0425",
+    "trade_days": [
+      "2026-11-05",
+      "2026-11-06"
+    ],
+    "prior": {
+      "time": "2026-11-05",
+      "amount": "13912123094.00",
+      "net_inflow": "-389513872.0"
+    },
+    "current": {
+      "net_inflow": "-272176560.0",
+      "amount": "11356701911.0",
+      "source_time": "2026-11-06T07:39:30Z"
+    },
+    "expected_position_2d": "-2.618603879955121799301091009",
+    "history_rows": 531,
+    "failed": 0,
+    "actual_position_2d": "-2.618604",
+    "passed": true
+  }
+}

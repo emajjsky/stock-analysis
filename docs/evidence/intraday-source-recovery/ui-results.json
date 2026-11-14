@@ -1,0 +1,21 @@
+{
+  "errors": [],
+  "stocks": [
+    {
+      "id": "LIVE.SH.688066",
+      "name": "*ST航图",
+      "chart": true,
+      "source": "东方财富公开分时（备用）"
+    },
+    {
+      "id": "LIVE.SZ.301015",
+      "name": "百洋医药",
+      "chart": true,
+      "source": "东方财富公开分时（备用）"
+    }
+  ],
+  "retry_requests": [
+    "http://127.0.0.1:8765/api/v1/market/refresh?security_id=LIVE.SZ.301015"
+  ],
+  "retry_recovers_empty_chart": true
+}

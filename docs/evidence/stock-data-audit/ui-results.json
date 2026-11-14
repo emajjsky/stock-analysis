@@ -1,0 +1,149 @@
+{
+  "errors": [],
+  "main": [
+    {
+      "indicator": "MA",
+      "canvas_sha256": "7b79a2d655b50d8edc31c73fad99d499fac775663da4cf000c173c4f54575b16"
+    },
+    {
+      "indicator": "BOLL",
+      "canvas_sha256": "e22850f43e984d385e58aebb1ba4d43f38fc118b22bf7c0ad1aa40e1642e1bfe"
+    },
+    {
+      "indicator": "EXPMA",
+      "canvas_sha256": "f963916764e15dade5bbe181cc89e10774338255d570b746c2e7bec91acc6de0"
+    },
+    {
+      "indicator": "BBI",
+      "canvas_sha256": "7ee6c44eb10a627e2cf6856bd973d640ceeff99d475893ecd5a0f61a91527631"
+    },
+    {
+      "indicator": "SAR",
+      "canvas_sha256": "1133e4f3d0b7a7d5030a8d99afe3472d1e756e6fbc7eda1faa17c5d178a3b5de"
+    }
+  ],
+  "secondary": [
+    "MACD",
+    "KDJ",
+    "RSI",
+    "OBV",
+    "W&R",
+    "MTM",
+    "VR",
+    "ARBR",
+    "DMI",
+    "BIAS",
+    "DMA",
+    "ASI",
+    "TRIX",
+    "DPO"
+  ],
+  "intraday": [
+    "VOL",
+    "MACD",
+    "RSI"
+  ],
+  "viewports": [
+    {
+      "tab": "五档",
+      "width": 1920,
+      "scroll": 1920,
+      "bookHeight": 520,
+      "chartHeight": 520,
+      "bottomGap": 0,
+      "bookOverflow": 0
+    },
+    {
+      "tab": "估值与股本",
+      "width": 1920,
+      "scroll": 1920,
+      "bookHeight": 520,
+      "chartHeight": 520,
+      "bottomGap": 0,
+      "bookOverflow": 0
+    },
+    {
+      "tab": "五档",
+      "width": 1600,
+      "scroll": 1600,
+      "bookHeight": 520,
+      "chartHeight": 520,
+      "bottomGap": 0,
+      "bookOverflow": 0
+    },
+    {
+      "tab": "估值与股本",
+      "width": 1600,
+      "scroll": 1600,
+      "bookHeight": 520,
+      "chartHeight": 520,
+      "bottomGap": 0,
+      "bookOverflow": 0
+    },
+    {
+      "tab": "五档",
+      "width": 1366,
+      "scroll": 1366,
+      "bookHeight": 520,
+      "chartHeight": 520,
+      "bottomGap": 0,
+      "bookOverflow": 0
+    },
+    {
+      "tab": "估值与股本",
+      "width": 1366,
+      "scroll": 1366,
+      "bookHeight": 520,
+      "chartHeight": 520,
+      "bottomGap": 0,
+      "bookOverflow": 0
+    },
+    {
+      "tab": "五档",
+      "width": 1093,
+      "scroll": 1093,
+      "bookHeight": 520,
+      "chartHeight": 520,
+      "bottomGap": 0,
+      "bookOverflow": 0
+    },
+    {
+      "tab": "估值与股本",
+      "width": 1093,
+      "scroll": 1093,
+      "bookHeight": 520,
+      "chartHeight": 520,
+      "bottomGap": 0,
+      "bookOverflow": 0
+    },
+    {
+      "tab": "五档",
+      "width": 390,
+      "scroll": 390,
+      "bookHeight": 541.96875,
+      "chartHeight": 673.609375,
+      "bottomGap": 549.96875,
+      "bookOverflow": 0
+    },
+    {
+      "tab": "估值与股本",
+      "width": 390,
+      "scroll": 390,
+      "bookHeight": 492.78125,
+      "chartHeight": 673.609375,
+      "bottomGap": 500.78125,
+      "bookOverflow": 0
+    }
+  ],
+  "real_price_and_average_pixels": {
+    "price": 2181,
+    "average": 1938
+  },
+  "event_marker_pixels": 708,
+  "adjustment_auto_refresh": {
+    "expired_cache_queued": true,
+    "failure_backoff": true,
+    "manual_retry": true,
+    "data": "browser-only interception"
+  }
+}

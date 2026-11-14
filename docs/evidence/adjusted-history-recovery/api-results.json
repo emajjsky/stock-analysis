@@ -1,0 +1,74 @@
+{
+  "qfq:1d": {
+    "count": 5804,
+    "first": "2002-06-18",
+    "last": "2026-11-03",
+    "last_close": "6.36",
+    "source": "东方财富公开日线 / 前复权（备用源）",
+    "amount_known": 5804
+  },
+  "qfq:1w": {
+    "count": 1225,
+    "first": "2002-06-18",
+    "last": "2026-11-02",
+    "last_close": "6.36",
+    "source": "东方财富公开日线 / 前复权（备用源）",
+    "amount_known": 1225
+  },
+  "qfq:1mo": {
+    "count": 293,
+    "first": "2002-06-18",
+    "last": "2026-11-02",
+    "last_close": "6.36",
+    "source": "东方财富公开日线 / 前复权（备用源）",
+    "amount_known": 293
+  },
+  "hfq:1d": {
+    "count": 5804,
+    "first": "2002-06-18",
+    "last": "2026-11-03",
+    "last_close": "29.25",
+    "source": "东方财富公开日线 / 后复权（备用源）",
+    "amount_known": 5804
+  },
+  "hfq:1w": {
+    "count": 1225,
+    "first": "2002-06-18",
+    "last": "2026-11-02",
+    "last_close": "29.25",
+    "source": "东方财富公开日线 / 后复权（备用源）",
+    "amount_known": 1225
+  },
+  "hfq:1mo": {
+    "count": 293,
+    "first": "2002-06-18",
+    "last": "2026-11-02",
+    "last_close": "29.25",
+    "source": "东方财富公开日线 / 后复权（备用源）",
+    "amount_known": 293
+  },
+  "none:1d": {
+    "count": 5804,
+    "first": "2002-06-18",
+    "last": "2026-11-03",
+    "last_close": "6.360",
+    "source": null,
+    "amount_known": 5804
+  },
+  "none:1w": {
+    "count": 1225,
+    "first": "2002-06-18",
+    "last": "2026-11-02",
+    "last_close": "6.360",
+    "source": null,
+    "amount_known": 1225
+  },
+  "none:1mo": {
+    "count": 293,
+    "first": "2002-06-18",
+    "last": "2026-11-02",
+    "last_close": "6.360",
+    "source": null,
+    "amount_known": 293
+  }
+}

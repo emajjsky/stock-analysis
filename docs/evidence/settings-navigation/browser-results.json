@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-10-28T06:33:21.120871+00:00",
+  "service": "http://127.0.0.1:8765",
+  "cases": [
+    {
+      "width": 1536,
+      "height": 695,
+      "settings_visible": true,
+      "settings_click_and_reload": true,
+      "sync_input_accessible": true,
+      "empty_watch_recovery": true,
+      "sync_form_gates_checked": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "settings_visible": true,
+      "settings_click_and_reload": true,
+      "sync_input_accessible": true,
+      "empty_watch_recovery": true,
+      "sync_form_gates_checked": true
+    },
+    {
+      "width": 1093,
+      "height": 614,
+      "settings_visible": true,
+      "settings_click_and_reload": true,
+      "sync_input_accessible": true,
+      "empty_watch_recovery": true,
+      "sync_form_gates_checked": true
+    },
+    {
+      "width": 1440,
+      "height": 400,
+      "settings_visible": true,
+      "settings_click_and_reload": true,
+      "sync_input_accessible": true,
+      "empty_watch_recovery": true,
+      "sync_form_gates_checked": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "settings_visible": true,
+      "settings_click_and_reload": true,
+      "sync_input_accessible": true,
+      "empty_watch_recovery": true,
+      "sync_form_gates_checked": true
+    },
+    {
+      "width": 390,
+      "height": 640,
+      "settings_visible": true,
+      "settings_click_and_reload": true,
+      "sync_input_accessible": true,
+      "empty_watch_recovery": true,
+      "sync_form_gates_checked": true
+    },
+    {
+      "width": 667,
+      "height": 375,
+      "settings_visible": true,
+      "settings_click_and_reload": true,
+      "sync_input_accessible": true,
+      "empty_watch_recovery": true,
+      "sync_form_gates_checked": true
+    }
+  ],
+  "page_errors": [],
+  "data_sync_triggered": false,
+  "business_data_modified": false
+}

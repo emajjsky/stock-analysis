@@ -1,0 +1,56 @@
+{
+  "tabs": [
+    "板块热点",
+    "板块轮动",
+    "板块分析",
+    "板块资金",
+    "板块增仓",
+    "债股联动",
+    "期股联动",
+    "证券目录"
+  ],
+  "desktop_overflow": {
+    "板块热点": 0,
+    "板块轮动": 0,
+    "板块分析": 0,
+    "板块资金": 0,
+    "板块增仓": 0,
+    "债股联动": 0,
+    "期股联动": 0,
+    "证券目录": 0
+  },
+  "screenshots": [
+    "01-hot-concept.png",
+    "02-板块轮动.png",
+    "03-板块分析.png",
+    "04-板块资金.png",
+    "05-板块增仓.png",
+    "06-债股联动.png",
+    "07-期股联动.png",
+    "08-证券目录.png",
+    "09-catalog-mobile.png"
+  ],
+  "breadth": {
+    "coverage": "296 / 308",
+    "distribution": "涨 8.1% 平 0.3% 跌 91.6%",
+    "member_return_bands": [
+      "≥7%2",
+      "3%至7%4",
+      "-3%至3%185",
+      "-7%至-3%103",
+      "≤-7%2"
+    ]
+  },
+  "bond_distribution": [
+    28,
+    220,
+    31,
+    23,
+    12,
+    0
+  ],
+  "mobile_overflow": 0,
+  "source_error_isolation_and_recovery": "passed",
+  "narrow_desktop_overflow": 0,
+  "page_errors": []
+}

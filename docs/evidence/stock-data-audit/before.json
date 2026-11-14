@@ -1,0 +1,33 @@
+{
+  "backup": "F:\\教学案例\\.runtime\\backups\\stock-data-before-20261103T124218Z.db",
+  "protected_sha256": "5d9810d53da993296af558b597da37e565152131e3cc976cfb9e511ad09ca018",
+  "counts": {
+    "automation": 1,
+    "automation_run": 1,
+    "evaluation": 1,
+    "index_daily": 8,
+    "index_intraday": 8,
+    "index_quote": 8,
+    "market_history": 5,
+    "market_snapshot": 12,
+    "market_sync_run": 30,
+    "monitor": 2,
+    "monitor_version": 2,
+    "news_feed": 15,
+    "notification": 1,
+    "profile": 6,
+    "recommendation": 6,
+    "research_current": 6,
+    "research_observation": 28,
+    "research_snapshot": 6,
+    "research_sync_run": 3,
+    "security": 18,
+    "signal": 1,
+    "state": 1,
+    "stock_intraday": 4,
+    "terminal": 2,
+    "terminal_history": 5,
+    "terminal_recent": 4,
+    "watch": 3
+  }
+}

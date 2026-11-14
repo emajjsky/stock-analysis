@@ -1,0 +1,77 @@
+{
+  "time": "2026-11-03T13:16:23.418337+00:00",
+  "test_data": "browser-only fixtures, no database writes",
+  "results": [
+    {
+      "name": "01-early-open",
+      "width": 1188,
+      "left_blank": 22,
+      "right_blank": 24,
+      "all_visible": true
+    },
+    {
+      "name": "02-zoom-out-limit",
+      "width": 1188,
+      "left_blank": 22,
+      "right_blank": 24,
+      "all_visible": true
+    },
+    {
+      "name": "03-zoom-in-right",
+      "width": 1188,
+      "left_blank": 0,
+      "right_blank": 42,
+      "all_visible": false
+    },
+    {
+      "name": "04-zoom-out-other-position",
+      "width": 1188,
+      "left_blank": 22,
+      "right_blank": 24,
+      "all_visible": true
+    },
+    {
+      "name": "05-refresh-full-range",
+      "width": 1188,
+      "left_blank": 14,
+      "right_blank": 16,
+      "all_visible": true
+    },
+    {
+      "name": "07-refresh-zoom-range",
+      "width": 1188,
+      "left_blank": 0,
+      "right_blank": 27,
+      "all_visible": false
+    },
+    {
+      "name": "08-refresh-zoom-out-limit",
+      "width": 1188,
+      "left_blank": 13,
+      "right_blank": 14,
+      "all_visible": true
+    },
+    {
+      "name": "09-resize-1366",
+      "width": 954,
+      "left_blank": 13,
+      "right_blank": 0,
+      "all_visible": true
+    },
+    {
+      "name": "09-resize-1920",
+      "width": 1508,
+      "left_blank": 16,
+      "right_blank": 18,
+      "all_visible": true
+    },
+    {
+      "name": "10-next-day-two-points",
+      "width": 1508,
+      "left_blank": 376,
+      "right_blank": 378,
+      "all_visible": true
+    }
+  ],
+  "page_errors": []
+}

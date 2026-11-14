@@ -1,0 +1,18 @@
+{
+  "watch_count": 7,
+  "tested_widths": [
+    1600,
+    1366,
+    1920,
+    390
+  ],
+  "amount_unit": "万元",
+  "no_redundant_labels": true,
+  "selection_activation": true,
+  "cache_poll_seconds": 5,
+  "stale_chart_date_visible": true,
+  "quote_failure_preserves_rows": true,
+  "full_stock_chart_preserved": true,
+  "algorithm_flags_unchanged": true,
+  "page_errors": []
+}

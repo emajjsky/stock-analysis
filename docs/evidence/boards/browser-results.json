@@ -1,0 +1,45 @@
+{
+  "counts": {
+    "industry": 496,
+    "seed_supported_members": 8,
+    "concept": 531
+  },
+  "layouts": [
+    {
+      "width": 1366,
+      "height": 900,
+      "page_horizontal_overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "page_horizontal_overflow": false
+    },
+    {
+      "width": 1100,
+      "height": 850,
+      "page_horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "page_horizontal_overflow": false
+    }
+  ],
+  "manual_refresh_posts": 1,
+  "page_errors": [],
+  "opened_stock_url": "http://127.0.0.1:8765/#/stock/LIVE.SZ.000001",
+  "checks": [
+    "行业概念切换",
+    "搜索与排序",
+    "板块成分股联动",
+    "分时及日K",
+    "快速切换不串板块",
+    "热力图40板块",
+    "20日资金",
+    "已存交易日轮动",
+    "手动刷新",
+    "侧栏折叠展开",
+    "目录搜索打开个股"
+  ]
+}
