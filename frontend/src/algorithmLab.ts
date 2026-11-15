@@ -2,7 +2,11 @@ export interface LabAlgorithm { id:string; name:string; group:string; descriptio
 export interface LabSelection {id:string;parameters:Record<string,number>}
 export interface LabResult {id:string;name:string;version:string;status:string;matched:boolean;stance:string;value:number|null;reason:string;markers:{time:string;text:string;direction:string}[]}
 export interface LabRow {security:{id:string;name:string;code:string};matched:boolean;hit_count:number;total:number;missing:number;action:string;results:LabResult[];data_as_of:string|null;generated_at:string;price:string|null;mode:string;input_hash:string;limitations:string[];data_status:string;data_note:string}
-export interface LabRun {id:string;started_at:string;finished_at:string;status:string;total:number;matched:number;skipped:number;rows:LabRow[];mode:string;scope:string;selections:LabSelection[];combination:string}
+export interface LabRun {id:string;started_at:string;finished_at:string;status:string;total:number;matched:number;skipped:number;rows:LabRow[];mode:string;scope:string;selections:LabSelection[];combination:string;workspace?:LabWorkspace;security_ids?:string[]}
+export type LabWorkspace='screen'|'stock'|'monitor';
+export type LabRunSummary=Omit<LabRun,'rows'>;
+export interface LabConfig {mode:string;scope:string;security_ids:string[];selections:LabSelection[];combination:string;workspace:LabWorkspace}
+export interface LabJob {id:string;run_id:string;status:string;workspace:LabWorkspace;config:LabConfig;started_at:string;finished_at:string|null;updated_at:string;total:number;completed:number;matched:number;skipped:number;current:string;error:string|null}
 export interface LabTask {id?:string;name:string;scope:string;security_ids:string[];mode:string;selections:LabSelection[];combination:string;interval_seconds:number;enabled:boolean;auto_review:boolean;use_jev?:boolean;last_checked_at?:string;error?:string}
 export interface LabReview {status:string;summary:string;model?:string}
 export interface HistoryStatus {status:string;total:number;completed:number;downloaded:number;failed:number;current:string;errors:string[];target_date?:string;coverage:{catalog_count:number;history_count:number;rows:number;first_date:string|null;last_date:string|null;quality_warning_count:number}}

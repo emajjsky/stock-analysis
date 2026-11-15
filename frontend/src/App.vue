@@ -41,6 +41,7 @@ import RuleEditor from "./components/RuleEditor.vue";
 import IpoView from './views/IpoView.vue';
 import WebBrowserView from './views/WebBrowserView.vue';
 import './webBrowser';
+import {activeLabJob,labWorkspace,startLabWorkspace,stopLabWorkspace,workspaceNames} from './labWorkspace';
 const nav = [
   { id: "home", name: "首页", icon: ChartNoAxesCombined },
   { id: "discover", name: "发现", icon: Compass },
@@ -232,6 +233,7 @@ function key(e: KeyboardEvent) {
   }
 }
 onMounted(async () => {
+  startLabWorkspace();
   await refresh();
   if (disposed) return;
   pollCache();
@@ -244,6 +246,7 @@ onMounted(async () => {
   window.addEventListener('wangzha-open-browser',showWeb);
 });
 onUnmounted(() => {
+  stopLabWorkspace();
   document.removeEventListener("keydown", key);
   document.removeEventListener("pointerdown", outsideSearch);
   window.removeEventListener('resize',hideNavTooltip);
@@ -379,6 +382,10 @@ onUnmounted(() => {
           </div>
         </div>
         <div class="topbar-actions">
+          <button v-if="activeLabJob" class="lab-global-job" @click="labWorkspace.tab=activeLabJob.workspace;navigate('discover')" :aria-label="'查看算法计算进度'">
+            <span class="lab-running-dot"/>{{workspaceNames[activeLabJob.workspace]}} {{activeLabJob.completed}} / {{activeLabJob.total}}
+          </button>
+          <button v-else-if="page!=='discover'&&labWorkspace.jobs[0]?.status==='SUCCEEDED'" class="lab-global-job" @click="labWorkspace.tab=labWorkspace.jobs[0].workspace;navigate('discover')">计算已完成 · 查看结果</button>
           <button
             class="icon-button notification-trigger"
             aria-label="打开通知中心"

@@ -1,5 +1,7 @@
 # 实施规格、接口与验证
 
+2026-11-15 0.3.1：按用户录屏修复发现页交互。用户计算改为可查询、可取消的后端持久任务；三个场景独立保存条件和结果，切页/返回/刷新恢复；历史查看恢复原配置并定位结果；零命中与失败有明确反馈，K线页沿用候选日线依据。范围与验收以docs/DISCOVERY-INTERACTIONS.md和docs/evidence/lab-workspaces-20261115/为准。保留原用户数据库和0.3.0发行目录，交付新的0.3.1本地客户端。
+
 2026-11-15 当前实现契约：backend/algorithm_lab.py注册与执行确定性插件，backend/jev_decision.py调用TypeSafe官方/v1/systemone；Noul判断概率由代码转为复核分流，不作为投资收益概率。history_sync.py用独立进程隔离BaoStock会话，同一证券选定整段来源，不拼接不同OHLCV来源；provider_bars保留原数据，history_coverage记录来源、完成日期与剔除项。Electron便携包带冻结Python服务和发行seed，默认8766端口、独立用户目录，启动窗口先补数再由用户进入。发现页沿用Vue原有视觉；不增加交易权限。新接口及验证规则详见docs/ALGORITHM-LAB-CONTRACT.md。
 
 2026-11-07 板块概念/ETF/债股联动：热点概念榜使用东财完整板块代码；ETF组件只接收`members.code === boardCode`的成员，按视图和板块代码重建。名称/主题匹配和季度披露持仓交集分开；后者至少3只且披露净值权重合计不少于20%，持仓加载、失败、无候选分别展示状态。可转债榜使用东财`b:MK0354`延时快照，并用`RPT_BOND_CB_LIST`的`CONVERT_STOCK_CODE`/`SECURITY_SHORT_NAME`严格联接正股；批量读取正股延时快照。涨跌差为债券涨幅减正股涨幅，显示百分点。条款缺少现行转股价/剩余规模时保留空值；`INITIAL_TRANSFER_PRICE`只标为发行初始转股价。市场页用债股工作区替换最新概念标签，bond刷新不触发板块排行刷新；自动更新遵从现有设置。用固定响应测试日期状态、证券身份、缺失行情与涨跌差，再在现行8765通过浏览器做切换回归。

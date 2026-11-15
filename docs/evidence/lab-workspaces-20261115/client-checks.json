@@ -1,0 +1,28 @@
+[
+  {
+    "check": "真实便携包全量选股运行中切设置返回并刷新，结果自动展示",
+    "packaged": true,
+    "version": "0.3.1",
+    "job_id": "562f2930-53bf-4929-80ad-6fad95fb4f35",
+    "submits": 1,
+    "result": "计算 5223 只 · 满足 336 只 · 数据不足 2 只\n完成于 11/15 22:21",
+    "coverage": {
+      "catalog_count": 5223,
+      "history_count": 5223,
+      "rows": 16805168,
+      "first_date": "1990-12-19",
+      "last_date": "2026-11-13",
+      "quality_warning_count": 67
+    }
+  },
+  {
+    "check": "候选带原始算法依据进入K线、返回及历史查看结果",
+    "stock": "平安银行",
+    "passed": true
+  },
+  {
+    "check": "退出后服务关闭，冻结运行时无缺包异常",
+    "page_errors": [],
+    "passed": true
+  }
+]

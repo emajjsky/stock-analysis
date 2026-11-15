@@ -229,27 +229,34 @@ class AlgorithmLab:
                                  '未复权日线可能受除权影响；分时为来源单日成交价序列，非完整分钟OHLC',
                                  '公告材料仅为目录/标题，尚未核对公告原文，不推断利好利空'])
 
-    def run(self,config,*,persist=True):
-        if not self.run_lock.acquire(False):raise ValueError('已有算法任务运行中')
+    def run(self,config,*,persist=True,run_id=None,progress=None,cancelled=None,prepared_pool=None):
+        if not self.run_lock.acquire(blocking=progress is not None):raise ValueError('已有算法任务运行中')
         self.running=True
         try:
             mode=config.get('mode','daily');selections=validate_selections(config.get('selections'),mode)
             combination=config.get('combination','all')
             if combination not in {'all','any'}:raise ValueError('请选择同时满足或任一满足')
-            universe=self.universe(config.get('scope','watch'),config.get('security_ids'))
-            run=dict(id=uuid.uuid4().hex,started_at=stamp(),status='RUNNING',mode=mode,scope=config.get('scope','watch'),
+            universe=prepared_pool if prepared_pool is not None else self.universe(config.get('scope','watch'),config.get('security_ids'))
+            run=dict(id=run_id or uuid.uuid4().hex,started_at=stamp(),status='RUNNING',mode=mode,scope=config.get('scope','watch'),
                      selections=selections,combination=combination,total=len(universe),rows=[],skipped=0,matched=0)
+            run['workspace']=config.get('workspace','stock' if config.get('scope')=='custom' and len(universe)==1 else 'screen')
+            run['security_ids']=[s['id'] for s in universe] if config.get('scope')=='custom' else []
+            if progress:progress(0,len(universe),'准备计算',0,0)
             for sec in universe:
+                if cancelled and cancelled():raise InterruptedError('计算已取消，上一份完整结果保留。')
                 row=self.analyze(sec,selections,mode,combination)
                 if row['missing']==len(selections):run['skipped']+=1
                 run['matched']+=int(row['matched']);run['rows'].append(row)
+                if progress:progress(len(run['rows']),len(universe),sec['name']+' '+sec['code'],run['matched'],run['skipped'])
+            if cancelled and cancelled():raise InterruptedError('计算已取消，上一份完整结果保留。')
             run['rows'].sort(key=lambda r:(r['matched'],r['hit_count'],-r['missing']),reverse=True)
             run.update(status='SUCCEEDED',finished_at=stamp())
             if persist:
                 with self.store.lock,self.store.db:
                     self.store.put('lab_run',run)
-                    history=sorted(self.store.all('lab_run'),key=lambda x:x['started_at'])
-                    for old in history[:-15]:self.store.db.execute("DELETE FROM documents WHERE kind='lab_run' AND id=?",(old['id'],))
+                    self.store.put('lab_run_summary',{k:v for k,v in run.items() if k!='rows'})
+                    history=self.store.db.execute("SELECT id FROM documents WHERE kind='lab_run' ORDER BY json_extract(payload,'$.started_at') DESC").fetchall()
+                    for old in history[15:]:self.store.db.execute("DELETE FROM documents WHERE kind IN ('lab_run','lab_run_summary') AND id=?",(old[0],))
             return run
         finally:self.running=False;self.run_lock.release()
 

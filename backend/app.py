@@ -45,7 +45,7 @@ from backend.technical import extended_indicators, intraday_indicators
 from backend.history_sync import HistorySync
 from backend.algorithm_lab import AlgorithmLab, public_catalog, validate_selections
 
-VERSION = "0.3.0"
+VERSION = "0.3.1"
 logger = logging.getLogger("workstation.backend")
 CENT = Decimal("0.01")
 LIMIT_CASH = Decimal("10000000000")
@@ -302,6 +302,7 @@ def create_app(db_path: str | Path | None = None, *, network_enabled: bool | Non
         try:
             yield
         finally:
+            jobs.stop()
             lab.stop()
             history_sync.stop(shutdown=True)
             ipo.stop()
@@ -332,6 +333,9 @@ def create_app(db_path: str | Path | None = None, *, network_enabled: bool | Non
     lab = AlgorithmLab(store, terminal, news)
     lab.history_sync = history_sync
     app.state.lab = lab
+    from backend.lab_jobs import LabJobs
+    jobs=LabJobs(lab)
+    app.state.lab_jobs=jobs
     research_data = ResearchData(store, auto_enabled=lambda: terminal.network_enabled and terminal.config()['enabled'])
     app.state.research_data = research_data
 
@@ -1226,7 +1230,7 @@ def create_app(db_path: str | Path | None = None, *, network_enabled: bool | Non
     @app.get("/api/v1/settings")
     def settings(request:Request):
         configured=bool(os.getenv("AGENT_API_BASE") and os.getenv("AGENT_MODEL"))
-        return respond(request,dict(agent_configured=configured,agent_model=os.getenv("AGENT_MODEL") if configured else None,mode=store.mode(),version=VERSION,limitations=["模型通过环境变量配置，不向浏览器返回密钥", "支持后台轮询公开行情并保存日线；不含交易所级实时订阅或真实交易", "行情刷新和算法监测独立配置；后台获取行情不触发自动选股、复核或交易", "首页支持市场快讯和公告目录；公司研究资料独立同步，公告正文未抓取；首页资讯不自动进入Agent研究证据，研究资料按信号时点过滤，不自动生成正负面结论", "不含Qlib训练、桌面打包和商业数据授权", "模拟使用示例费用、保存价格立即成交及有限主板规则，非完整交易所仿真"] ))
+        return respond(request,dict(agent_configured=configured,agent_model=os.getenv("AGENT_MODEL") if configured else None,mode=store.mode(),version=VERSION,limitations=["模型通过环境变量配置，不向浏览器返回密钥", "支持后台轮询公开行情并保存日线；不含交易所级实时订阅或真实交易", "行情刷新和算法监测独立配置；后台获取行情不触发自动选股、复核或交易", "首页支持市场快讯和公告目录；公司研究资料独立同步，公告正文未抓取；首页资讯不自动进入Agent研究证据，研究资料按信号时点过滤，不自动生成正负面结论", "不含Qlib训练和商业数据授权", "模拟使用示例费用、保存价格立即成交及有限主板规则，非完整交易所仿真"] ))
 
     @app.get('/api/v1/data/catalog')
     def catalog_status(request: Request):
@@ -1473,8 +1477,25 @@ def create_app(db_path: str | Path | None = None, *, network_enabled: bool | Non
 
     @app.get('/api/v1/lab/runs')
     def lab_runs(request: Request):
-        runs=sorted(store.all('lab_run'),key=lambda x:x['started_at'],reverse=True)
-        return respond(request,[{k:v for k,v in r.items() if k!='rows'} for r in runs])
+        with store.lock,store.db:
+            # 老版本记录首次读取时补轻量摘要；进度轮询不反复解析全市场完整结果。
+            missing=store.db.execute("SELECT json_remove(r.payload,'$.rows') FROM documents r WHERE r.kind='lab_run' AND NOT EXISTS (SELECT 1 FROM documents s WHERE s.kind='lab_run_summary' AND s.id=r.id)").fetchall()
+            for item in missing:store.put('lab_run_summary',json.loads(item[0]))
+            runs=sorted(store.all('lab_run_summary'),key=lambda r:r['started_at'],reverse=True)
+        return respond(request,runs)
+
+    @app.get('/api/v1/lab/jobs')
+    def lab_jobs(request: Request):
+        return respond(request,jobs.list())
+
+    @app.post('/api/v1/lab/jobs')
+    def lab_job_start(request: Request, body: dict):
+        try:return respond(request,jobs.start(body))
+        except ValueError as exc:raise Problem(422,'ALGORITHM_INVALID',str(exc))
+
+    @app.post('/api/v1/lab/jobs/{job_id}/cancel')
+    def lab_job_cancel(request: Request, job_id: str):
+        return respond(request,jobs.cancel(job_id))
 
     @app.get('/api/v1/lab/runs/{run_id}')
     def lab_run_detail(request: Request, run_id: str):

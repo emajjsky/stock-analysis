@@ -1,5 +1,5 @@
 ﻿param(
-    [string]$Version = '0.3.0',
+    [string]$Version = '0.3.1',
     [string]$OutputDirectory = '',
     [string]$SeedPath = '.runtime/release/seed.db',
     [switch]$SkipBackendBuild,
