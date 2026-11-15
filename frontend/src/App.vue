@@ -42,6 +42,7 @@ import IpoView from './views/IpoView.vue';
 import WebBrowserView from './views/WebBrowserView.vue';
 import './webBrowser';
 import {activeLabJob,labWorkspace,startLabWorkspace,stopLabWorkspace,workspaceNames} from './labWorkspace';
+import {version as clientVersion} from '../package.json';
 const nav = [
   { id: "home", name: "首页", icon: ChartNoAxesCombined },
   { id: "discover", name: "发现", icon: Compass },
@@ -407,6 +408,12 @@ onUnmounted(() => {
           <Database :size="13" />数据设置
         </button>
       </div>
+      <section v-if="activeLabJob" class="lab-persistent-progress" role="status" :data-job-id="activeLabJob.id">
+        <div><strong>{{activeLabJob.status==='CANCELLING'?'正在取消筛查':'算法筛查中'}} · {{workspaceNames[activeLabJob.workspace]}}</strong><span>{{activeLabJob.completed.toLocaleString()}} / {{activeLabJob.total.toLocaleString()}} 只 · {{Math.floor(activeLabJob.completed/(activeLabJob.total||1)*100)}}%</span></div>
+        <progress :value="activeLabJob.completed" :max="activeLabJob.total||1" aria-label="全局算法筛查进度"/>
+        <div><span class="tiny">已满足 {{activeLabJob.matched}} 只 · {{activeLabJob.current}}</span><button class="text-button" @click="labWorkspace.tab=activeLabJob.workspace;navigate('discover')">查看筛查任务</button></div>
+        <p v-if="labWorkspace.connectionError" class="tiny">连接暂时中断，保留上次进度，正在重连…</p>
+      </section>
       <main>
         <div v-if="error" class="error-box">
           <strong>本地服务连接失败</strong>
@@ -455,7 +462,7 @@ onUnmounted(() => {
         /></template>
       </main>
       <footer v-if="!['market','ipo','web'].includes(page) || stock" class="app-footer">
-        <span>王炸</span
+        <span>王炸 {{clientVersion}}</span
         ><span
           >所有时间均为北京时间 · 数据截至 {{ date(state.meta.as_of) }}</span
         >

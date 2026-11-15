@@ -8,6 +8,7 @@ const { pathToFileURL } = require('node:url');
 if(!process.env.WANGZHA_PORT)process.env.WANGZHA_PORT=app.isPackaged?'8766':'8765';
 const { publicURL, trustedSender, LOCAL_ORIGIN } = require('./url-policy.cjs');
 const {ensureSeed}=require('./storage.cjs');
+const {verifyBackend,prepareFrontend,entryURL}=require('./delivery.cjs');
 const root = path.resolve(__dirname, '..');
 let window, child, browserSession, active, visible = false, bounds;
 let nextId = 0;
@@ -50,8 +51,7 @@ function available() {
 async function ensureBackend() {
   if (await available()) {
     if(app.isPackaged)throw new Error('客户端端口已被占用。请关闭已有王炸客户端，或在启动配置中指定其他 WANGZHA_PORT。');
-    const response=await fetch(LOCAL_ORIGIN+'/api/v1/lab/catalog');
-    if(!response.ok) throw new Error('8765端口运行着旧版本服务，请关闭旧服务后重试。');
+    await verifyBackend(LOCAL_ORIGIN,app.getVersion());
     return;
   }
   const bundled=path.join(process.resourcesPath,'backend','wangzha-backend.exe');
@@ -64,7 +64,7 @@ async function ensureBackend() {
     const log=fs.openSync(path.join(userRoot,'backend.log'),'a');
     child=spawn(bundled,[],{cwd:path.dirname(bundled),windowsHide:true,stdio:['ignore',log,log],env:{...process.env,WORKSTATION_DB:database}});
     child.on('error',()=>{});
-    for(let i=0;i<90;i++){if(await available())return;await new Promise(r=>setTimeout(r,500));}
+    for(let i=0;i<90;i++){if(await available()){await verifyBackend(LOCAL_ORIGIN,app.getVersion());return;}await new Promise(r=>setTimeout(r,500));}
     throw new Error('内置数据服务未就绪，请检查数据目录中的 backend.log。');
   }
   const venvPython = path.join(root, '.venv', 'Scripts', 'python.exe');
@@ -75,7 +75,7 @@ async function ensureBackend() {
   child.on('error', () => { failed = true; });
   child.on('exit', () => { failed = true; });
   for (let i = 0; i < 60; i++) {
-    if (await available()) return;
+    if (await available()) {await verifyBackend(LOCAL_ORIGIN,app.getVersion());return;}
     if (failed) break;
     await new Promise(resolve => setTimeout(resolve, 500));
   }
@@ -146,6 +146,7 @@ app.on('second-instance',()=>{const target=window&&!window.isDestroyed()?window:
 app.whenReady().then(async () => {
   if(!single)return;
   await ensureBackend();
+  await prepareFrontend(session.defaultSession);
   app.setAppUserModelId('Stock.Wangzha');
   browserSession = session.fromPartition('persist:wangzha-external');
   browserSession.setPermissionRequestHandler((_, __, callback) => callback(false));
@@ -225,7 +226,7 @@ app.whenReady().then(async () => {
     if(event.sender!==startup.webContents||event.senderFrame!==event.sender.mainFrame||event.senderFrame.url!==startupURL)throw new Error('无权访问启动服务');
     if(command==='enter'){
       if(entering)return;entering=true;
-      await window.loadURL(LOCAL_ORIGIN+'/#/discover');if(process.env.WANGZHA_TEST_HIDDEN!=='1')window.show();startup.close();return;
+      await window.loadURL(entryURL(LOCAL_ORIGIN,app.getVersion()),{extraHeaders:'Cache-Control: no-cache\n'});if(process.env.WANGZHA_TEST_HIDDEN!=='1')window.show();startup.close();return;
     }
     if(command==='status')return (await fetch(LOCAL_ORIGIN+'/api/v1/history/status')).json().then(x=>x.data);
     if(command==='start'){

@@ -1,5 +1,7 @@
 # 实施规格、接口与验证
 
+2026-11-15 0.3.2：0.3.1干净配置验收遗漏旧HTML缓存升级路径，真实用户仍加载旧发现页。启动仅刷新HTTP缓存并校验服务版本与任务接口，保留本地配置和用户数据库；入口禁止缓存，增加跨页面吸附筛查进度条。必须覆盖同一旧缓存配置目录升级和原有默认用户目录，证据见docs/evidence/client-upgrade-20261115/。
+
 2026-11-15 0.3.1：按用户录屏修复发现页交互。用户计算改为可查询、可取消的后端持久任务；三个场景独立保存条件和结果，切页/返回/刷新恢复；历史查看恢复原配置并定位结果；零命中与失败有明确反馈，K线页沿用候选日线依据。范围与验收以docs/DISCOVERY-INTERACTIONS.md和docs/evidence/lab-workspaces-20261115/为准。保留原用户数据库和0.3.0发行目录，交付新的0.3.1本地客户端。
 
 2026-11-15 当前实现契约：backend/algorithm_lab.py注册与执行确定性插件，backend/jev_decision.py调用TypeSafe官方/v1/systemone；Noul判断概率由代码转为复核分流，不作为投资收益概率。history_sync.py用独立进程隔离BaoStock会话，同一证券选定整段来源，不拼接不同OHLCV来源；provider_bars保留原数据，history_coverage记录来源、完成日期与剔除项。Electron便携包带冻结Python服务和发行seed，默认8766端口、独立用户目录，启动窗口先补数再由用户进入。发现页沿用Vue原有视觉；不增加交易权限。新接口及验证规则详见docs/ALGORITHM-LAB-CONTRACT.md。

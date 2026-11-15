@@ -45,7 +45,7 @@ from backend.technical import extended_indicators, intraday_indicators
 from backend.history_sync import HistorySync
 from backend.algorithm_lab import AlgorithmLab, public_catalog, validate_selections
 
-VERSION = "0.3.1"
+VERSION = "0.3.2"
 logger = logging.getLogger("workstation.backend")
 CENT = Decimal("0.01")
 LIMIT_CASH = Decimal("10000000000")
@@ -386,6 +386,9 @@ def create_app(db_path: str | Path | None = None, *, network_enabled: bool | Non
             return error(request, 500, "INTERNAL_ERROR", "服务处理失败，请查看本地诊断")
         response.headers["X-Content-Type-Options"] = "nosniff"
         response.headers["X-Request-ID"] = request.state.request_id
+        response.headers["X-Wangzha-Version"] = VERSION
+        if not request.url.path.startswith('/assets/'):
+            response.headers['Cache-Control'] = 'no-store'
         return response
 
     @app.exception_handler(Problem)
@@ -1533,8 +1536,9 @@ def create_app(db_path: str | Path | None = None, *, network_enabled: bool | Non
         candidate=(dist/path).resolve()
         if dist.resolve() not in candidate.parents and candidate!=dist.resolve():
             raise Problem(403,"INVALID_PATH","文件路径不合法")
-        if candidate.is_file():return FileResponse(candidate)
-        if (dist/"index.html").is_file():return FileResponse(dist/"index.html")
+        if candidate.is_file():return FileResponse(candidate,headers={'Cache-Control':'public, max-age=31536000, immutable'} if path.startswith('assets/') else {'Cache-Control':'no-store'})
+        if path.startswith('assets/'):raise Problem(404,"NOT_FOUND","页面资源已更新，请刷新页面")
+        if (dist/"index.html").is_file():return FileResponse(dist/"index.html",headers={'Cache-Control':'no-store'})
         raise Problem(404,"FRONTEND_NOT_BUILT","前端尚未构建，请先在frontend目录执行npm run build")
 
     return app

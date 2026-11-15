@@ -1,5 +1,5 @@
 ﻿param(
-    [string]$Version = '0.3.1',
+    [string]$Version = '0.3.2',
     [string]$OutputDirectory = '',
     [string]$SeedPath = '.runtime/release/seed.db',
     [switch]$SkipBackendBuild,
@@ -35,7 +35,7 @@ if ($LASTEXITCODE -ne 0) { throw '客户端图标/版本资源写入失败' }
 $resources = Join-Path $output 'resources'
 $appDirectory = Join-Path $resources 'app'
 New-Item -ItemType Directory -Path $appDirectory | Out-Null
-foreach ($file in @('main.cjs','preload.cjs','url-policy.cjs','storage.cjs','tooltip.html','startup.html','startup.cjs','startup-preload.cjs','icon.ico')) {
+foreach ($file in @('main.cjs','preload.cjs','url-policy.cjs','storage.cjs','delivery.cjs','tooltip.html','startup.html','startup.cjs','startup-preload.cjs','icon.ico')) {
     Copy-Item -LiteralPath (Join-Path $projectRoot "desktop/$file") -Destination $appDirectory
 }
 @{ name='wangzha-desktop';version=$Version;main='main.cjs';description='王炸股票研究客户端' } | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $appDirectory 'package.json') -Encoding utf8
