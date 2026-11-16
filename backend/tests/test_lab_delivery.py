@@ -24,13 +24,14 @@ def test_live_stale_quote_is_visible_but_cannot_trigger(tmp_path):
         s.put('market_snapshot',dict(id=sid,change_pct='1',source_time='2020-01-01T01:30:00Z'))
     task=lab.save_task(dict(name='过期验证',mode='intraday',scope='custom',security_ids=[sid],selections=[{'id':'price-change'}],enabled=True))
     lab.tick();assert not s.all('lab_event')
-    assert '5分钟' in s.get('lab_task',task['id'])['error']
+    assert '非今日' in s.get('lab_task',task['id'])['error']
     with s.db:s.put('market_snapshot',dict(id=sid,change_pct='5',source_time='2020-01-02T01:30:00Z'))
     task=s.get('lab_task',task['id']);task.pop('last_checked_at',None)
     with s.db:s.put('lab_task',task)
     lab.tick();assert not s.all('notification')
     row=lab.run(dict(scope='custom',security_ids=[sid],mode='intraday',selections=[{'id':'price-change'}]))['rows'][0]
-    assert row['data_status']=='STALE' and row['matched']
+    assert row['data_status']=='STALE' and not row['matched']
+    assert row['results'][0]['matched']  # 保留原始规则证据，但过期输入不进入候选。
     assert row['data_as_of']=='2020-01-02T01:30:00Z'
 
 
@@ -87,7 +88,7 @@ def test_new_api_auth_records_and_models_without_key(tmp_path,monkeypatch):
     with TestClient(app,base_url='http://127.0.0.1:8765') as c:
         assert c.post('/api/v1/lab/run',json={}).status_code==403
         c.get('/api/v1/session');c.headers['Origin']='http://127.0.0.1:8765'
-        assert len(c.get('/api/v1/lab/catalog').json()['data'])==9
+        assert len(c.get('/api/v1/lab/catalog').json()['data'])==20
         model=c.get('/api/v1/lab/model-status').json()['data']
         assert model['jev']['configured'] is False and 'key' not in model['jev']
         bad=c.post('/api/v1/lab/run',json={'selections':[None]})

@@ -8,8 +8,9 @@ export interface DesktopBrowser {
 declare global { interface Window { wangzhaBrowser?: DesktopBrowser } }
 export const browserPresets = [
   { label: '同花顺行情', url: 'https://q.10jqka.com.cn/' },
-  { label: '同花顺新股', url: 'https://data.10jqka.com.cn/ipo/xgsgyzq/' },
-  { label: '东方财富新股', url: 'https://data.eastmoney.com/xg/' },
+  { label: '东方财富行情', url: 'https://quote.eastmoney.com/center/' },
+  { label: '新浪财经', url: 'https://finance.sina.com.cn/stock/' },
+  { label: '巨潮资讯', url: 'https://www.cninfo.com.cn/' },
 ];
 export function openWeb(url: string) {
   window.dispatchEvent(new CustomEvent('wangzha-open-browser', { detail: { url } }));

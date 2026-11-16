@@ -1,0 +1,177 @@
+{
+  "checked_at": "2026-11-16T01:55:50.778315Z",
+  "job": {
+    "id": "4e034a23681f43c3abdcf9a0498eee61",
+    "run_id": "4e034a23681f43c3abdcf9a0498eee61",
+    "status": "SUCCEEDED",
+    "workspace": "screen",
+    "config": {
+      "mode": "intraday",
+      "scope": "custom",
+      "workspace": "screen",
+      "selections": [
+        {
+          "id": "intraday-vwap",
+          "parameters": {}
+        }
+      ],
+      "combination": "all",
+      "security_ids": [
+        "LIVE.SZ.000001",
+        "LIVE.SH.600519",
+        "LIVE.SH.688981"
+      ],
+      "batch_name": "三只公开分时下载实测",
+      "refresh_inputs": true
+    },
+    "request_hash": "a3f115d851ba695597da326a6db62c288a766b4789b77b3501def9cb20c4ae65",
+    "started_at": "2026-11-16T01:55:49.750555Z",
+    "updated_at": "2026-11-16T01:55:50.778315Z",
+    "finished_at": "2026-11-16T01:55:50.778315Z",
+    "total": 3,
+    "completed": 3,
+    "matched": 2,
+    "skipped": 0,
+    "current": "计算完成",
+    "error": null,
+    "input_errors": []
+  },
+  "rows": [
+    {
+      "security": {
+        "id": "LIVE.SZ.000001",
+        "name": "平安银行",
+        "code": "000001"
+      },
+      "matched": true,
+      "hit_count": 1,
+      "total": 1,
+      "missing": 0,
+      "action": "关注机会",
+      "results": [
+        {
+          "id": "intraday-vwap",
+          "name": "分时均价线之上",
+          "version": "1.0.0",
+          "status": "READY",
+          "matched": true,
+          "stance": "WATCH",
+          "value": 12.1142,
+          "reason": "当前 12.140 / 来源成交均价 12.114",
+          "markers": [
+            {
+              "time": "2026-11-16T01:55:00Z",
+              "text": "分时均价线之上",
+              "direction": "WATCH"
+            }
+          ]
+        }
+      ],
+      "data_as_of": "2026-11-16T01:55:00Z",
+      "price": "12.14",
+      "input_hash": "924203784d26a849a0fa5b9d006aea9dfec3a741ec25b70fafda14bced6de90d",
+      "mode": "intraday",
+      "adjustment": "NONE",
+      "generated_at": "2026-11-16T01:55:50.777315Z",
+      "news_ids": [],
+      "news_evidence": [],
+      "diagnosis": null,
+      "data_status": "CURRENT",
+      "data_note": "今日盘中快照；午休以11:30为基准检查时效",
+      "limitations": [
+        "研究信号，不是已校准盈利概率；未结合个人仓位形成买卖指令",
+        "未复权日线可能受除权影响；分时为来源单日成交价序列，非完整分钟OHLC",
+        "公告材料仅为目录/标题，尚未核对公告原文，不推断利好利空"
+      ]
+    },
+    {
+      "security": {
+        "id": "LIVE.SH.600519",
+        "name": "贵州茅台",
+        "code": "600519"
+      },
+      "matched": true,
+      "hit_count": 1,
+      "total": 1,
+      "missing": 0,
+      "action": "关注机会",
+      "results": [
+        {
+          "id": "intraday-vwap",
+          "name": "分时均价线之上",
+          "version": "1.0.0",
+          "status": "READY",
+          "matched": true,
+          "stance": "WATCH",
+          "value": 1433.8335,
+          "reason": "当前 1437.160 / 来源成交均价 1433.833",
+          "markers": [
+            {
+              "time": "2026-11-16T01:55:00Z",
+              "text": "分时均价线之上",
+              "direction": "WATCH"
+            }
+          ]
+        }
+      ],
+      "data_as_of": "2026-11-16T01:55:00Z",
+      "price": "1437.16",
+      "input_hash": "46f9d4c42811b5780491a0ddb24f95e9e8de918d43f5f55cfdcbe3b85b8bc676",
+      "mode": "intraday",
+      "adjustment": "NONE",
+      "generated_at": "2026-11-16T01:55:50.777315Z",
+      "news_ids": [],
+      "news_evidence": [],
+      "diagnosis": null,
+      "data_status": "CURRENT",
+      "data_note": "今日盘中快照；午休以11:30为基准检查时效",
+      "limitations": [
+        "研究信号，不是已校准盈利概率；未结合个人仓位形成买卖指令",
+        "未复权日线可能受除权影响；分时为来源单日成交价序列，非完整分钟OHLC",
+        "公告材料仅为目录/标题，尚未核对公告原文，不推断利好利空"
+      ]
+    },
+    {
+      "security": {
+        "id": "LIVE.SH.688981",
+        "name": "中芯国际",
+        "code": "688981"
+      },
+      "matched": false,
+      "hit_count": 0,
+      "total": 1,
+      "missing": 0,
+      "action": "等待条件",
+      "results": [
+        {
+          "id": "intraday-vwap",
+          "name": "分时均价线之上",
+          "version": "1.0.0",
+          "status": "READY",
+          "matched": false,
+          "stance": "WAIT",
+          "value": 107.2746,
+          "reason": "当前 106.850 / 来源成交均价 107.275",
+          "markers": []
+        }
+      ],
+      "data_as_of": "2026-11-16T01:55:00Z",
+      "price": "106.85",
+      "input_hash": "7d12b3718ce52907972747cbb1b4b639a5cb3210f53089ee380805f44c5896cd",
+      "mode": "intraday",
+      "adjustment": "NONE",
+      "generated_at": "2026-11-16T01:55:50.777315Z",
+      "news_ids": [],
+      "news_evidence": [],
+      "diagnosis": null,
+      "data_status": "CURRENT",
+      "data_note": "今日盘中快照；午休以11:30为基准检查时效",
+      "limitations": [
+        "研究信号，不是已校准盈利概率；未结合个人仓位形成买卖指令",
+        "未复权日线可能受除权影响；分时为来源单日成交价序列，非完整分钟OHLC",
+        "公告材料仅为目录/标题，尚未核对公告原文，不推断利好利空"
+      ]
+    }
+  ],
+  "note": "实际LabJobs依次更新腾讯报价和分时，再冻结缓存计算；未来采样点按截止时间过滤。仅3只实时来源验证，不代表完整市场覆盖。"
+}

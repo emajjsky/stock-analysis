@@ -13,6 +13,7 @@ from datetime import datetime, timedelta, timezone
 import httpx
 
 from backend.technical import ema
+from backend.lab_research import EXTRA, EXTRA_MAP, QUOTE_IDS, extra_compute, diagnose, event_assessment, session_context
 from backend.jev_decision import decide, configuration as jev_configuration
 
 
@@ -37,9 +38,10 @@ CATALOG = [
          parameters={'period':14,'max_pct':5}, schema={'period':[3,60],'max_pct':[0.5,30]}, supports=['daily']),
     dict(id='price-change', name='盘中涨跌阈值', group='分时', description='按最新来源报价相对昨收的涨跌幅检查阈值。', minimum=0,
          parameters={'threshold':3}, schema={'threshold':[-20,20]}, supports=['intraday']),
-    dict(id='announcement', name='新公告事件', group='资讯', description='精确关联该证券的新公告触发研究提醒，不推导利好利空。', minimum=0,
+    dict(id='announcement', name='公告关联线索', group='资讯', description='检索近期缓存公告并展示标题方向线索；覆盖不全、未读正文时不推导交易结论。', minimum=0,
          parameters={}, schema={}, supports=['news']),
 ]
+CATALOG.extend(EXTRA)
 BY_ID = {a['id']:a for a in CATALOG}
 
 
@@ -48,8 +50,8 @@ def public_catalog():
 
 
 def validate_selections(selections, mode):
-    if not isinstance(selections,list) or not selections or len(selections)>9:
-        raise ValueError('请选择1至9个算法')
+    if not isinstance(selections,list) or not selections or len(selections)>len(CATALOG):
+        raise ValueError(f'请选择1至{len(CATALOG)}个算法')
     clean=[]
     seen=set()
     for item in selections:
@@ -68,14 +70,16 @@ def validate_selections(selections, mode):
                 raise ValueError(f'{definition["name"]}：{key}须在{low}至{high}之间')
             if key in {'window','period','fast','slow'} and int(value)!=value:
                 raise ValueError('周期参数必须为整数')
-        if aid=='ma-trend' and params['fast']>=params['slow']:
+        if aid in {'ma-trend','ma-cross'} and params['fast']>=params['slow']:
             raise ValueError('短周期必须小于长周期')
+        if 'lower' in params and 'upper' in params and params['lower']>=params['upper']:raise ValueError('下限必须小于上限')
         clean.append({'id':aid,'parameters':params})
     return clean
 
 
 def compute(selection, bars, quote=None, mode='daily', news=None):
     aid=selection['id']; p=selection['parameters']; definition=BY_ID[aid]
+    if aid in EXTRA_MAP:return extra_compute(selection,bars,quote)
     result=dict(id=aid,name=definition['name'],version='1.0.0',status='READY',matched=False,
                 stance='WAIT',value=None,reason='',markers=[])
     window=int(p.get('window',0));period=int(p.get('period',0))
@@ -147,6 +151,7 @@ class AlgorithmLab:
         self.store,self.terminal,self.news=store,terminal,news
         self.run_lock=threading.Lock();self.stop_event=threading.Event();self.thread=None
         self.running=False
+        self.context=threading.local()
 
     def universe(self,scope,security_ids=None):
         if security_ids is not None and (not isinstance(security_ids,list) or len(security_ids)>6000 or any(not isinstance(s,str) or len(s)>80 for s in security_ids)):
@@ -176,6 +181,16 @@ class AlgorithmLab:
                 return 'HISTORY','已完成日线；请核对数据日期与补数状态'
             source=datetime.fromisoformat(data_at.replace('Z','+00:00'))
             if source.tzinfo is None:source=source.replace(tzinfo=timezone(timedelta(hours=8)))
+            if source>now+timedelta(seconds=60):return 'STALE','来源时间晚于当前时刻，不能采用'
+            if mode=='intraday':
+                local=source.astimezone(china.tzinfo)
+                if local.date()!=china.date():return 'STALE','非今日分时/报价：'+local.date().isoformat()+'，不作为当前盘中候选'
+                minute=china.hour*60+china.minute
+                reference=now
+                if 690<=minute<780:reference=china.replace(hour=11,minute=30,second=0,microsecond=0)
+                elif minute>=900:reference=china.replace(hour=15,minute=0,second=0,microsecond=0)
+                if (reference-source).total_seconds()>300:return 'STALE','落后当前交易阶段超过5分钟，不作为有效盘中结果'
+                return ('INTRADAY_ARCHIVE','当日收盘分时快照；点击运行不会持续更新') if minute>=900 else ('CURRENT','今日盘中快照；午休以11:30为基准检查时效')
             # 盘中仅接受5分钟内来源；休市仍可研究，但不会生成实时通知。
             if mode in {'intraday','news'} and (now-source).total_seconds()>300:
                 return 'STALE','来源超过5分钟，仅供查看，不触发监测'
@@ -183,11 +198,15 @@ class AlgorithmLab:
         except (ValueError,TypeError):return 'STALE','来源时间无效，不触发监测'
 
     def analyze(self,sec,selections,mode='daily',combination='all'):
-        sid=sec['id'];quote=self.store.get('market_snapshot',sid,False) or {}
+        ctx=getattr(self.context,'value',None) or {}
+        sid=sec['id'];quote=ctx.get('quotes',{}).get(sid,{}) if ctx else self.store.get('market_snapshot',sid,False) or {}
         if mode=='intraday':
-            cached=self.store.get('stock_intraday',sid,False) or {}
-            bars=[{'time':p['time'],'close':p['value']} for p in cached.get('points',[])]
-            data_at=quote.get('source_time') if all(s['id']=='price-change' for s in selections) else cached.get('source_time')
+            cached=ctx.get('series',{}).get(sid,{}) if ctx else self.store.get('stock_intraday',sid,False) or {}
+            cutoff=ctx.get('cutoff',stamp())
+            points=sorted({p['time']:p for p in cached.get('points',[]) if p['time']<=cutoff}.values(),key=lambda p:p['time'])
+            latest_day=points[-1]['time'][:10] if points else None
+            bars=[{**p,'close':p['value']} for p in points if p['time'][:10]==latest_day]
+            data_at=quote.get('source_time') if all(s['id'] in QUOTE_IDS for s in selections) else (bars[-1]['time'] if bars else None)
         elif mode=='news':bars=[];data_at=None
         else:
             # 当前算法最长250日；保留600根用于EMA/RSI预热，全历史仍保留于数据库。
@@ -197,33 +216,43 @@ class AlgorithmLab:
                 bars=list(reversed(saved or [dict(r) for r in self.store.db.execute('SELECT * FROM provider_bars WHERE security_id=? AND provider_id=? ORDER BY time DESC LIMIT 600',(sid,provider))]))
             # 真实当日未完成的日线绝不进入已确认策略。
             if sid.startswith('LIVE.'):
-                china=datetime.now(timezone(timedelta(hours=8)))
+                china=datetime.fromisoformat(ctx['cutoff'].replace('Z','+00:00')).astimezone(timezone(timedelta(hours=8))) if ctx else datetime.now(timezone(timedelta(hours=8)))
                 bars=[b for b in bars if b['time']<china.date().isoformat() or (b['time']==china.date().isoformat() and china.hour>=16)]
             data_at=bars[-1]['time'] if bars else None
         articles=[]
-        if mode=='news':
+        if mode=='news' or ctx.get('workspace')=='stock':
             refreshed=[]
-            for feed in self.store.all('news_feed'):
-                articles.extend(i for i in feed.get('items',[]) if i.get('kind')=='announcement' and any(s.get('id')==sid for s in i.get('securities',[])))
-                if feed.get('updated_at'):refreshed.append(feed['updated_at'])
-            articles=list({a['id']:a for a in articles}.values())
-            data_at=max(refreshed,default=None)
+            for feed in (ctx.get('feeds',[]) if ctx else self.store.all('news_feed')):
+                linked=[i for i in feed.get('items',[]) if i.get('kind')=='announcement' and any(s.get('id')==sid for s in i.get('securities',[]))]
+                articles.extend(linked)
+                if linked and feed.get('updated_at'):refreshed.append(feed['updated_at'])
+            cutoff=ctx.get('cutoff',stamp());since=(datetime.fromisoformat(cutoff.replace('Z','+00:00'))-timedelta(days=7)).date().isoformat()
+            articles=list({a['id']:a for a in articles if since<=(a.get('published_at') or '')[:10]<=cutoff[:10]}.values())
+            if mode=='news':data_at=max(refreshed,default=None)
         results=[compute(s,bars,quote,mode,articles) for s in selections]
+        if mode=='news' and not articles:
+            results=[{**r,'status':'MISSING','matched':False,'reason':'近7日已缓存目录未发现关联；来源覆盖不完整，不等于没有公告'} for r in results]
         data_status,data_note=self.freshness(sid,mode,data_at)
+        if mode=='news':data_note='近7日已缓存公告目录；时间为抓取时点，非公告发布时间，未读正文'
+        if mode=='intraday' and any(s['id'] in QUOTE_IDS for s in selections) and any(s['id'] not in QUOTE_IDS for s in selections):
+            qs,qn=self.freshness(sid,mode,quote.get('source_time'))
+            if qs in {'MISSING','STALE'}:data_status,data_note=qs,'报价与分时混合：'+qn
         available=[r for r in results if r['status']=='READY'];missing=len(results)-len(available)
         hits=sum(r['matched'] for r in available)
         matched=(hits==len(results) and not missing) if combination=='all' else hits>0
         risk=any(r['stance']=='RISK' for r in results)
         conflict=matched and any(r['stance']=='WEAK' for r in results)
-        action='风险观察' if risk else '信号分歧' if conflict else '关注机会' if matched else '等待条件'
+        if missing or (sid.startswith('LIVE.') and data_status in {'MISSING','STALE'}):matched=False
+        action='公告待核实' if mode=='news' and matched else '输入不完整' if missing else '数据过期' if data_status=='STALE' else '风险观察' if risk else '信号分歧' if conflict else '关注机会' if matched else '等待条件'
         # EMA/RSI也使用预热段；哈希必须涵盖实际参与计算的全部数据。
-        inputs=[{k:b[k] for k in ('time','open','high','low','close','volume','amount') if k in b} for b in bars]
-        digest=hashlib.sha256(json.dumps({'sid':sid,'bars':inputs,'quote':{k:quote.get(k) for k in ('source_time','price','change_pct')} if mode=='intraday' else None,'selections':selections,'articles':[a['id'] for a in articles]},sort_keys=True).encode()).hexdigest()
+        inputs=[{k:b[k] for k in ('time','open','high','low','close','volume','amount','average_price') if k in b} for b in bars]
+        digest=hashlib.sha256(json.dumps({'sid':sid,'bars':inputs,'quote':{k:quote.get(k) for k in ('source_time','price','change_pct','turnover_rate','high','low')} if mode=='intraday' else None,'selections':selections,'articles':[{k:a.get(k) for k in ('id','title','published_at','url')} for a in articles]},sort_keys=True).encode()).hexdigest()
         return dict(security={'id':sid,'name':sec['name'],'code':sec['code']},matched=matched,hit_count=hits,
                     total=len(results),missing=missing,action=action,results=results,data_as_of=data_at,
-                    price=bars[-1]['close'] if bars else quote.get('price'),input_hash=digest,
+                    price=quote.get('price') if mode=='intraday' and all(s['id'] in QUOTE_IDS for s in selections) else bars[-1]['close'] if bars else quote.get('price'),input_hash=digest,
                     mode=mode,adjustment='NONE',generated_at=stamp(),news_ids=sorted(a['id'] for a in articles),
-                    news_evidence=[{**{k:a.get(k) for k in ('id','title','url','published_at','source')},'evidence_type':'TITLE_ONLY'} for a in sorted(articles,key=lambda a:a.get('published_at',''),reverse=True)[:10]],
+                    news_evidence=[event_assessment(a) for a in sorted(articles,key=lambda a:a.get('published_at',''),reverse=True)[:10]],
+                    diagnosis=diagnose(bars) if mode=='daily' and ctx.get('workspace')=='stock' else None,
                     data_status=data_status,data_note=data_note,
                     limitations=['研究信号，不是已校准盈利概率；未结合个人仓位形成买卖指令',
                                  '未复权日线可能受除权影响；分时为来源单日成交价序列，非完整分钟OHLC',
@@ -239,26 +268,37 @@ class AlgorithmLab:
             universe=prepared_pool if prepared_pool is not None else self.universe(config.get('scope','watch'),config.get('security_ids'))
             run=dict(id=run_id or uuid.uuid4().hex,started_at=stamp(),status='RUNNING',mode=mode,scope=config.get('scope','watch'),
                      selections=selections,combination=combination,total=len(universe),rows=[],skipped=0,matched=0)
+            run['batch_name']=str(config.get('batch_name',''))[:60]
+            run.update(session_context())
+            run['config_hash']=hashlib.sha256(json.dumps(dict(mode=mode,scope=config.get('scope','watch'),security_ids=sorted(s['id'] for s in universe),selections=selections,combination=combination),sort_keys=True).encode()).hexdigest()
             run['workspace']=config.get('workspace','stock' if config.get('scope')=='custom' and len(universe)==1 else 'screen')
             run['security_ids']=[s['id'] for s in universe] if config.get('scope')=='custom' else []
+            cutoff=stamp();run['data_cutoff']=cutoff;run['input_policy']='运行前采集缓存快照；来源时间逐只展示，不声称全市场同秒同步'
+            with self.store.lock:
+                self.context.value=dict(cutoff=cutoff,workspace=run['workspace'],quotes={q['id']:q for q in self.store.all('market_snapshot')} if mode=='intraday' else {},series={q['id']:q for q in self.store.all('stock_intraday')} if mode=='intraday' else {},feeds=self.store.all('news_feed') if mode=='news' or run['workspace']=='stock' else [])
+            run['input_errors']=config.get('input_errors',[])
+            run['stats_version']=2;run['skipped_all']=0;run['stale']=0;run['eligible']=0
             if progress:progress(0,len(universe),'准备计算',0,0)
             for sec in universe:
                 if cancelled and cancelled():raise InterruptedError('计算已取消，上一份完整结果保留。')
                 row=self.analyze(sec,selections,mode,combination)
-                if row['missing']==len(selections):run['skipped']+=1
+                if row['missing']>0:run['skipped']+=1
+                if row['missing']==len(selections):run['skipped_all']+=1
+                if row['data_status']=='STALE':run['stale']+=1
+                if not row['missing'] and row['data_status'] not in {'STALE','MISSING'}:run['eligible']+=1
                 run['matched']+=int(row['matched']);run['rows'].append(row)
                 if progress:progress(len(run['rows']),len(universe),sec['name']+' '+sec['code'],run['matched'],run['skipped'])
             if cancelled and cancelled():raise InterruptedError('计算已取消，上一份完整结果保留。')
             run['rows'].sort(key=lambda r:(r['matched'],r['hit_count'],-r['missing']),reverse=True)
-            run.update(status='SUCCEEDED',finished_at=stamp())
+            source_dates=sorted(r['data_as_of'] for r in run['rows'] if r.get('data_as_of'))
+            run.update(status='SUCCEEDED',finished_at=stamp(),source_from=source_dates[0] if source_dates else None,source_to=source_dates[-1] if source_dates else None,coverage_status='NONE' if not run['eligible'] else 'PARTIAL' if run['eligible']<run['total'] else 'COMPLETE')
             if persist:
                 with self.store.lock,self.store.db:
                     self.store.put('lab_run',run)
                     self.store.put('lab_run_summary',{k:v for k,v in run.items() if k!='rows'})
-                    history=self.store.db.execute("SELECT id FROM documents WHERE kind='lab_run' ORDER BY json_extract(payload,'$.started_at') DESC").fetchall()
-                    for old in history[15:]:self.store.db.execute("DELETE FROM documents WHERE kind IN ('lab_run','lab_run_summary') AND id=?",(old[0],))
+                    # 用户批次不按次数自动淘汰；旧版已删除的记录无法恢复。
             return run
-        finally:self.running=False;self.run_lock.release()
+        finally:self.context.value=None;self.running=False;self.run_lock.release()
 
     def save_task(self,config):
         allowed={'id','name','scope','security_ids','mode','selections','combination','interval_seconds','enabled','auto_review','use_jev'}
@@ -302,7 +342,7 @@ class AlgorithmLab:
         elif task['mode']=='intraday':
             result=self.terminal.market_data.sync([s['id'] for s in live])
             if result.get('errors'):raise ValueError('；'.join(result['errors'])[:200])
-            if any(s['id'] in {'macd','rsi'} for s in task['selections']):
+            if any(s['id'] not in QUOTE_IDS for s in task['selections']):
                 provider=self.terminal.provider_factory()
                 try:
                     for sec in live:

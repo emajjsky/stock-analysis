@@ -45,7 +45,7 @@ from backend.technical import extended_indicators, intraday_indicators
 from backend.history_sync import HistorySync
 from backend.algorithm_lab import AlgorithmLab, public_catalog, validate_selections
 
-VERSION = "0.3.2"
+VERSION = "0.4.0"
 logger = logging.getLogger("workstation.backend")
 CENT = Decimal("0.01")
 LIMIT_CASH = Decimal("10000000000")
@@ -1484,6 +1484,13 @@ def create_app(db_path: str | Path | None = None, *, network_enabled: bool | Non
             # 老版本记录首次读取时补轻量摘要；进度轮询不反复解析全市场完整结果。
             missing=store.db.execute("SELECT json_remove(r.payload,'$.rows') FROM documents r WHERE r.kind='lab_run' AND NOT EXISTS (SELECT 1 FROM documents s WHERE s.kind='lab_run_summary' AND s.id=r.id)").fetchall()
             for item in missing:store.put('lab_run_summary',json.loads(item[0]))
+            # 修正旧版“全部缺失”和“任一缺失”混用；轻量摘要只迁移一次。
+            legacy=store.db.execute("SELECT id,payload FROM documents WHERE kind='lab_run_summary' AND json_extract(payload,'$.stats_version') IS NULL").fetchall()
+            for item in legacy:
+                summary=json.loads(item['payload'])
+                counts=store.db.execute("SELECT sum(CASE WHEN json_extract(value,'$.missing')>0 THEN 1 ELSE 0 END),sum(CASE WHEN json_extract(value,'$.data_status')='STALE' THEN 1 ELSE 0 END) FROM documents,json_each(payload,'$.rows') WHERE kind='lab_run' AND documents.id=?",(item['id'],)).fetchone()
+                summary.update(skipped=counts[0] or 0,stale=counts[1] or 0,stats_version=2)
+                store.put('lab_run_summary',summary)
             runs=sorted(store.all('lab_run_summary'),key=lambda r:r['started_at'],reverse=True)
         return respond(request,runs)
 
@@ -1502,7 +1509,19 @@ def create_app(db_path: str | Path | None = None, *, network_enabled: bool | Non
 
     @app.get('/api/v1/lab/runs/{run_id}')
     def lab_run_detail(request: Request, run_id: str):
-        return respond(request,store.get('lab_run',run_id))
+        run=store.get('lab_run',run_id)
+        run['skipped']=sum(r.get('missing',0)>0 for r in run['rows'])
+        run['stale']=sum(r.get('data_status')=='STALE' for r in run['rows'])
+        return respond(request,run)
+
+    @app.patch('/api/v1/lab/runs/{run_id}')
+    def lab_run_rename(request: Request, run_id: str, body: dict):
+        name=body.get('batch_name')
+        if not isinstance(name,str) or not name.strip() or len(name)>60:raise Problem(422,'INVALID_NAME','批次名称须为1至60字')
+        with store.lock,store.db:
+            run=store.get('lab_run',run_id);run['batch_name']=name.strip();store.put('lab_run',run)
+            store.put('lab_run_summary',{k:v for k,v in run.items() if k!='rows'})
+        return respond(request,{'id':run_id,'batch_name':name.strip()})
 
     @app.get('/api/v1/lab/tasks')
     def lab_tasks(request: Request):

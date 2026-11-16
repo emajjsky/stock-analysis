@@ -262,6 +262,7 @@ app.whenReady().then(async () => {
 app.on('window-all-closed', () => app.quit());
 app.on('before-quit', () => {
   clearInterval(noticeTimer);
+  browserSession?.flushStorageData();
   if(child&&child.pid){
     // 只结束本次客户端创建的服务树，包含历史下载子进程。
     if(process.platform==='win32'){

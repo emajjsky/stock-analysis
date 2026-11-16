@@ -83,7 +83,7 @@ onUnmounted(() => {
       <label class="web-address"><Globe :size="15"/><input v-model="address" @focus="addressFocused=true" @blur="addressFocused=false" aria-label="网页地址" spellcheck="false"/><button class="text-button" type="submit">前往</button></label>
       <a :href="active?.url || address" target="_blank" rel="noopener noreferrer" class="icon-button" aria-label="打开原站" title="打开原站"><ExternalLink :size="17"/></a>
     </form>
-    <nav class="web-bookmarks" aria-label="行情预设网址"><button v-for="p in browserPresets" :key="p.url" @click="open(p.url)">{{ p.label }}</button><span v-if="bridge">新开网页保留在内部标签页</span></nav>
+    <nav class="web-bookmarks" aria-label="行情预设网址"><button v-for="p in browserPresets" :key="p.url" @click="open(p.url)">{{ p.label }}</button><span v-if="bridge">独立保存网站登录状态 · 到期按原站重新登录</span></nav>
     <div v-if="error || active?.error" class="error-box" role="alert">{{ error || active?.error }}</div>
     <div ref="area" class="web-viewport">
       <div v-if="!bridge && !preview" class="web-start">

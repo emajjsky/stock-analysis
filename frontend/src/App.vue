@@ -41,7 +41,7 @@ import RuleEditor from "./components/RuleEditor.vue";
 import IpoView from './views/IpoView.vue';
 import WebBrowserView from './views/WebBrowserView.vue';
 import './webBrowser';
-import {activeLabJob,labWorkspace,startLabWorkspace,stopLabWorkspace,workspaceNames} from './labWorkspace';
+import {startLabWorkspace,stopLabWorkspace} from './labWorkspace';
 import {version as clientVersion} from '../package.json';
 const nav = [
   { id: "home", name: "首页", icon: ChartNoAxesCombined },
@@ -383,10 +383,6 @@ onUnmounted(() => {
           </div>
         </div>
         <div class="topbar-actions">
-          <button v-if="activeLabJob" class="lab-global-job" @click="labWorkspace.tab=activeLabJob.workspace;navigate('discover')" :aria-label="'查看算法计算进度'">
-            <span class="lab-running-dot"/>{{workspaceNames[activeLabJob.workspace]}} {{activeLabJob.completed}} / {{activeLabJob.total}}
-          </button>
-          <button v-else-if="page!=='discover'&&labWorkspace.jobs[0]?.status==='SUCCEEDED'" class="lab-global-job" @click="labWorkspace.tab=labWorkspace.jobs[0].workspace;navigate('discover')">计算已完成 · 查看结果</button>
           <button
             class="icon-button notification-trigger"
             aria-label="打开通知中心"
@@ -408,12 +404,6 @@ onUnmounted(() => {
           <Database :size="13" />数据设置
         </button>
       </div>
-      <section v-if="activeLabJob" class="lab-persistent-progress" role="status" :data-job-id="activeLabJob.id">
-        <div><strong>{{activeLabJob.status==='CANCELLING'?'正在取消筛查':'算法筛查中'}} · {{workspaceNames[activeLabJob.workspace]}}</strong><span>{{activeLabJob.completed.toLocaleString()}} / {{activeLabJob.total.toLocaleString()}} 只 · {{Math.floor(activeLabJob.completed/(activeLabJob.total||1)*100)}}%</span></div>
-        <progress :value="activeLabJob.completed" :max="activeLabJob.total||1" aria-label="全局算法筛查进度"/>
-        <div><span class="tiny">已满足 {{activeLabJob.matched}} 只 · {{activeLabJob.current}}</span><button class="text-button" @click="labWorkspace.tab=activeLabJob.workspace;navigate('discover')">查看筛查任务</button></div>
-        <p v-if="labWorkspace.connectionError" class="tiny">连接暂时中断，保留上次进度，正在重连…</p>
-      </section>
       <main>
         <div v-if="error" class="error-box">
           <strong>本地服务连接失败</strong>

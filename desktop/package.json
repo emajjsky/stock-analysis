@@ -1,6 +1,6 @@
 {
   "name": "wangzha-desktop",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "private": true,
   "description": "王炸桌面客户端与多标签网页行情",
   "main": "main.cjs",

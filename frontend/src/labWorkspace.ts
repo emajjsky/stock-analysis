@@ -9,13 +9,14 @@ export interface LabDraft {
   selectionsByMode:Record<string,LabSelection[]>;paramsOpen:boolean;resultId?:string;pendingId?:string;
   filter:'matched'|'all'|'missing';expanded:string;limit:number;
   taskName:string;interval:number;autoReview:boolean;useJev:boolean;editingId?:string;
+  batchName:string;refreshInputs:boolean;
 }
 const storageKey='wangzha-lab-workspaces-v1';
 export const clone=<T>(value:T):T=>JSON.parse(JSON.stringify(value));
 function defaults(key:LabWorkspace):LabDraft {
   return {mode:'daily',scope:key==='screen'?'all':'custom',combination:'all',chosen:[],
     selectionsByMode:{daily:[{id:'ma-trend',parameters:{fast:5,slow:20}},{id:'atr-risk',parameters:{period:14,max_pct:5}}],intraday:[{id:'price-change',parameters:{threshold:3}}],news:[{id:'announcement',parameters:{}}]},
-    paramsOpen:true,filter:key==='screen'?'matched':'all',expanded:'',limit:50,taskName:'我的算法监测',interval:60,autoReview:false,useJev:false};
+    paramsOpen:true,filter:key==='screen'?'matched':'all',expanded:'',limit:50,taskName:'我的算法监测',interval:60,autoReview:false,useJev:false,batchName:'',refreshInputs:true};
 }
 function restore(){
   const drafts={screen:defaults('screen'),stock:defaults('stock'),monitor:defaults('monitor')};
@@ -45,13 +46,13 @@ export function stockStudy(id:string):StockStudy {
 export function carryStockStudy(run:LabRun,id:string){
   if(run.mode!=='daily')return;
   const row=run.rows.find(r=>r.security.id===id);if(!row)return;
-  const study=stockStudy(id);study.selected=clone(run.selections);study.run={...run,rows:[row],total:1,matched:Number(row.matched),skipped:Number(row.missing===row.total)};study.error='';
+  const study=stockStudy(id);study.selected=clone(run.selections);study.run={...run,rows:[row],total:1,matched:Number(row.matched),skipped:Number(row.missing>0)};study.error='';
 }
 export const activeLabJob=computed(()=>labWorkspace.jobs.find(j=>['QUEUED','RUNNING','CANCELLING'].includes(j.status)));
 export function runWorkspace(run:LabRunSummary):LabWorkspace {return run.workspace??(run.scope==='custom'&&run.total===1?'stock':'screen');}
 export function draftConfig(key:LabWorkspace):LabConfig {
   const d=labWorkspace.drafts[key];
-  return {workspace:key,mode:d.mode,scope:key==='stock'?'custom':d.scope,security_ids:d.chosen.map(s=>s.id),selections:clone(d.selectionsByMode[d.mode]??[]),combination:d.combination};
+  return {workspace:key,mode:d.mode,scope:key==='stock'?'custom':d.scope,security_ids:d.chosen.map(s=>s.id),selections:clone(d.selectionsByMode[d.mode]??[]),combination:d.combination,batch_name:d.batchName,refresh_inputs:d.refreshInputs};
 }
 export function sameConfig(run:LabRun,key:LabWorkspace){
   const config=draftConfig(key);
